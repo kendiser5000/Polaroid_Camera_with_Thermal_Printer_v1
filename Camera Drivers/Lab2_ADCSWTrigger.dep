@@ -1,0 +1,25 @@
+Dependencies for Project 'Lab2', Target 'ADCSWTrigger': (DO NOT MODIFY !)
+F (.\startup.s)(0x5B99DD4E)(--cpu Cortex-M4 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\ADCSWTrigger.c)(0x5BA03A4A)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\adcswtrigger.o --omf_browse .\adcswtrigger.crf --depend .\adcswtrigger.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (..\../inc/tm4c123gh6pm.h)(0x5B8EB599)
+F (.\ADCTestMain.c)(0x5BA12163)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\adctestmain.o --omf_browse .\adctestmain.crf --depend .\adctestmain.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (ADCSWTrigger.h)(0x5B99DD4D)
+I (..\../inc/tm4c123gh6pm.h)(0x5B8EB599)
+I (PLL.h)(0x5B99DD4D)
+I (ST7735.h)(0x5B8EB4FB)
+F (.\PLL.c)(0x5B99DD4D)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (PLL.h)(0x5B99DD4D)
+I (..\../inc/tm4c123gh6pm.h)(0x5B8EB599)
+F (.\ST7735.c)(0x5B8EE768)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\st7735.o --omf_browse .\st7735.crf --depend .\st7735.d)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C87C24)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (ST7735.h)(0x5B8EB4FB)
+I (..\../inc/tm4c123gh6pm.h)(0x5B8EB599)
+F (.\ST7735.h)(0x5B8EB4FB)()
+F (.\Timer2.h)(0x5B8EAE09)()
+F (.\Timer2.c)(0x5B8EAE09)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\timer2.o --omf_browse .\timer2.crf --depend .\timer2.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (..\../inc/tm4c123gh6pm.h)(0x5B8EB599)

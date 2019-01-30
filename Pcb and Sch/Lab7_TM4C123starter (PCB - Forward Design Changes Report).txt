@@ -1,0 +1,28 @@
+Forward Design Changes Report
+-----------------------------
+
+Report File:        C:\Users\mattqd97\Documents\GitHub\Final-Project\Pcb and Sch\Lab7_TM4C123starter (PCB - Forward Design Changes Report).txt
+Report Written:     Thursday, November 01, 2018
+Design Path:        C:\Users\mattqd97\Documents\GitHub\Final-Project\Pcb and Sch\Lab7_TM4C123starter.pcb
+Design Title:       
+Created:            10/22/2018 11:46:27 PM
+Last Saved:         10/30/2018 8:21:07 AM
+Editing Time:       990 min
+Units:              mil (precision 0)
+
+Disconnected pin "U7.2" from net "5V".
+
+Added net "N1072".
+
+Error: Unable to add component reference "Gnd" of component "Testpoint_TwoHole", package "DIL" because Cannot find component "Testpoint_TwoHole"..
+Error: Unable to add component reference "Gnd3" of component "Testpoint_TwoHole", package "DIL" because Cannot find component "Testpoint_TwoHole"..
+Error: Unable to add component reference "TP2" of component "Testpoint_TwoHole", package "DIL" because Cannot find component "Testpoint_TwoHole"..
+Error: Unable to add component reference "TP1" of component "Testpoint_TwoHole", package "DIL" because Cannot find component "Testpoint_TwoHole"..
+Added component reference "J8" of component "Header2", package "SIP".
+
+Connected pin "U7.2" to net "N1072".
+Connected pin "J8.1" to net "5V".
+Connected pin "J8.2" to net "N1072".
+
+
+End Of Report.

@@ -1,0 +1,1768 @@
+ARM Linker, 5.03 [Build 76] [MDK-ARM Professional]
+
+==============================================================================
+
+Section Cross References
+
+    startup.o(RESET) refers to startup.o(STACK) for StackMem
+    startup.o(RESET) refers to uart1.o(i.UART1_Handler) for UART1_Handler
+    startup.o(RESET) refers to diskio.o(i.Timer5A_Handler) for Timer5A_Handler
+    startup.o(RESET) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    diskio.o(i.SSI0_Init) refers to diskio.o(i.Timer5_Init) for Timer5_Init
+    diskio.o(i.SSI0_Init) refers to diskio.o(i.CS_Init) for CS_Init
+    diskio.o(i.Timer5A_Handler) refers to diskio.o(i.disk_timerproc) for disk_timerproc
+    diskio.o(i.deselect) refers to diskio.o(i.xchg_spi) for xchg_spi
+    diskio.o(i.disk_initialize) refers to diskio.o(i.init_spi) for init_spi
+    diskio.o(i.disk_initialize) refers to diskio.o(i.xchg_spi) for xchg_spi
+    diskio.o(i.disk_initialize) refers to diskio.o(i.send_cmd) for send_cmd
+    diskio.o(i.disk_initialize) refers to diskio.o(i.deselect) for deselect
+    diskio.o(i.disk_initialize) refers to diskio.o(.data) for Stat
+    diskio.o(i.disk_ioctl) refers to diskio.o(i.select) for select
+    diskio.o(i.disk_ioctl) refers to diskio.o(i.send_cmd) for send_cmd
+    diskio.o(i.disk_ioctl) refers to diskio.o(i.rcvr_datablock) for rcvr_datablock
+    diskio.o(i.disk_ioctl) refers to diskio.o(i.xchg_spi) for xchg_spi
+    diskio.o(i.disk_ioctl) refers to diskio.o(i.wait_ready) for wait_ready
+    diskio.o(i.disk_ioctl) refers to diskio.o(i.deselect) for deselect
+    diskio.o(i.disk_ioctl) refers to diskio.o(.data) for Stat
+    diskio.o(i.disk_read) refers to diskio.o(i.send_cmd) for send_cmd
+    diskio.o(i.disk_read) refers to diskio.o(i.rcvr_datablock) for rcvr_datablock
+    diskio.o(i.disk_read) refers to diskio.o(i.deselect) for deselect
+    diskio.o(i.disk_read) refers to diskio.o(.data) for Stat
+    diskio.o(i.disk_status) refers to diskio.o(.data) for Stat
+    diskio.o(i.disk_timerproc) refers to diskio.o(.data) for Timer1
+    diskio.o(i.disk_write) refers to diskio.o(i.send_cmd) for send_cmd
+    diskio.o(i.disk_write) refers to diskio.o(i.xmit_datablock) for xmit_datablock
+    diskio.o(i.disk_write) refers to diskio.o(i.deselect) for deselect
+    diskio.o(i.disk_write) refers to diskio.o(.data) for Stat
+    diskio.o(i.init_spi) refers to diskio.o(i.SSI0_Init) for SSI0_Init
+    diskio.o(i.init_spi) refers to diskio.o(.data) for Timer1
+    diskio.o(i.rcvr_datablock) refers to diskio.o(i.xchg_spi) for xchg_spi
+    diskio.o(i.rcvr_datablock) refers to diskio.o(i.rcvr_spi_multi) for rcvr_spi_multi
+    diskio.o(i.rcvr_datablock) refers to diskio.o(.data) for Timer1
+    diskio.o(i.rcvr_spi_multi) refers to diskio.o(i.rcvr_spi) for rcvr_spi
+    diskio.o(i.select) refers to diskio.o(i.xchg_spi) for xchg_spi
+    diskio.o(i.select) refers to diskio.o(i.wait_ready) for wait_ready
+    diskio.o(i.select) refers to diskio.o(i.deselect) for deselect
+    diskio.o(i.send_cmd) refers to diskio.o(i.deselect) for deselect
+    diskio.o(i.send_cmd) refers to diskio.o(i.select) for select
+    diskio.o(i.send_cmd) refers to diskio.o(i.xchg_spi) for xchg_spi
+    diskio.o(i.wait_ready) refers to diskio.o(i.xchg_spi) for xchg_spi
+    diskio.o(i.wait_ready) refers to diskio.o(.data) for Timer2
+    diskio.o(i.xmit_datablock) refers to diskio.o(i.wait_ready) for wait_ready
+    diskio.o(i.xmit_datablock) refers to diskio.o(i.xchg_spi) for xchg_spi
+    diskio.o(i.xmit_datablock) refers to diskio.o(i.xmit_spi_multi) for xmit_spi_multi
+    ff.o(i.check_fs) refers to ff.o(i.move_window) for move_window
+    ff.o(i.create_chain) refers to ff.o(i.get_fat) for get_fat
+    ff.o(i.create_chain) refers to ff.o(i.put_fat) for put_fat
+    ff.o(i.create_name) refers to ff.o(i.mem_set) for mem_set
+    ff.o(i.create_name) refers to ff.o(i.chk_chr) for chk_chr
+    ff.o(i.dir_alloc) refers to ff.o(i.dir_sdi) for dir_sdi
+    ff.o(i.dir_alloc) refers to ff.o(i.move_window) for move_window
+    ff.o(i.dir_alloc) refers to ff.o(i.dir_next) for dir_next
+    ff.o(i.dir_find) refers to ff.o(i.dir_sdi) for dir_sdi
+    ff.o(i.dir_find) refers to ff.o(i.move_window) for move_window
+    ff.o(i.dir_find) refers to ff.o(i.mem_cmp) for mem_cmp
+    ff.o(i.dir_find) refers to ff.o(i.dir_next) for dir_next
+    ff.o(i.dir_next) refers to ff.o(i.get_fat) for get_fat
+    ff.o(i.dir_next) refers to ff.o(i.create_chain) for create_chain
+    ff.o(i.dir_next) refers to ff.o(i.sync_window) for sync_window
+    ff.o(i.dir_next) refers to ff.o(i.mem_set) for mem_set
+    ff.o(i.dir_next) refers to ff.o(i.clust2sect) for clust2sect
+    ff.o(i.dir_read) refers to ff.o(i.move_window) for move_window
+    ff.o(i.dir_read) refers to ff.o(i.dir_next) for dir_next
+    ff.o(i.dir_register) refers to ff.o(i.dir_alloc) for dir_alloc
+    ff.o(i.dir_register) refers to ff.o(i.move_window) for move_window
+    ff.o(i.dir_register) refers to ff.o(i.mem_set) for mem_set
+    ff.o(i.dir_register) refers to ff.o(i.mem_cpy) for mem_cpy
+    ff.o(i.dir_remove) refers to ff.o(i.dir_sdi) for dir_sdi
+    ff.o(i.dir_remove) refers to ff.o(i.move_window) for move_window
+    ff.o(i.dir_remove) refers to ff.o(i.mem_set) for mem_set
+    ff.o(i.dir_sdi) refers to ff.o(i.get_fat) for get_fat
+    ff.o(i.dir_sdi) refers to ff.o(i.clust2sect) for clust2sect
+    ff.o(i.f_chdir) refers to ff.o(i.find_volume) for find_volume
+    ff.o(i.f_chdir) refers to ff.o(i.follow_path) for follow_path
+    ff.o(i.f_chdir) refers to ff.o(i.ld_clust) for ld_clust
+    ff.o(i.f_chmod) refers to ff.o(i.find_volume) for find_volume
+    ff.o(i.f_chmod) refers to ff.o(i.follow_path) for follow_path
+    ff.o(i.f_chmod) refers to ff.o(i.sync_fs) for sync_fs
+    ff.o(i.f_close) refers to ff.o(i.f_sync) for f_sync
+    ff.o(i.f_close) refers to ff.o(i.validate) for validate
+    ff.o(i.f_closedir) refers to ff.o(i.validate) for validate
+    ff.o(i.f_getcwd) refers to ff.o(i.find_volume) for find_volume
+    ff.o(i.f_getcwd) refers to ff.o(i.dir_sdi) for dir_sdi
+    ff.o(i.f_getcwd) refers to ff.o(i.dir_read) for dir_read
+    ff.o(i.f_getcwd) refers to ff.o(i.ld_clust) for ld_clust
+    ff.o(i.f_getcwd) refers to ff.o(i.dir_next) for dir_next
+    ff.o(i.f_getcwd) refers to ff.o(i.get_fileinfo) for get_fileinfo
+    ff.o(i.f_getfree) refers to ff.o(i.find_volume) for find_volume
+    ff.o(i.f_getfree) refers to ff.o(i.get_fat) for get_fat
+    ff.o(i.f_getfree) refers to ff.o(i.move_window) for move_window
+    ff.o(i.f_getlabel) refers to ff.o(i.find_volume) for find_volume
+    ff.o(i.f_getlabel) refers to ff.o(i.dir_sdi) for dir_sdi
+    ff.o(i.f_getlabel) refers to ff.o(i.dir_read) for dir_read
+    ff.o(i.f_getlabel) refers to ff.o(i.mem_cpy) for mem_cpy
+    ff.o(i.f_getlabel) refers to ff.o(i.move_window) for move_window
+    ff.o(i.f_lseek) refers to ff.o(i.validate) for validate
+    ff.o(i.f_lseek) refers to ff.o(i.create_chain) for create_chain
+    ff.o(i.f_lseek) refers to ff.o(i.get_fat) for get_fat
+    ff.o(i.f_lseek) refers to ff.o(i.clust2sect) for clust2sect
+    ff.o(i.f_lseek) refers to diskio.o(i.disk_write) for disk_write
+    ff.o(i.f_lseek) refers to diskio.o(i.disk_read) for disk_read
+    ff.o(i.f_mkdir) refers to ff.o(i.find_volume) for find_volume
+    ff.o(i.f_mkdir) refers to ff.o(i.follow_path) for follow_path
+    ff.o(i.f_mkdir) refers to ff.o(i.create_chain) for create_chain
+    ff.o(i.f_mkdir) refers to ff.o(i.sync_window) for sync_window
+    ff.o(i.f_mkdir) refers to ff.o(i.clust2sect) for clust2sect
+    ff.o(i.f_mkdir) refers to ff.o(i.mem_set) for mem_set
+    ff.o(i.f_mkdir) refers to ff.o(i.st_clust) for st_clust
+    ff.o(i.f_mkdir) refers to ff.o(i.mem_cpy) for mem_cpy
+    ff.o(i.f_mkdir) refers to ff.o(i.dir_register) for dir_register
+    ff.o(i.f_mkdir) refers to ff.o(i.remove_chain) for remove_chain
+    ff.o(i.f_mkdir) refers to ff.o(i.sync_fs) for sync_fs
+    ff.o(i.f_mkfs) refers to ff.o(i.get_ldnumber) for get_ldnumber
+    ff.o(i.f_mkfs) refers to diskio.o(i.disk_initialize) for disk_initialize
+    ff.o(i.f_mkfs) refers to diskio.o(i.disk_ioctl) for disk_ioctl
+    ff.o(i.f_mkfs) refers to ff.o(i.mem_set) for mem_set
+    ff.o(i.f_mkfs) refers to diskio.o(i.disk_write) for disk_write
+    ff.o(i.f_mkfs) refers to ff.o(i.mem_cpy) for mem_cpy
+    ff.o(i.f_mkfs) refers to ff.o(.data) for FatFs
+    ff.o(i.f_mkfs) refers to ff.o(.constdata) for vst
+    ff.o(i.f_mount) refers to ff.o(i.get_ldnumber) for get_ldnumber
+    ff.o(i.f_mount) refers to ff.o(i.find_volume) for find_volume
+    ff.o(i.f_mount) refers to ff.o(.data) for FatFs
+    ff.o(i.f_open) refers to ff.o(i.find_volume) for find_volume
+    ff.o(i.f_open) refers to ff.o(i.follow_path) for follow_path
+    ff.o(i.f_open) refers to ff.o(i.dir_register) for dir_register
+    ff.o(i.f_open) refers to ff.o(i.ld_clust) for ld_clust
+    ff.o(i.f_open) refers to ff.o(i.st_clust) for st_clust
+    ff.o(i.f_open) refers to ff.o(i.remove_chain) for remove_chain
+    ff.o(i.f_open) refers to ff.o(i.move_window) for move_window
+    ff.o(i.f_opendir) refers to ff.o(i.find_volume) for find_volume
+    ff.o(i.f_opendir) refers to ff.o(i.follow_path) for follow_path
+    ff.o(i.f_opendir) refers to ff.o(i.ld_clust) for ld_clust
+    ff.o(i.f_opendir) refers to ff.o(i.dir_sdi) for dir_sdi
+    ff.o(i.f_read) refers to ff.o(i.validate) for validate
+    ff.o(i.f_read) refers to ff.o(i.get_fat) for get_fat
+    ff.o(i.f_read) refers to ff.o(i.clust2sect) for clust2sect
+    ff.o(i.f_read) refers to diskio.o(i.disk_read) for disk_read
+    ff.o(i.f_read) refers to ff.o(i.mem_cpy) for mem_cpy
+    ff.o(i.f_read) refers to diskio.o(i.disk_write) for disk_write
+    ff.o(i.f_readdir) refers to ff.o(i.validate) for validate
+    ff.o(i.f_readdir) refers to ff.o(i.dir_sdi) for dir_sdi
+    ff.o(i.f_readdir) refers to ff.o(i.dir_read) for dir_read
+    ff.o(i.f_readdir) refers to ff.o(i.get_fileinfo) for get_fileinfo
+    ff.o(i.f_readdir) refers to ff.o(i.dir_next) for dir_next
+    ff.o(i.f_rename) refers to ff.o(i.find_volume) for find_volume
+    ff.o(i.f_rename) refers to ff.o(i.follow_path) for follow_path
+    ff.o(i.f_rename) refers to ff.o(i.mem_cpy) for mem_cpy
+    ff.o(i.f_rename) refers to ff.o(i.get_ldnumber) for get_ldnumber
+    ff.o(i.f_rename) refers to ff.o(i.dir_register) for dir_register
+    ff.o(i.f_rename) refers to ff.o(i.ld_clust) for ld_clust
+    ff.o(i.f_rename) refers to ff.o(i.clust2sect) for clust2sect
+    ff.o(i.f_rename) refers to ff.o(i.move_window) for move_window
+    ff.o(i.f_rename) refers to ff.o(i.st_clust) for st_clust
+    ff.o(i.f_rename) refers to ff.o(i.dir_remove) for dir_remove
+    ff.o(i.f_rename) refers to ff.o(i.sync_fs) for sync_fs
+    ff.o(i.f_setlabel) refers to ff.o(i.find_volume) for find_volume
+    ff.o(i.f_setlabel) refers to ff.o(i.chk_chr) for chk_chr
+    ff.o(i.f_setlabel) refers to ff.o(i.dir_sdi) for dir_sdi
+    ff.o(i.f_setlabel) refers to ff.o(i.dir_read) for dir_read
+    ff.o(i.f_setlabel) refers to ff.o(i.mem_cpy) for mem_cpy
+    ff.o(i.f_setlabel) refers to ff.o(i.sync_fs) for sync_fs
+    ff.o(i.f_setlabel) refers to ff.o(i.dir_alloc) for dir_alloc
+    ff.o(i.f_setlabel) refers to ff.o(i.mem_set) for mem_set
+    ff.o(i.f_stat) refers to ff.o(i.find_volume) for find_volume
+    ff.o(i.f_stat) refers to ff.o(i.follow_path) for follow_path
+    ff.o(i.f_stat) refers to ff.o(i.get_fileinfo) for get_fileinfo
+    ff.o(i.f_sync) refers to ff.o(i.validate) for validate
+    ff.o(i.f_sync) refers to diskio.o(i.disk_write) for disk_write
+    ff.o(i.f_sync) refers to ff.o(i.move_window) for move_window
+    ff.o(i.f_sync) refers to ff.o(i.st_clust) for st_clust
+    ff.o(i.f_sync) refers to ff.o(i.sync_fs) for sync_fs
+    ff.o(i.f_truncate) refers to ff.o(i.validate) for validate
+    ff.o(i.f_truncate) refers to ff.o(i.remove_chain) for remove_chain
+    ff.o(i.f_truncate) refers to ff.o(i.get_fat) for get_fat
+    ff.o(i.f_truncate) refers to ff.o(i.put_fat) for put_fat
+    ff.o(i.f_truncate) refers to diskio.o(i.disk_write) for disk_write
+    ff.o(i.f_unlink) refers to ff.o(i.find_volume) for find_volume
+    ff.o(i.f_unlink) refers to ff.o(i.follow_path) for follow_path
+    ff.o(i.f_unlink) refers to ff.o(i.ld_clust) for ld_clust
+    ff.o(i.f_unlink) refers to ff.o(i.mem_cpy) for mem_cpy
+    ff.o(i.f_unlink) refers to ff.o(i.dir_sdi) for dir_sdi
+    ff.o(i.f_unlink) refers to ff.o(i.dir_read) for dir_read
+    ff.o(i.f_unlink) refers to ff.o(i.dir_remove) for dir_remove
+    ff.o(i.f_unlink) refers to ff.o(i.remove_chain) for remove_chain
+    ff.o(i.f_unlink) refers to ff.o(i.sync_fs) for sync_fs
+    ff.o(i.f_utime) refers to ff.o(i.find_volume) for find_volume
+    ff.o(i.f_utime) refers to ff.o(i.follow_path) for follow_path
+    ff.o(i.f_utime) refers to ff.o(i.sync_fs) for sync_fs
+    ff.o(i.f_write) refers to ff.o(i.validate) for validate
+    ff.o(i.f_write) refers to ff.o(i.create_chain) for create_chain
+    ff.o(i.f_write) refers to diskio.o(i.disk_write) for disk_write
+    ff.o(i.f_write) refers to ff.o(i.clust2sect) for clust2sect
+    ff.o(i.f_write) refers to ff.o(i.mem_cpy) for mem_cpy
+    ff.o(i.f_write) refers to diskio.o(i.disk_read) for disk_read
+    ff.o(i.find_volume) refers to ff.o(i.get_ldnumber) for get_ldnumber
+    ff.o(i.find_volume) refers to diskio.o(i.disk_status) for disk_status
+    ff.o(i.find_volume) refers to diskio.o(i.disk_initialize) for disk_initialize
+    ff.o(i.find_volume) refers to ff.o(i.check_fs) for check_fs
+    ff.o(i.find_volume) refers to ff.o(i.move_window) for move_window
+    ff.o(i.find_volume) refers to ff.o(.data) for FatFs
+    ff.o(i.follow_path) refers to ff.o(i.dir_sdi) for dir_sdi
+    ff.o(i.follow_path) refers to ff.o(i.create_name) for create_name
+    ff.o(i.follow_path) refers to ff.o(i.dir_find) for dir_find
+    ff.o(i.follow_path) refers to ff.o(i.ld_clust) for ld_clust
+    ff.o(i.get_fat) refers to ff.o(i.move_window) for move_window
+    ff.o(i.move_window) refers to ff.o(i.sync_window) for sync_window
+    ff.o(i.move_window) refers to diskio.o(i.disk_read) for disk_read
+    ff.o(i.put_fat) refers to ff.o(i.move_window) for move_window
+    ff.o(i.remove_chain) refers to ff.o(i.get_fat) for get_fat
+    ff.o(i.remove_chain) refers to ff.o(i.put_fat) for put_fat
+    ff.o(i.sync_fs) refers to ff.o(i.sync_window) for sync_window
+    ff.o(i.sync_fs) refers to ff.o(i.mem_set) for mem_set
+    ff.o(i.sync_fs) refers to diskio.o(i.disk_write) for disk_write
+    ff.o(i.sync_fs) refers to diskio.o(i.disk_ioctl) for disk_ioctl
+    ff.o(i.sync_window) refers to diskio.o(i.disk_write) for disk_write
+    ff.o(i.validate) refers to diskio.o(i.disk_status) for disk_status
+    sdcfile.o(i.FileSystemTest) refers to ff.o(i.f_open) for f_open
+    sdcfile.o(i.FileSystemTest) refers to st7735.o(i.ST7735_Color565) for ST7735_Color565
+    sdcfile.o(i.FileSystemTest) refers to st7735.o(i.ST7735_DrawString) for ST7735_DrawString
+    sdcfile.o(i.FileSystemTest) refers to ff.o(i.f_write) for f_write
+    sdcfile.o(i.FileSystemTest) refers to ff.o(i.f_close) for f_close
+    sdcfile.o(i.FileSystemTest) refers to ff.o(i.f_read) for f_read
+    sdcfile.o(i.FileSystemTest) refers to st7735.o(i.ST7735_DrawChar) for ST7735_DrawChar
+    sdcfile.o(i.FileSystemTest) refers to st7735.o(i.ST7735_SetCursor) for ST7735_SetCursor
+    sdcfile.o(i.FileSystemTest) refers to st7735.o(i.ST7735_SetTextColor) for ST7735_SetTextColor
+    sdcfile.o(i.FileSystemTest) refers to st7735.o(i.ST7735_OutUDec) for ST7735_OutUDec
+    sdcfile.o(i.FileSystemTest) refers to sdcfile.o(.bss) for Handle2
+    sdcfile.o(i.FileSystemTest) refers to sdcfile.o(.data) for Fresult
+    sdcfile.o(i.SimpleUnformattedTest) refers to diskio.o(i.disk_initialize) for disk_initialize
+    sdcfile.o(i.SimpleUnformattedTest) refers to sdcfile.o(i.diskError) for diskError
+    sdcfile.o(i.SimpleUnformattedTest) refers to diskio.o(i.disk_write) for disk_write
+    sdcfile.o(i.SimpleUnformattedTest) refers to diskio.o(i.disk_read) for disk_read
+    sdcfile.o(i.SimpleUnformattedTest) refers to st7735.o(i.ST7735_Color565) for ST7735_Color565
+    sdcfile.o(i.SimpleUnformattedTest) refers to st7735.o(i.ST7735_DrawString) for ST7735_DrawString
+    sdcfile.o(i.SimpleUnformattedTest) refers to st7735.o(i.ST7735_SetCursor) for ST7735_SetCursor
+    sdcfile.o(i.SimpleUnformattedTest) refers to st7735.o(i.ST7735_SetTextColor) for ST7735_SetTextColor
+    sdcfile.o(i.SimpleUnformattedTest) refers to st7735.o(i.ST7735_OutUDec) for ST7735_OutUDec
+    sdcfile.o(i.SimpleUnformattedTest) refers to sdcfile.o(.bss) for buffer
+    sdcfile.o(i.diskError) refers to st7735.o(i.ST7735_Color565) for ST7735_Color565
+    sdcfile.o(i.diskError) refers to st7735.o(i.ST7735_DrawString) for ST7735_DrawString
+    sdcfile.o(i.diskError) refers to st7735.o(i.ST7735_SetCursor) for ST7735_SetCursor
+    sdcfile.o(i.diskError) refers to st7735.o(i.ST7735_SetTextColor) for ST7735_SetTextColor
+    sdcfile.o(i.diskError) refers to st7735.o(i.ST7735_OutUDec) for ST7735_OutUDec
+    sdcfile.o(i.main2) refers to pll.o(i.PLL_Init) for PLL_Init
+    sdcfile.o(i.main2) refers to st7735.o(i.ST7735_InitR) for ST7735_InitR
+    sdcfile.o(i.main2) refers to st7735.o(i.ST7735_FillScreen) for ST7735_FillScreen
+    sdcfile.o(i.main2) refers to startup.o(.text) for EnableInterrupts
+    sdcfile.o(i.main2) refers to ff.o(i.f_mount) for f_mount
+    sdcfile.o(i.main2) refers to st7735.o(i.ST7735_Color565) for ST7735_Color565
+    sdcfile.o(i.main2) refers to st7735.o(i.ST7735_DrawString) for ST7735_DrawString
+    sdcfile.o(i.main2) refers to ff.o(i.f_open) for f_open
+    sdcfile.o(i.main2) refers to ff.o(i.f_read) for f_read
+    sdcfile.o(i.main2) refers to st7735.o(i.ST7735_DrawChar) for ST7735_DrawChar
+    sdcfile.o(i.main2) refers to ff.o(i.f_close) for f_close
+    sdcfile.o(i.main2) refers to st7735.o(i.ST7735_SetCursor) for ST7735_SetCursor
+    sdcfile.o(i.main2) refers to st7735.o(i.ST7735_SetTextColor) for ST7735_SetTextColor
+    sdcfile.o(i.main2) refers to st7735.o(i.ST7735_OutUDec) for ST7735_OutUDec
+    sdcfile.o(i.main2) refers to ff.o(i.f_lseek) for f_lseek
+    sdcfile.o(i.main2) refers to ff.o(i.f_write) for f_write
+    sdcfile.o(i.main2) refers to sdcfile.o(.bss) for g_sFatFs
+    sdcfile.o(i.main2) refers to sdcfile.o(.data) for MountFresult
+    sdcfile.o(i.main2) refers to sdcfile.o(.constdata) for inFilename
+    st7735.o(i.Delay1ms) refers to st7735.o(.emb_text) for Delay
+    st7735.o(i.Output_Clear) refers to st7735.o(i.ST7735_FillScreen) for ST7735_FillScreen
+    st7735.o(i.Output_Color) refers to st7735.o(i.ST7735_SetTextColor) for ST7735_SetTextColor
+    st7735.o(i.Output_Init) refers to st7735.o(i.ST7735_InitR) for ST7735_InitR
+    st7735.o(i.Output_Init) refers to st7735.o(i.ST7735_FillScreen) for ST7735_FillScreen
+    st7735.o(i.Output_Off) refers to st7735.o(i.Output_Clear) for Output_Clear
+    st7735.o(i.Output_On) refers to st7735.o(i.Output_Init) for Output_Init
+    st7735.o(i.ST7735_DrawBitmap) refers to st7735.o(i.setAddrWindow) for setAddrWindow
+    st7735.o(i.ST7735_DrawBitmap) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.ST7735_DrawBitmap) refers to st7735.o(.data) for _width
+    st7735.o(i.ST7735_DrawChar) refers to st7735.o(i.setAddrWindow) for setAddrWindow
+    st7735.o(i.ST7735_DrawChar) refers to st7735.o(i.pushColor) for pushColor
+    st7735.o(i.ST7735_DrawChar) refers to st7735.o(.data) for _width
+    st7735.o(i.ST7735_DrawChar) refers to st7735.o(.constdata) for Font
+    st7735.o(i.ST7735_DrawCharS) refers to st7735.o(i.ST7735_DrawPixel) for ST7735_DrawPixel
+    st7735.o(i.ST7735_DrawCharS) refers to st7735.o(i.ST7735_FillRect) for ST7735_FillRect
+    st7735.o(i.ST7735_DrawCharS) refers to st7735.o(.data) for _width
+    st7735.o(i.ST7735_DrawCharS) refers to st7735.o(.constdata) for Font
+    st7735.o(i.ST7735_DrawFastHLine) refers to st7735.o(i.setAddrWindow) for setAddrWindow
+    st7735.o(i.ST7735_DrawFastHLine) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.ST7735_DrawFastHLine) refers to st7735.o(.data) for _width
+    st7735.o(i.ST7735_DrawFastVLine) refers to st7735.o(i.setAddrWindow) for setAddrWindow
+    st7735.o(i.ST7735_DrawFastVLine) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.ST7735_DrawFastVLine) refers to st7735.o(.data) for _width
+    st7735.o(i.ST7735_DrawPixel) refers to st7735.o(i.setAddrWindow) for setAddrWindow
+    st7735.o(i.ST7735_DrawPixel) refers to st7735.o(i.pushColor) for pushColor
+    st7735.o(i.ST7735_DrawPixel) refers to st7735.o(.data) for _width
+    st7735.o(i.ST7735_DrawString) refers to st7735.o(i.ST7735_DrawCharS) for ST7735_DrawCharS
+    st7735.o(i.ST7735_FillRect) refers to st7735.o(i.setAddrWindow) for setAddrWindow
+    st7735.o(i.ST7735_FillRect) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.ST7735_FillRect) refers to st7735.o(.data) for _width
+    st7735.o(i.ST7735_FillScreen) refers to st7735.o(i.ST7735_FillRect) for ST7735_FillRect
+    st7735.o(i.ST7735_FillScreen) refers to st7735.o(.data) for _height
+    st7735.o(i.ST7735_InitB) refers to st7735.o(i.commonInit) for commonInit
+    st7735.o(i.ST7735_InitB) refers to st7735.o(i.ST7735_SetCursor) for ST7735_SetCursor
+    st7735.o(i.ST7735_InitB) refers to st7735.o(i.ST7735_FillScreen) for ST7735_FillScreen
+    st7735.o(i.ST7735_InitB) refers to st7735.o(.constdata) for Bcmd
+    st7735.o(i.ST7735_InitB) refers to st7735.o(.data) for StTextColor
+    st7735.o(i.ST7735_InitR) refers to st7735.o(i.commonInit) for commonInit
+    st7735.o(i.ST7735_InitR) refers to st7735.o(i.commandList) for commandList
+    st7735.o(i.ST7735_InitR) refers to st7735.o(i.writecommand) for writecommand
+    st7735.o(i.ST7735_InitR) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.ST7735_InitR) refers to st7735.o(i.ST7735_SetCursor) for ST7735_SetCursor
+    st7735.o(i.ST7735_InitR) refers to st7735.o(i.ST7735_FillScreen) for ST7735_FillScreen
+    st7735.o(i.ST7735_InitR) refers to st7735.o(.constdata) for Rcmd1
+    st7735.o(i.ST7735_InitR) refers to st7735.o(.data) for ColStart
+    st7735.o(i.ST7735_InvertDisplay) refers to st7735.o(i.writecommand) for writecommand
+    st7735.o(i.ST7735_OutChar) refers to st7735.o(i.ST7735_DrawString) for ST7735_DrawString
+    st7735.o(i.ST7735_OutChar) refers to st7735.o(i.ST7735_DrawCharS) for ST7735_DrawCharS
+    st7735.o(i.ST7735_OutChar) refers to st7735.o(.data) for StY
+    st7735.o(i.ST7735_OutString) refers to st7735.o(i.ST7735_OutChar) for ST7735_OutChar
+    st7735.o(i.ST7735_OutUDec) refers to st7735.o(i.fillmessage) for fillmessage
+    st7735.o(i.ST7735_OutUDec) refers to st7735.o(i.ST7735_DrawString) for ST7735_DrawString
+    st7735.o(i.ST7735_OutUDec) refers to st7735.o(i.ST7735_DrawCharS) for ST7735_DrawCharS
+    st7735.o(i.ST7735_OutUDec) refers to st7735.o(.data) for Messageindex
+    st7735.o(i.ST7735_OutUDec) refers to st7735.o(.bss) for Message
+    st7735.o(i.ST7735_PlotBar) refers to st7735.o(i.ST7735_DrawFastVLine) for ST7735_DrawFastVLine
+    st7735.o(i.ST7735_PlotBar) refers to st7735.o(.data) for Ymin
+    st7735.o(i.ST7735_PlotClear) refers to st7735.o(i.ST7735_Color565) for ST7735_Color565
+    st7735.o(i.ST7735_PlotClear) refers to st7735.o(i.ST7735_FillRect) for ST7735_FillRect
+    st7735.o(i.ST7735_PlotClear) refers to st7735.o(.data) for Ymax
+    st7735.o(i.ST7735_PlotLine) refers to st7735.o(i.ST7735_DrawPixel) for ST7735_DrawPixel
+    st7735.o(i.ST7735_PlotLine) refers to st7735.o(.data) for Ymin
+    st7735.o(i.ST7735_PlotNext) refers to st7735.o(.data) for X
+    st7735.o(i.ST7735_PlotNextErase) refers to st7735.o(i.ST7735_Color565) for ST7735_Color565
+    st7735.o(i.ST7735_PlotNextErase) refers to st7735.o(i.ST7735_DrawFastVLine) for ST7735_DrawFastVLine
+    st7735.o(i.ST7735_PlotNextErase) refers to st7735.o(.data) for X
+    st7735.o(i.ST7735_PlotPoint) refers to st7735.o(i.ST7735_DrawPixel) for ST7735_DrawPixel
+    st7735.o(i.ST7735_PlotPoint) refers to st7735.o(.data) for Ymin
+    st7735.o(i.ST7735_PlotPoints) refers to st7735.o(i.ST7735_DrawPixel) for ST7735_DrawPixel
+    st7735.o(i.ST7735_PlotPoints) refers to st7735.o(.data) for Ymin
+    st7735.o(i.ST7735_PlotdBfs) refers to st7735.o(i.ST7735_DrawFastVLine) for ST7735_DrawFastVLine
+    st7735.o(i.ST7735_PlotdBfs) refers to st7735.o(.constdata) for dBfs
+    st7735.o(i.ST7735_PlotdBfs) refers to st7735.o(.data) for X
+    st7735.o(i.ST7735_SetCursor) refers to st7735.o(.data) for StX
+    st7735.o(i.ST7735_SetRotation) refers to st7735.o(i.writecommand) for writecommand
+    st7735.o(i.ST7735_SetRotation) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.ST7735_SetRotation) refers to st7735.o(.data) for Rotation
+    st7735.o(i.ST7735_SetTextColor) refers to st7735.o(.data) for StTextColor
+    st7735.o(i.commandList) refers to st7735.o(i.writecommand) for writecommand
+    st7735.o(i.commandList) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.commandList) refers to st7735.o(i.Delay1ms) for Delay1ms
+    st7735.o(i.commonInit) refers to st7735.o(i.Delay1ms) for Delay1ms
+    st7735.o(i.commonInit) refers to st7735.o(i.commandList) for commandList
+    st7735.o(i.commonInit) refers to st7735.o(.data) for RowStart
+    st7735.o(i.fillmessage) refers to st7735.o(.bss) for Message
+    st7735.o(i.fillmessage) refers to st7735.o(.data) for Messageindex
+    st7735.o(i.fputc) refers to st7735.o(i.ST7735_OutChar) for ST7735_OutChar
+    st7735.o(i.pushColor) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.setAddrWindow) refers to st7735.o(i.writecommand) for writecommand
+    st7735.o(i.setAddrWindow) refers to st7735.o(i.writedata) for writedata
+    st7735.o(i.setAddrWindow) refers to st7735.o(.data) for ColStart
+    jpg2bmp.o(i.main) refers to heap.o(i.Heap_Init) for Heap_Init
+    jpg2bmp.o(i.main) refers to pll.o(i.PLL_Init) for PLL_Init
+    jpg2bmp.o(i.main) refers to st7735.o(i.ST7735_InitR) for ST7735_InitR
+    jpg2bmp.o(i.main) refers to st7735.o(i.ST7735_FillScreen) for ST7735_FillScreen
+    jpg2bmp.o(i.main) refers to st7735.o(i.ST7735_SetRotation) for ST7735_SetRotation
+    jpg2bmp.o(i.main) refers to startup.o(.text) for EnableInterrupts
+    jpg2bmp.o(i.main) refers to camera.o(i.CameraInit) for CameraInit
+    jpg2bmp.o(i.main) refers to camera.o(i.CameraCapturePic) for CameraCapturePic
+    jpg2bmp.o(i.main) refers to jpg2bmp.o(i.pjpeg_load_from_file) for pjpeg_load_from_file
+    jpg2bmp.o(i.main) refers to heap.o(i.Heap_Free) for Heap_Free
+    jpg2bmp.o(i.main) refers to jpg2bmp.o(.data) for status
+    jpg2bmp.o(i.pjpeg_load_from_file) refers to ff.o(i.f_mount) for f_mount
+    jpg2bmp.o(i.pjpeg_load_from_file) refers to ff.o(i.f_open) for f_open
+    jpg2bmp.o(i.pjpeg_load_from_file) refers to st7735.o(i.ST7735_Color565) for ST7735_Color565
+    jpg2bmp.o(i.pjpeg_load_from_file) refers to st7735.o(i.ST7735_DrawString) for ST7735_DrawString
+    jpg2bmp.o(i.pjpeg_load_from_file) refers to picojpeg.o(i.pjpeg_decode_init) for pjpeg_decode_init
+    jpg2bmp.o(i.pjpeg_load_from_file) refers to ff.o(i.f_close) for f_close
+    jpg2bmp.o(i.pjpeg_load_from_file) refers to picojpeg.o(i.pjpeg_decode_mcu) for pjpeg_decode_mcu
+    jpg2bmp.o(i.pjpeg_load_from_file) refers to heap.o(i.Heap_Free) for Heap_Free
+    jpg2bmp.o(i.pjpeg_load_from_file) refers to st7735.o(i.ST7735_DrawPixel) for ST7735_DrawPixel
+    jpg2bmp.o(i.pjpeg_load_from_file) refers to jpg2bmp.o(.bss) for g_sFatFs
+    jpg2bmp.o(i.pjpeg_load_from_file) refers to jpg2bmp.o(.data) for MountFresult
+    jpg2bmp.o(i.pjpeg_load_from_file) refers to jpg2bmp.o(i.pjpeg_need_bytes_callback) for pjpeg_need_bytes_callback
+    jpg2bmp.o(i.pjpeg_need_bytes_callback) refers to ff.o(i.f_read) for f_read
+    jpg2bmp.o(i.pjpeg_need_bytes_callback) refers to jpg2bmp.o(.data) for g_nInFileSize
+    jpg2bmp.o(i.pjpeg_need_bytes_callback) refers to jpg2bmp.o(.bss) for Handle
+    picojpeg.o(i.arithmeticRightShiftN16) refers to picojpeg.o(i.replicateSignBit16) for replicateSignBit16
+    picojpeg.o(i.checkHuffTables) refers to picojpeg.o(.data) for gCompList
+    picojpeg.o(i.checkQuantTables) refers to picojpeg.o(.data) for gCompList
+    picojpeg.o(i.convertCb) refers to picojpeg.o(i.subAndClamp) for subAndClamp
+    picojpeg.o(i.convertCb) refers to picojpeg.o(i.addAndClamp) for addAndClamp
+    picojpeg.o(i.convertCb) refers to picojpeg.o(.bss) for gMCUBufG
+    picojpeg.o(i.convertCr) refers to picojpeg.o(i.addAndClamp) for addAndClamp
+    picojpeg.o(i.convertCr) refers to picojpeg.o(i.subAndClamp) for subAndClamp
+    picojpeg.o(i.convertCr) refers to picojpeg.o(.bss) for gMCUBufR
+    picojpeg.o(i.copyY) refers to picojpeg.o(.bss) for gMCUBufR
+    picojpeg.o(i.createWinogradQuant) refers to picojpeg.o(.constdata) for gWinogradQuant
+    picojpeg.o(i.decodeNextMCU) refers to picojpeg.o(i.processRestart) for processRestart
+    picojpeg.o(i.decodeNextMCU) refers to picojpeg.o(i.huffDecode) for huffDecode
+    picojpeg.o(i.decodeNextMCU) refers to picojpeg.o(i.getBits2) for getBits2
+    picojpeg.o(i.decodeNextMCU) refers to picojpeg.o(i.huffExtend) for huffExtend
+    picojpeg.o(i.decodeNextMCU) refers to picojpeg.o(i.transformBlockReduce) for transformBlockReduce
+    picojpeg.o(i.decodeNextMCU) refers to picojpeg.o(i.transformBlock) for transformBlock
+    picojpeg.o(i.decodeNextMCU) refers to picojpeg.o(.data) for gRestartInterval
+    picojpeg.o(i.decodeNextMCU) refers to picojpeg.o(.bss) for gQuant1
+    picojpeg.o(i.decodeNextMCU) refers to picojpeg.o(.constdata) for ZAG
+    picojpeg.o(i.fillInBuf) refers to picojpeg.o(.data) for gInBufOfs
+    picojpeg.o(i.fillInBuf) refers to picojpeg.o(.bss) for gInBuf
+    picojpeg.o(i.findEOI) refers to picojpeg.o(i.getBits1) for getBits1
+    picojpeg.o(i.findEOI) refers to picojpeg.o(i.processMarkers) for processMarkers
+    picojpeg.o(i.findEOI) refers to picojpeg.o(.data) for gBitsLeft
+    picojpeg.o(i.fixInBuffer) refers to picojpeg.o(i.stuffChar) for stuffChar
+    picojpeg.o(i.fixInBuffer) refers to picojpeg.o(i.getBits2) for getBits2
+    picojpeg.o(i.fixInBuffer) refers to picojpeg.o(.data) for gBitsLeft
+    picojpeg.o(i.getBit) refers to picojpeg.o(i.getOctet) for getOctet
+    picojpeg.o(i.getBit) refers to picojpeg.o(.data) for gBitBuf
+    picojpeg.o(i.getBits) refers to picojpeg.o(i.getOctet) for getOctet
+    picojpeg.o(i.getBits) refers to picojpeg.o(.data) for gBitBuf
+    picojpeg.o(i.getBits1) refers to picojpeg.o(i.getBits) for getBits
+    picojpeg.o(i.getBits2) refers to picojpeg.o(i.getBits) for getBits
+    picojpeg.o(i.getChar) refers to picojpeg.o(i.fillInBuf) for fillInBuf
+    picojpeg.o(i.getChar) refers to picojpeg.o(.data) for gInBufLeft
+    picojpeg.o(i.getChar) refers to picojpeg.o(.bss) for gInBuf
+    picojpeg.o(i.getHuffTable) refers to picojpeg.o(.bss) for gHuffTab0
+    picojpeg.o(i.getHuffVal) refers to picojpeg.o(.bss) for gHuffVal0
+    picojpeg.o(i.getOctet) refers to picojpeg.o(i.getChar) for getChar
+    picojpeg.o(i.getOctet) refers to picojpeg.o(i.stuffChar) for stuffChar
+    picojpeg.o(i.huffDecode) refers to picojpeg.o(i.getBit) for getBit
+    picojpeg.o(i.huffExtend) refers to picojpeg.o(i.getExtendTest) for getExtendTest
+    picojpeg.o(i.huffExtend) refers to picojpeg.o(i.getExtendOffset) for getExtendOffset
+    picojpeg.o(i.idctCols) refers to picojpeg.o(i.arithmeticRightShiftN16) for arithmeticRightShiftN16
+    picojpeg.o(i.idctCols) refers to picojpeg.o(i.clamp) for clamp
+    picojpeg.o(i.idctCols) refers to picojpeg.o(i.imul_b5) for imul_b5
+    picojpeg.o(i.idctCols) refers to picojpeg.o(i.imul_b4) for imul_b4
+    picojpeg.o(i.idctCols) refers to picojpeg.o(i.imul_b2) for imul_b2
+    picojpeg.o(i.idctCols) refers to picojpeg.o(i.imul_b1_b3) for imul_b1_b3
+    picojpeg.o(i.idctCols) refers to picojpeg.o(.bss) for gCoeffBuf
+    picojpeg.o(i.idctRows) refers to picojpeg.o(i.imul_b5) for imul_b5
+    picojpeg.o(i.idctRows) refers to picojpeg.o(i.imul_b4) for imul_b4
+    picojpeg.o(i.idctRows) refers to picojpeg.o(i.imul_b2) for imul_b2
+    picojpeg.o(i.idctRows) refers to picojpeg.o(i.imul_b1_b3) for imul_b1_b3
+    picojpeg.o(i.idctRows) refers to picojpeg.o(.bss) for gCoeffBuf
+    picojpeg.o(i.imul_b1_b3) refers to picojpeg.o(i.arithmeticRightShift8L) for arithmeticRightShift8L
+    picojpeg.o(i.imul_b2) refers to picojpeg.o(i.arithmeticRightShift8L) for arithmeticRightShift8L
+    picojpeg.o(i.imul_b4) refers to picojpeg.o(i.arithmeticRightShift8L) for arithmeticRightShift8L
+    picojpeg.o(i.imul_b5) refers to picojpeg.o(i.arithmeticRightShift8L) for arithmeticRightShift8L
+    picojpeg.o(i.init) refers to picojpeg.o(i.getBits1) for getBits1
+    picojpeg.o(i.init) refers to picojpeg.o(.data) for gImageXSize
+    picojpeg.o(i.initFrame) refers to picojpeg.o(.data) for gCompsInFrame
+    picojpeg.o(i.initScan) refers to picojpeg.o(i.locateSOSMarker) for locateSOSMarker
+    picojpeg.o(i.initScan) refers to picojpeg.o(i.checkHuffTables) for checkHuffTables
+    picojpeg.o(i.initScan) refers to picojpeg.o(i.checkQuantTables) for checkQuantTables
+    picojpeg.o(i.initScan) refers to picojpeg.o(i.fixInBuffer) for fixInBuffer
+    picojpeg.o(i.initScan) refers to picojpeg.o(.data) for gLastDC
+    picojpeg.o(i.locateSOFMarker) refers to picojpeg.o(i.locateSOIMarker) for locateSOIMarker
+    picojpeg.o(i.locateSOFMarker) refers to picojpeg.o(i.processMarkers) for processMarkers
+    picojpeg.o(i.locateSOFMarker) refers to picojpeg.o(i.readSOFMarker) for readSOFMarker
+    picojpeg.o(i.locateSOIMarker) refers to picojpeg.o(i.getBits1) for getBits1
+    picojpeg.o(i.locateSOIMarker) refers to picojpeg.o(.data) for gBitBuf
+    picojpeg.o(i.locateSOSMarker) refers to picojpeg.o(i.processMarkers) for processMarkers
+    picojpeg.o(i.locateSOSMarker) refers to picojpeg.o(i.readSOSMarker) for readSOSMarker
+    picojpeg.o(i.nextMarker) refers to picojpeg.o(i.getBits1) for getBits1
+    picojpeg.o(i.pjpeg_decode_init) refers to picojpeg.o(i.init) for init
+    picojpeg.o(i.pjpeg_decode_init) refers to picojpeg.o(i.locateSOFMarker) for locateSOFMarker
+    picojpeg.o(i.pjpeg_decode_init) refers to picojpeg.o(i.initFrame) for initFrame
+    picojpeg.o(i.pjpeg_decode_init) refers to picojpeg.o(i.initScan) for initScan
+    picojpeg.o(i.pjpeg_decode_init) refers to picojpeg.o(.data) for g_pNeedBytesCallback
+    picojpeg.o(i.pjpeg_decode_init) refers to picojpeg.o(.bss) for gMCUBufR
+    picojpeg.o(i.pjpeg_decode_mcu) refers to picojpeg.o(i.decodeNextMCU) for decodeNextMCU
+    picojpeg.o(i.pjpeg_decode_mcu) refers to picojpeg.o(.data) for gCallbackStatus
+    picojpeg.o(i.processMarkers) refers to picojpeg.o(i.nextMarker) for nextMarker
+    picojpeg.o(i.processMarkers) refers to picojpeg.o(i.readDHTMarker) for readDHTMarker
+    picojpeg.o(i.processMarkers) refers to picojpeg.o(i.readDQTMarker) for readDQTMarker
+    picojpeg.o(i.processMarkers) refers to picojpeg.o(i.readDRIMarker) for readDRIMarker
+    picojpeg.o(i.processMarkers) refers to picojpeg.o(i.skipVariableMarker) for skipVariableMarker
+    picojpeg.o(i.processRestart) refers to picojpeg.o(i.getChar) for getChar
+    picojpeg.o(i.processRestart) refers to picojpeg.o(i.getBits2) for getBits2
+    picojpeg.o(i.processRestart) refers to picojpeg.o(.data) for gNextRestartNum
+    picojpeg.o(i.readDHTMarker) refers to picojpeg.o(i.getBits1) for getBits1
+    picojpeg.o(i.readDHTMarker) refers to picojpeg.o(i.getHuffTable) for getHuffTable
+    picojpeg.o(i.readDHTMarker) refers to picojpeg.o(i.getHuffVal) for getHuffVal
+    picojpeg.o(i.readDHTMarker) refers to picojpeg.o(i.getMaxHuffCodes) for getMaxHuffCodes
+    picojpeg.o(i.readDHTMarker) refers to picojpeg.o(i.huffCreate) for huffCreate
+    picojpeg.o(i.readDHTMarker) refers to picojpeg.o(.data) for gValidHuffTables
+    picojpeg.o(i.readDQTMarker) refers to picojpeg.o(i.getBits1) for getBits1
+    picojpeg.o(i.readDQTMarker) refers to picojpeg.o(i.createWinogradQuant) for createWinogradQuant
+    picojpeg.o(i.readDQTMarker) refers to picojpeg.o(.data) for gValidQuantTables
+    picojpeg.o(i.readDQTMarker) refers to picojpeg.o(.bss) for gQuant1
+    picojpeg.o(i.readDRIMarker) refers to picojpeg.o(i.getBits1) for getBits1
+    picojpeg.o(i.readDRIMarker) refers to picojpeg.o(.data) for gRestartInterval
+    picojpeg.o(i.readSOFMarker) refers to picojpeg.o(i.getBits1) for getBits1
+    picojpeg.o(i.readSOFMarker) refers to picojpeg.o(.data) for gImageYSize
+    picojpeg.o(i.readSOSMarker) refers to picojpeg.o(i.getBits1) for getBits1
+    picojpeg.o(i.readSOSMarker) refers to picojpeg.o(.data) for gCompsInScan
+    picojpeg.o(i.skipVariableMarker) refers to picojpeg.o(i.getBits1) for getBits1
+    picojpeg.o(i.stuffChar) refers to picojpeg.o(.data) for gInBufOfs
+    picojpeg.o(i.stuffChar) refers to picojpeg.o(.bss) for gInBuf
+    picojpeg.o(i.transformBlock) refers to picojpeg.o(i.idctRows) for idctRows
+    picojpeg.o(i.transformBlock) refers to picojpeg.o(i.idctCols) for idctCols
+    picojpeg.o(i.transformBlock) refers to picojpeg.o(i.copyY) for copyY
+    picojpeg.o(i.transformBlock) refers to picojpeg.o(i.convertCb) for convertCb
+    picojpeg.o(i.transformBlock) refers to picojpeg.o(i.convertCr) for convertCr
+    picojpeg.o(i.transformBlock) refers to picojpeg.o(i.upsampleCbV) for upsampleCbV
+    picojpeg.o(i.transformBlock) refers to picojpeg.o(i.upsampleCrV) for upsampleCrV
+    picojpeg.o(i.transformBlock) refers to picojpeg.o(i.upsampleCbH) for upsampleCbH
+    picojpeg.o(i.transformBlock) refers to picojpeg.o(i.upsampleCrH) for upsampleCrH
+    picojpeg.o(i.transformBlock) refers to picojpeg.o(i.upsampleCb) for upsampleCb
+    picojpeg.o(i.transformBlock) refers to picojpeg.o(i.upsampleCr) for upsampleCr
+    picojpeg.o(i.transformBlock) refers to picojpeg.o(.data) for gScanType
+    picojpeg.o(i.transformBlockReduce) refers to picojpeg.o(i.arithmeticRightShiftN16) for arithmeticRightShiftN16
+    picojpeg.o(i.transformBlockReduce) refers to picojpeg.o(i.clamp) for clamp
+    picojpeg.o(i.transformBlockReduce) refers to picojpeg.o(i.subAndClamp) for subAndClamp
+    picojpeg.o(i.transformBlockReduce) refers to picojpeg.o(i.addAndClamp) for addAndClamp
+    picojpeg.o(i.transformBlockReduce) refers to picojpeg.o(.bss) for gCoeffBuf
+    picojpeg.o(i.transformBlockReduce) refers to picojpeg.o(.data) for gScanType
+    picojpeg.o(i.upsampleCb) refers to picojpeg.o(i.subAndClamp) for subAndClamp
+    picojpeg.o(i.upsampleCb) refers to picojpeg.o(i.addAndClamp) for addAndClamp
+    picojpeg.o(i.upsampleCb) refers to picojpeg.o(.bss) for gCoeffBuf
+    picojpeg.o(i.upsampleCbH) refers to picojpeg.o(i.subAndClamp) for subAndClamp
+    picojpeg.o(i.upsampleCbH) refers to picojpeg.o(i.addAndClamp) for addAndClamp
+    picojpeg.o(i.upsampleCbH) refers to picojpeg.o(.bss) for gCoeffBuf
+    picojpeg.o(i.upsampleCbV) refers to picojpeg.o(i.subAndClamp) for subAndClamp
+    picojpeg.o(i.upsampleCbV) refers to picojpeg.o(i.addAndClamp) for addAndClamp
+    picojpeg.o(i.upsampleCbV) refers to picojpeg.o(.bss) for gCoeffBuf
+    picojpeg.o(i.upsampleCr) refers to picojpeg.o(i.addAndClamp) for addAndClamp
+    picojpeg.o(i.upsampleCr) refers to picojpeg.o(i.subAndClamp) for subAndClamp
+    picojpeg.o(i.upsampleCr) refers to picojpeg.o(.bss) for gCoeffBuf
+    picojpeg.o(i.upsampleCrH) refers to picojpeg.o(i.addAndClamp) for addAndClamp
+    picojpeg.o(i.upsampleCrH) refers to picojpeg.o(i.subAndClamp) for subAndClamp
+    picojpeg.o(i.upsampleCrH) refers to picojpeg.o(.bss) for gCoeffBuf
+    picojpeg.o(i.upsampleCrV) refers to picojpeg.o(i.addAndClamp) for addAndClamp
+    picojpeg.o(i.upsampleCrV) refers to picojpeg.o(i.subAndClamp) for subAndClamp
+    picojpeg.o(i.upsampleCrV) refers to picojpeg.o(.bss) for gCoeffBuf
+    heap.o(i.Heap_Calloc) refers to heap.o(i.Heap_Malloc) for Heap_Malloc
+    heap.o(i.Heap_Free) refers to heap.o(i.inHeapRange) for inHeapRange
+    heap.o(i.Heap_Free) refers to heap.o(i.blockUnused) for blockUnused
+    heap.o(i.Heap_Free) refers to heap.o(i.blockTrailer) for blockTrailer
+    heap.o(i.Heap_Free) refers to heap.o(i.markBlockUnused) for markBlockUnused
+    heap.o(i.Heap_Free) refers to heap.o(i.previousBlockHeader) for previousBlockHeader
+    heap.o(i.Heap_Free) refers to heap.o(i.mergeBlockWithBelow) for mergeBlockWithBelow
+    heap.o(i.Heap_Free) refers to heap.o(i.nextBlockHeader) for nextBlockHeader
+    heap.o(i.Heap_Free) refers to heap.o(.bss) for Heap
+    heap.o(i.Heap_Init) refers to heap.o(.bss) for Heap
+    heap.o(i.Heap_Malloc) refers to heap.o(i.blockUnused) for blockUnused
+    heap.o(i.Heap_Malloc) refers to heap.o(i.blockRoom) for blockRoom
+    heap.o(i.Heap_Malloc) refers to heap.o(i.splitAndMarkBlockUsed) for splitAndMarkBlockUsed
+    heap.o(i.Heap_Malloc) refers to heap.o(i.nextBlockHeader) for nextBlockHeader
+    heap.o(i.Heap_Malloc) refers to heap.o(i.inHeapRange) for inHeapRange
+    heap.o(i.Heap_Malloc) refers to heap.o(.bss) for Heap
+    heap.o(i.Heap_Realloc) refers to heap.o(i.inHeapRange) for inHeapRange
+    heap.o(i.Heap_Realloc) refers to heap.o(i.blockUnused) for blockUnused
+    heap.o(i.Heap_Realloc) refers to heap.o(i.Heap_Malloc) for Heap_Malloc
+    heap.o(i.Heap_Realloc) refers to heap.o(i.blockRoom) for blockRoom
+    heap.o(i.Heap_Realloc) refers to heap.o(i.Heap_Free) for Heap_Free
+    heap.o(i.Heap_Stats) refers to heap.o(i.blockUsed) for blockUsed
+    heap.o(i.Heap_Stats) refers to heap.o(i.blockRoom) for blockRoom
+    heap.o(i.Heap_Stats) refers to heap.o(i.nextBlockHeader) for nextBlockHeader
+    heap.o(i.Heap_Stats) refers to heap.o(i.inHeapRange) for inHeapRange
+    heap.o(i.Heap_Stats) refers to memcpya.o(.text) for __aeabi_memcpy4
+    heap.o(i.Heap_Stats) refers to heap.o(.bss) for Heap
+    heap.o(i.Heap_Test) refers to heap.o(i.blockTrailer) for blockTrailer
+    heap.o(i.Heap_Test) refers to heap.o(i.inHeapRange) for inHeapRange
+    heap.o(i.Heap_Test) refers to heap.o(i.blockUnused) for blockUnused
+    heap.o(i.Heap_Test) refers to heap.o(.bss) for Heap
+    heap.o(i.blockHeader) refers to heap.o(i.blockRoom) for blockRoom
+    heap.o(i.blockTrailer) refers to heap.o(i.blockRoom) for blockRoom
+    heap.o(i.inHeapRange) refers to heap.o(.bss) for Heap
+    heap.o(i.markBlockUnused) refers to heap.o(i.blockTrailer) for blockTrailer
+    heap.o(i.markBlockUnused) refers to heap.o(i.blockUnused) for blockUnused
+    heap.o(i.markBlockUsed) refers to heap.o(i.blockTrailer) for blockTrailer
+    heap.o(i.markBlockUsed) refers to heap.o(i.blockUsed) for blockUsed
+    heap.o(i.mergeBlockWithBelow) refers to heap.o(i.blockTrailer) for blockTrailer
+    heap.o(i.nextBlockHeader) refers to heap.o(i.blockTrailer) for blockTrailer
+    heap.o(i.previousBlockHeader) refers to heap.o(i.blockHeader) for blockHeader
+    heap.o(i.splitAndMarkBlockUsed) refers to heap.o(i.blockRoom) for blockRoom
+    heap.o(i.splitAndMarkBlockUsed) refers to heap.o(i.blockTrailer) for blockTrailer
+    heap.o(i.splitAndMarkBlockUsed) refers to heap.o(i.markBlockUsed) for markBlockUsed
+    fifo.o(i.FiFo_Get) refers to fifo.o(.data) for GetI
+    fifo.o(i.FiFo_Get) refers to fifo.o(.bss) for FIFO
+    fifo.o(i.FiFo_Init) refers to fifo.o(.bss) for FIFO
+    fifo.o(i.FiFo_Init) refers to fifo.o(.data) for GetI
+    fifo.o(i.FiFo_Put) refers to fifo.o(.data) for PutI
+    fifo.o(i.FiFo_Put) refers to fifo.o(.bss) for FIFO
+    debug_uart.o(i.DEBUG_UART_OutHex) refers to debug_uart.o(i.DEBUG_UART_OutString) for DEBUG_UART_OutString
+    debug_uart.o(i.DEBUG_UART_OutHex) refers to debug_uart.o(i.DEBUG_UART_OutChar) for DEBUG_UART_OutChar
+    debug_uart.o(i.DEBUG_UART_OutString) refers to debug_uart.o(i.DEBUG_UART_OutChar) for DEBUG_UART_OutChar
+    debug_uart.o(i.DEBUG_UART_OutUDec) refers to debug_uart.o(i.DEBUG_UART_OutChar) for DEBUG_UART_OutChar
+    camera.o(i.AcknowledgeReturn) refers to fifo.o(i.FiFo_Get) for FiFo_Get
+    camera.o(i.BufferLengthCMD) refers to camera.o(i.ConsumeFiFo) for ConsumeFiFo
+    camera.o(i.BufferLengthCMD) refers to uart1.o(i.UART1_OutChar) for UART1_OutChar
+    camera.o(i.BufferLengthCMD) refers to camera.o(i.DelayCam) for DelayCam
+    camera.o(i.BufferLengthCMD) refers to camera.o(i.AcknowledgeReturn) for AcknowledgeReturn
+    camera.o(i.BufferLengthCMD) refers to fifo.o(i.FiFo_Get) for FiFo_Get
+    camera.o(i.BufferLengthCMD) refers to camera.o(.constdata) for CommandList
+    camera.o(i.BufferLengthCMD) refers to camera.o(.data) for ReadBufferCmd
+    camera.o(i.CameraCapturePic) refers to camera.o(i.ConsumeFiFo) for ConsumeFiFo
+    camera.o(i.CameraCapturePic) refers to camera.o(i.SendCmd) for SendCmd
+    camera.o(i.CameraCapturePic) refers to camera.o(i.HandleBuffer) for HandleBuffer
+    camera.o(i.CameraInit) refers to debug_uart.o(i.DEBUG_UART_Init) for DEBUG_UART_Init
+    camera.o(i.CameraInit) refers to uart1.o(i.UART1_Init) for UART1_Init
+    camera.o(i.CameraInit) refers to camera.o(i.CameraReset) for CameraReset
+    camera.o(i.CameraInit) refers to camera.o(i.CameraSetImageSize) for CameraSetImageSize
+    camera.o(i.CameraInit) refers to camera.o(i.CameraSetBlackWhite) for CameraSetBlackWhite
+    camera.o(i.CameraReset) refers to camera.o(i.SendCmd) for SendCmd
+    camera.o(i.CameraReset) refers to fifo.o(i.FiFo_Init) for FiFo_Init
+    camera.o(i.CameraSetBlackWhite) refers to camera.o(i.SendCmd) for SendCmd
+    camera.o(i.CameraSetImageSize) refers to camera.o(i.SendCmd) for SendCmd
+    camera.o(i.ConsumeFiFo) refers to fifo.o(i.FiFo_Init) for FiFo_Init
+    camera.o(i.HandleBuffer) refers to camera.o(i.ConsumeFiFo) for ConsumeFiFo
+    camera.o(i.HandleBuffer) refers to camera.o(i.BufferLengthCMD) for BufferLengthCMD
+    camera.o(i.HandleBuffer) refers to camera.o(i.CameraInit) for CameraInit
+    camera.o(i.HandleBuffer) refers to camera.o(i.DelayCam) for DelayCam
+    camera.o(i.HandleBuffer) refers to camera.o(i.SendCmd) for SendCmd
+    camera.o(i.HandleBuffer) refers to camera.o(i.ReadBufferCMD) for ReadBufferCMD
+    camera.o(i.ReadBufferCMD) refers to camera.o(i.startFile) for startFile
+    camera.o(i.ReadBufferCMD) refers to camera.o(i.ConsumeFiFo) for ConsumeFiFo
+    camera.o(i.ReadBufferCMD) refers to uart1.o(i.UART1_OutChar) for UART1_OutChar
+    camera.o(i.ReadBufferCMD) refers to camera.o(i.AcknowledgeReturn) for AcknowledgeReturn
+    camera.o(i.ReadBufferCMD) refers to fifo.o(i.FiFo_Get) for FiFo_Get
+    camera.o(i.ReadBufferCMD) refers to debug_uart.o(i.DEBUG_UART_OutHex) for DEBUG_UART_OutHex
+    camera.o(i.ReadBufferCMD) refers to camera.o(i.writeByte) for writeByte
+    camera.o(i.ReadBufferCMD) refers to camera.o(i.closeFile) for closeFile
+    camera.o(i.ReadBufferCMD) refers to camera.o(.constdata) for CommandList
+    camera.o(i.SendCmd) refers to uart1.o(i.UART1_OutChar) for UART1_OutChar
+    camera.o(i.SendCmd) refers to camera.o(i.DelayCam) for DelayCam
+    camera.o(i.SendCmd) refers to camera.o(i.AcknowledgeReturn) for AcknowledgeReturn
+    camera.o(i.SendCmd) refers to fifo.o(i.FiFo_Get) for FiFo_Get
+    camera.o(i.SendCmd) refers to camera.o(i.ConsumeFiFo) for ConsumeFiFo
+    camera.o(i.SendCmd) refers to camera.o(.constdata) for CommandList
+    camera.o(i.closeFile) refers to ff.o(i.f_close) for f_close
+    camera.o(i.closeFile) refers to camera.o(.bss) for Handle
+    camera.o(i.closeFile) refers to camera.o(.data) for Fresult
+    camera.o(i.startFile) refers to ff.o(i.f_mount) for f_mount
+    camera.o(i.startFile) refers to ff.o(i.f_open) for f_open
+    camera.o(i.startFile) refers to camera.o(.bss) for g_sFatFs
+    camera.o(i.startFile) refers to camera.o(.data) for MountFresult
+    camera.o(i.writeByte) refers to ff.o(i.f_write) for f_write
+    camera.o(i.writeByte) refers to ff.o(i.f_lseek) for f_lseek
+    camera.o(i.writeByte) refers to camera.o(.data) for Fresult
+    camera.o(i.writeByte) refers to camera.o(.bss) for Handle
+    camera.o(.constdata) refers to camera.o(.data) for Commands
+    uart1.o(i.UART1_Handler) refers to uart1.o(i.UART1_InChar) for UART1_InChar
+    uart1.o(i.UART1_Handler) refers to fifo.o(i.FiFo_Put) for FiFo_Put
+    uart1.o(i.UART1_Init) refers to fifo.o(i.FiFo_Init) for FiFo_Init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to jpg2bmp.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to jpg2bmp.o(i.main) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing startup.o(HEAP), (0 bytes).
+    Removing ff.o(i.dir_read), (112 bytes).
+    Removing ff.o(i.dir_remove), (54 bytes).
+    Removing ff.o(i.f_chdir), (84 bytes).
+    Removing ff.o(i.f_chmod), (96 bytes).
+    Removing ff.o(i.f_closedir), (22 bytes).
+    Removing ff.o(i.f_getcwd), (274 bytes).
+    Removing ff.o(i.f_getfree), (258 bytes).
+    Removing ff.o(i.f_getlabel), (190 bytes).
+    Removing ff.o(i.f_mkdir), (364 bytes).
+    Removing ff.o(i.f_mkfs), (1608 bytes).
+    Removing ff.o(i.f_opendir), (110 bytes).
+    Removing ff.o(i.f_readdir), (88 bytes).
+    Removing ff.o(i.f_rename), (270 bytes).
+    Removing ff.o(i.f_setlabel), (488 bytes).
+    Removing ff.o(i.f_stat), (60 bytes).
+    Removing ff.o(i.f_truncate), (184 bytes).
+    Removing ff.o(i.f_unlink), (190 bytes).
+    Removing ff.o(i.f_utime), (98 bytes).
+    Removing ff.o(i.get_fileinfo), (116 bytes).
+    Removing ff.o(.constdata), (44 bytes).
+    Removing sdcfile.o(i.FileSystemTest), (716 bytes).
+    Removing sdcfile.o(i.SimpleUnformattedTest), (340 bytes).
+    Removing sdcfile.o(i.diskError), (176 bytes).
+    Removing sdcfile.o(i.main2), (844 bytes).
+    Removing sdcfile.o(.bss), (2172 bytes).
+    Removing sdcfile.o(.constdata), (16 bytes).
+    Removing sdcfile.o(.data), (2 bytes).
+    Removing st7735.o(i.Output_Clear), (10 bytes).
+    Removing st7735.o(i.Output_Color), (12 bytes).
+    Removing st7735.o(i.Output_Init), (16 bytes).
+    Removing st7735.o(i.Output_Off), (8 bytes).
+    Removing st7735.o(i.Output_On), (8 bytes).
+    Removing st7735.o(i.ST7735_DrawBitmap), (288 bytes).
+    Removing st7735.o(i.ST7735_DrawChar), (268 bytes).
+    Removing st7735.o(i.ST7735_DrawFastHLine), (124 bytes).
+    Removing st7735.o(i.ST7735_DrawFastVLine), (124 bytes).
+    Removing st7735.o(i.ST7735_InitB), (40 bytes).
+    Removing st7735.o(i.ST7735_InvertDisplay), (22 bytes).
+    Removing st7735.o(i.ST7735_OutChar), (212 bytes).
+    Removing st7735.o(i.ST7735_OutString), (24 bytes).
+    Removing st7735.o(i.ST7735_OutUDec), (140 bytes).
+    Removing st7735.o(i.ST7735_PlotBar), (88 bytes).
+    Removing st7735.o(i.ST7735_PlotClear), (92 bytes).
+    Removing st7735.o(i.ST7735_PlotLine), (264 bytes).
+    Removing st7735.o(i.ST7735_PlotNext), (32 bytes).
+    Removing st7735.o(i.ST7735_PlotNextErase), (64 bytes).
+    Removing st7735.o(i.ST7735_PlotPoint), (152 bytes).
+    Removing st7735.o(i.ST7735_PlotPoints), (172 bytes).
+    Removing st7735.o(i.ST7735_PlotdBfs), (60 bytes).
+    Removing st7735.o(i.ST7735_SetTextColor), (12 bytes).
+    Removing st7735.o(i.ST7735_SwapColor), (18 bytes).
+    Removing st7735.o(i.ferror), (8 bytes).
+    Removing st7735.o(i.fgetc), (6 bytes).
+    Removing st7735.o(i.fillmessage), (72 bytes).
+    Removing st7735.o(i.fputc), (16 bytes).
+    Removing st7735.o(.bss), (12 bytes).
+    Removing picojpeg.o(i.findEOI), (68 bytes).
+    Removing heap.o(i.Heap_Calloc), (46 bytes).
+    Removing heap.o(i.Heap_Malloc), (84 bytes).
+    Removing heap.o(i.Heap_Realloc), (112 bytes).
+    Removing heap.o(i.Heap_Stats), (116 bytes).
+    Removing heap.o(i.Heap_Test), (104 bytes).
+    Removing heap.o(i.blockUsed), (16 bytes).
+    Removing heap.o(i.markBlockUsed), (48 bytes).
+    Removing heap.o(i.splitAndMarkBlockUsed), (76 bytes).
+    Removing debug_uart.o(i.DEBUG_UART_InChar), (24 bytes).
+    Removing debug_uart.o(i.DEBUG_UART_OutUDec), (42 bytes).
+    Removing camera.o(i.CameraSetBufferSize), (2 bytes).
+
+69 unused section(s) (total 12078 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      644  startup.o(RESET)
+    ../clib/../cmprslib/zerorunl2.c          0x00000000   Number         0  __dczerorl2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    Camera.c                                 0x00000000   Number         0  camera.o ABSOLUTE
+    DEBUG_UART.c                             0x00000000   Number         0  debug_uart.o ABSOLUTE
+    FiFo.c                                   0x00000000   Number         0  fifo.o ABSOLUTE
+    PLL.c                                    0x00000000   Number         0  pll.o ABSOLUTE
+    SDCFile.c                                0x00000000   Number         0  sdcfile.o ABSOLUTE
+    ST7735.c                                 0x00000000   Number         0  st7735.o ABSOLUTE
+    ST7735.c                                 0x00000000   Number         0  st7735.o ABSOLUTE
+    Uart1.c                                  0x00000000   Number         0  uart1.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    diskio.c                                 0x00000000   Number         0  diskio.o ABSOLUTE
+    ff.c                                     0x00000000   Number         0  ff.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    heap.c                                   0x00000000   Number         0  heap.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    jpg2bmp.c                                0x00000000   Number         0  jpg2bmp.o ABSOLUTE
+    picojpeg.c                               0x00000000   Number         0  picojpeg.o ABSOLUTE
+    startup.s                                0x00000000   Number         0  startup.o ABSOLUTE
+    $v0                                      0x0000026c   Number         0  startup.o(RESET)
+    .ARM.Collect$$$$00000000                 0x00000284   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x00000284   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x00000288   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x0000028c   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x0000028c   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x0000028c   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x00000294   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x00000294   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x00000294   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x00000294   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .emb_text                                0x00000298   Section        6  st7735.o(.emb_text)
+    $v0                                      0x00000298   Number         0  st7735.o(.emb_text)
+    .text                                    0x000002a0   Section       28  startup.o(.text)
+    $v0                                      0x000002a0   Number         0  startup.o(.text)
+    .text                                    0x000002bc   Section       36  init.o(.text)
+    .text                                    0x000002e0   Section        0  __dczerorl2.o(.text)
+    i.AcknowledgeReturn                      0x0000033c   Section        0  camera.o(i.AcknowledgeReturn)
+    i.BufferLengthCMD                        0x00000364   Section        0  camera.o(i.BufferLengthCMD)
+    i.CS_Init                                0x00000400   Section        0  diskio.o(i.CS_Init)
+    i.CameraCapturePic                       0x000004ac   Section        0  camera.o(i.CameraCapturePic)
+    i.CameraInit                             0x000004c4   Section        0  camera.o(i.CameraInit)
+    i.CameraReset                            0x000004dc   Section        0  camera.o(i.CameraReset)
+    i.CameraSetBlackWhite                    0x000004f0   Section        0  camera.o(i.CameraSetBlackWhite)
+    i.CameraSetImageSize                     0x00000500   Section        0  camera.o(i.CameraSetImageSize)
+    i.ConsumeFiFo                            0x00000510   Section        0  camera.o(i.ConsumeFiFo)
+    i.DEBUG_UART_Init                        0x00000518   Section        0  debug_uart.o(i.DEBUG_UART_Init)
+    i.DEBUG_UART_OutChar                     0x000005a0   Section        0  debug_uart.o(i.DEBUG_UART_OutChar)
+    i.DEBUG_UART_OutHex                      0x000005b8   Section        0  debug_uart.o(i.DEBUG_UART_OutHex)
+    i.DEBUG_UART_OutString                   0x00000614   Section        0  debug_uart.o(i.DEBUG_UART_OutString)
+    i.Delay1ms                               0x0000062c   Section        0  st7735.o(i.Delay1ms)
+    i.DelayCam                               0x00000644   Section        0  camera.o(i.DelayCam)
+    i.FiFo_Get                               0x00000658   Section        0  fifo.o(i.FiFo_Get)
+    i.FiFo_Init                              0x0000069c   Section        0  fifo.o(i.FiFo_Init)
+    i.FiFo_Put                               0x000006c8   Section        0  fifo.o(i.FiFo_Put)
+    i.HandleBuffer                           0x00000718   Section        0  camera.o(i.HandleBuffer)
+    i.Heap_Free                              0x00000764   Section        0  heap.o(i.Heap_Free)
+    i.Heap_Init                              0x000007f4   Section        0  heap.o(i.Heap_Init)
+    i.PLL_Init                               0x0000080c   Section        0  pll.o(i.PLL_Init)
+    i.ReadBufferCMD                          0x00000888   Section        0  camera.o(i.ReadBufferCMD)
+    i.SSI0_Init                              0x0000099c   Section        0  diskio.o(i.SSI0_Init)
+    i.ST7735_Color565                        0x00000ae4   Section        0  st7735.o(i.ST7735_Color565)
+    i.ST7735_DrawCharS                       0x00000afc   Section        0  st7735.o(i.ST7735_DrawCharS)
+    i.ST7735_DrawPixel                       0x00000bf0   Section        0  st7735.o(i.ST7735_DrawPixel)
+    i.ST7735_DrawString                      0x00000c38   Section        0  st7735.o(i.ST7735_DrawString)
+    i.ST7735_FillRect                        0x00000c90   Section        0  st7735.o(i.ST7735_FillRect)
+    i.ST7735_FillScreen                      0x00000d3c   Section        0  st7735.o(i.ST7735_FillScreen)
+    i.ST7735_InitR                           0x00000d60   Section        0  st7735.o(i.ST7735_InitR)
+    i.ST7735_SetCursor                       0x00000ddc   Section        0  st7735.o(i.ST7735_SetCursor)
+    i.ST7735_SetRotation                     0x00000dfc   Section        0  st7735.o(i.ST7735_SetRotation)
+    i.SendCmd                                0x00000ed0   Section        0  camera.o(i.SendCmd)
+    i.Timer5A_Handler                        0x00000f50   Section        0  diskio.o(i.Timer5A_Handler)
+    i.Timer5_Init                            0x00000f64   Section        0  diskio.o(i.Timer5_Init)
+    i.UART1_Handler                          0x00000fd0   Section        0  uart1.o(i.UART1_Handler)
+    i.UART1_InChar                           0x00000ff4   Section        0  uart1.o(i.UART1_InChar)
+    i.UART1_Init                             0x0000100c   Section        0  uart1.o(i.UART1_Init)
+    i.UART1_OutChar                          0x000010f4   Section        0  uart1.o(i.UART1_OutChar)
+    i.__scatterload_copy                     0x0000110c   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x0000111a   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x0000111c   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.addAndClamp                            0x0000112a   Section        0  picojpeg.o(i.addAndClamp)
+    addAndClamp                              0x0000112b   Thumb Code    32  picojpeg.o(i.addAndClamp)
+    i.arithmeticRightShift8L                 0x0000114a   Section        0  picojpeg.o(i.arithmeticRightShift8L)
+    arithmeticRightShift8L                   0x0000114b   Thumb Code    14  picojpeg.o(i.arithmeticRightShift8L)
+    i.arithmeticRightShiftN16                0x00001158   Section        0  picojpeg.o(i.arithmeticRightShiftN16)
+    arithmeticRightShiftN16                  0x00001159   Thumb Code    28  picojpeg.o(i.arithmeticRightShiftN16)
+    i.blockHeader                            0x00001174   Section        0  heap.o(i.blockHeader)
+    blockHeader                              0x00001175   Thumb Code    18  heap.o(i.blockHeader)
+    i.blockRoom                              0x00001186   Section        0  heap.o(i.blockRoom)
+    blockRoom                                0x00001187   Thumb Code    18  heap.o(i.blockRoom)
+    i.blockTrailer                           0x00001198   Section        0  heap.o(i.blockTrailer)
+    blockTrailer                             0x00001199   Thumb Code    18  heap.o(i.blockTrailer)
+    i.blockUnused                            0x000011aa   Section        0  heap.o(i.blockUnused)
+    blockUnused                              0x000011ab   Thumb Code     8  heap.o(i.blockUnused)
+    i.checkHuffTables                        0x000011b4   Section        0  picojpeg.o(i.checkHuffTables)
+    checkHuffTables                          0x000011b5   Thumb Code    70  picojpeg.o(i.checkHuffTables)
+    i.checkQuantTables                       0x00001210   Section        0  picojpeg.o(i.checkQuantTables)
+    checkQuantTables                         0x00001211   Thumb Code    50  picojpeg.o(i.checkQuantTables)
+    i.check_fs                               0x00001254   Section        0  ff.o(i.check_fs)
+    check_fs                                 0x00001255   Thumb Code   140  ff.o(i.check_fs)
+    i.chk_chr                                0x000012e4   Section        0  ff.o(i.chk_chr)
+    chk_chr                                  0x000012e5   Thumb Code    24  ff.o(i.chk_chr)
+    i.clamp                                  0x000012fc   Section        0  picojpeg.o(i.clamp)
+    clamp                                    0x000012fd   Thumb Code    28  picojpeg.o(i.clamp)
+    i.closeFile                              0x00001318   Section        0  camera.o(i.closeFile)
+    i.clust2sect                             0x00001334   Section        0  ff.o(i.clust2sect)
+    i.commandList                            0x0000134e   Section        0  st7735.o(i.commandList)
+    commandList                              0x0000134f   Thumb Code    86  st7735.o(i.commandList)
+    i.commonInit                             0x000013a4   Section        0  st7735.o(i.commonInit)
+    commonInit                               0x000013a5   Thumb Code   510  st7735.o(i.commonInit)
+    i.convertCb                              0x000015e4   Section        0  picojpeg.o(i.convertCb)
+    convertCb                                0x000015e5   Thumb Code    96  picojpeg.o(i.convertCb)
+    i.convertCr                              0x00001650   Section        0  picojpeg.o(i.convertCr)
+    convertCr                                0x00001651   Thumb Code    96  picojpeg.o(i.convertCr)
+    i.copyY                                  0x000016bc   Section        0  picojpeg.o(i.copyY)
+    copyY                                    0x000016bd   Thumb Code    46  picojpeg.o(i.copyY)
+    i.createWinogradQuant                    0x000016fc   Section        0  picojpeg.o(i.createWinogradQuant)
+    createWinogradQuant                      0x000016fd   Thumb Code    38  picojpeg.o(i.createWinogradQuant)
+    i.create_chain                           0x00001728   Section        0  ff.o(i.create_chain)
+    create_chain                             0x00001729   Thumb Code   214  ff.o(i.create_chain)
+    i.create_name                            0x00001800   Section        0  ff.o(i.create_name)
+    create_name                              0x00001801   Thumb Code   418  ff.o(i.create_name)
+    i.decodeNextMCU                          0x000019b4   Section        0  picojpeg.o(i.decodeNextMCU)
+    decodeNextMCU                            0x000019b5   Thumb Code   576  picojpeg.o(i.decodeNextMCU)
+    i.deselect                               0x00001c48   Section        0  diskio.o(i.deselect)
+    deselect                                 0x00001c49   Thumb Code    18  diskio.o(i.deselect)
+    i.dir_alloc                              0x00001c60   Section        0  ff.o(i.dir_alloc)
+    dir_alloc                                0x00001c61   Thumb Code    92  ff.o(i.dir_alloc)
+    i.dir_find                               0x00001cbc   Section        0  ff.o(i.dir_find)
+    dir_find                                 0x00001cbd   Thumb Code    92  ff.o(i.dir_find)
+    i.dir_next                               0x00001d18   Section        0  ff.o(i.dir_next)
+    dir_next                                 0x00001d19   Thumb Code   270  ff.o(i.dir_next)
+    i.dir_register                           0x00001e26   Section        0  ff.o(i.dir_register)
+    dir_register                             0x00001e27   Thumb Code    58  ff.o(i.dir_register)
+    i.dir_sdi                                0x00001e60   Section        0  ff.o(i.dir_sdi)
+    dir_sdi                                  0x00001e61   Thumb Code   158  ff.o(i.dir_sdi)
+    i.disk_initialize                        0x00001f00   Section        0  diskio.o(i.disk_initialize)
+    i.disk_ioctl                             0x0000205c   Section        0  diskio.o(i.disk_ioctl)
+    i.disk_read                              0x00002284   Section        0  diskio.o(i.disk_read)
+    i.disk_status                            0x00002314   Section        0  diskio.o(i.disk_status)
+    i.disk_timerproc                         0x00002328   Section        0  diskio.o(i.disk_timerproc)
+    i.disk_write                             0x00002368   Section        0  diskio.o(i.disk_write)
+    i.f_close                                0x0000241c   Section        0  ff.o(i.f_close)
+    i.f_lseek                                0x0000243c   Section        0  ff.o(i.f_lseek)
+    i.f_mount                                0x000025bc   Section        0  ff.o(i.f_mount)
+    i.f_open                                 0x00002618   Section        0  ff.o(i.f_open)
+    i.f_read                                 0x00002778   Section        0  ff.o(i.f_read)
+    i.f_sync                                 0x00002918   Section        0  ff.o(i.f_sync)
+    i.f_write                                0x000029c8   Section        0  ff.o(i.f_write)
+    i.fillInBuf                              0x00002ba0   Section        0  picojpeg.o(i.fillInBuf)
+    fillInBuf                                0x00002ba1   Thumb Code    52  picojpeg.o(i.fillInBuf)
+    i.find_volume                            0x00002bec   Section        0  ff.o(i.find_volume)
+    find_volume                              0x00002bed   Thumb Code   890  ff.o(i.find_volume)
+    i.fixInBuffer                            0x00002f78   Section        0  picojpeg.o(i.fixInBuffer)
+    fixInBuffer                              0x00002f79   Thumb Code    46  picojpeg.o(i.fixInBuffer)
+    i.follow_path                            0x00002fb0   Section        0  ff.o(i.follow_path)
+    follow_path                              0x00002fb1   Thumb Code   176  ff.o(i.follow_path)
+    i.getBit                                 0x00003060   Section        0  picojpeg.o(i.getBit)
+    getBit                                   0x00003061   Thumb Code    78  picojpeg.o(i.getBit)
+    i.getBits                                0x000030b8   Section        0  picojpeg.o(i.getBits)
+    getBits                                  0x000030b9   Thumb Code   184  picojpeg.o(i.getBits)
+    i.getBits1                               0x00003178   Section        0  picojpeg.o(i.getBits1)
+    getBits1                                 0x00003179   Thumb Code    14  picojpeg.o(i.getBits1)
+    i.getBits2                               0x00003186   Section        0  picojpeg.o(i.getBits2)
+    getBits2                                 0x00003187   Thumb Code    14  picojpeg.o(i.getBits2)
+    i.getChar                                0x00003194   Section        0  picojpeg.o(i.getChar)
+    getChar                                  0x00003195   Thumb Code    70  picojpeg.o(i.getChar)
+    i.getExtendOffset                        0x000031ec   Section        0  picojpeg.o(i.getExtendOffset)
+    getExtendOffset                          0x000031ed   Thumb Code   112  picojpeg.o(i.getExtendOffset)
+    i.getExtendTest                          0x00003274   Section        0  picojpeg.o(i.getExtendTest)
+    getExtendTest                            0x00003275   Thumb Code   108  picojpeg.o(i.getExtendTest)
+    i.getHuffTable                           0x000032e0   Section        0  picojpeg.o(i.getHuffTable)
+    getHuffTable                             0x000032e1   Thumb Code    38  picojpeg.o(i.getHuffTable)
+    i.getHuffVal                             0x00003318   Section        0  picojpeg.o(i.getHuffVal)
+    getHuffVal                               0x00003319   Thumb Code    38  picojpeg.o(i.getHuffVal)
+    i.getMaxHuffCodes                        0x00003350   Section        0  picojpeg.o(i.getMaxHuffCodes)
+    getMaxHuffCodes                          0x00003351   Thumb Code    14  picojpeg.o(i.getMaxHuffCodes)
+    i.getOctet                               0x0000335e   Section        0  picojpeg.o(i.getOctet)
+    getOctet                                 0x0000335f   Thumb Code    42  picojpeg.o(i.getOctet)
+    i.get_fat                                0x00003388   Section        0  ff.o(i.get_fat)
+    i.get_ldnumber                           0x0000347a   Section        0  ff.o(i.get_ldnumber)
+    get_ldnumber                             0x0000347b   Thumb Code    74  ff.o(i.get_ldnumber)
+    i.huffCreate                             0x000034c4   Section        0  picojpeg.o(i.huffCreate)
+    huffCreate                               0x000034c5   Thumb Code    96  picojpeg.o(i.huffCreate)
+    i.huffDecode                             0x00003524   Section        0  picojpeg.o(i.huffDecode)
+    huffDecode                               0x00003525   Thumb Code    98  picojpeg.o(i.huffDecode)
+    i.huffExtend                             0x00003586   Section        0  picojpeg.o(i.huffExtend)
+    huffExtend                               0x00003587   Thumb Code    34  picojpeg.o(i.huffExtend)
+    i.idctCols                               0x000035a8   Section        0  picojpeg.o(i.idctCols)
+    idctCols                                 0x000035a9   Thumb Code   606  picojpeg.o(i.idctCols)
+    i.idctRows                               0x0000380c   Section        0  picojpeg.o(i.idctRows)
+    idctRows                                 0x0000380d   Thumb Code   424  picojpeg.o(i.idctRows)
+    i.imul_b1_b3                             0x000039b8   Section        0  picojpeg.o(i.imul_b1_b3)
+    imul_b1_b3                               0x000039b9   Thumb Code    24  picojpeg.o(i.imul_b1_b3)
+    i.imul_b2                                0x000039d0   Section        0  picojpeg.o(i.imul_b2)
+    imul_b2                                  0x000039d1   Thumb Code    24  picojpeg.o(i.imul_b2)
+    i.imul_b4                                0x000039e8   Section        0  picojpeg.o(i.imul_b4)
+    imul_b4                                  0x000039e9   Thumb Code    24  picojpeg.o(i.imul_b4)
+    i.imul_b5                                0x00003a00   Section        0  picojpeg.o(i.imul_b5)
+    imul_b5                                  0x00003a01   Thumb Code    22  picojpeg.o(i.imul_b5)
+    i.inHeapRange                            0x00003a18   Section        0  heap.o(i.inHeapRange)
+    inHeapRange                              0x00003a19   Thumb Code    24  heap.o(i.inHeapRange)
+    i.init                                   0x00003a34   Section        0  picojpeg.o(i.init)
+    init                                     0x00003a35   Thumb Code    68  picojpeg.o(i.init)
+    i.initFrame                              0x00003aa8   Section        0  picojpeg.o(i.initFrame)
+    initFrame                                0x00003aa9   Thumb Code   422  picojpeg.o(i.initFrame)
+    i.initScan                               0x00003c84   Section        0  picojpeg.o(i.initScan)
+    initScan                                 0x00003c85   Thumb Code    88  picojpeg.o(i.initScan)
+    i.init_spi                               0x00003cec   Section        0  diskio.o(i.init_spi)
+    init_spi                                 0x00003ced   Thumb Code    34  diskio.o(i.init_spi)
+    i.ld_clust                               0x00003d18   Section        0  ff.o(i.ld_clust)
+    ld_clust                                 0x00003d19   Thumb Code    32  ff.o(i.ld_clust)
+    i.locateSOFMarker                        0x00003d38   Section        0  picojpeg.o(i.locateSOFMarker)
+    locateSOFMarker                          0x00003d39   Thumb Code    84  picojpeg.o(i.locateSOFMarker)
+    i.locateSOIMarker                        0x00003d8c   Section        0  picojpeg.o(i.locateSOIMarker)
+    locateSOIMarker                          0x00003d8d   Thumb Code    96  picojpeg.o(i.locateSOIMarker)
+    i.locateSOSMarker                        0x00003df0   Section        0  picojpeg.o(i.locateSOSMarker)
+    locateSOSMarker                          0x00003df1   Thumb Code    56  picojpeg.o(i.locateSOSMarker)
+    i.main                                   0x00003e28   Section        0  jpg2bmp.o(i.main)
+    i.markBlockUnused                        0x00003e90   Section        0  heap.o(i.markBlockUnused)
+    markBlockUnused                          0x00003e91   Thumb Code    48  heap.o(i.markBlockUnused)
+    i.mem_cmp                                0x00003ec0   Section        0  ff.o(i.mem_cmp)
+    mem_cmp                                  0x00003ec1   Thumb Code    38  ff.o(i.mem_cmp)
+    i.mem_cpy                                0x00003ee6   Section        0  ff.o(i.mem_cpy)
+    mem_cpy                                  0x00003ee7   Thumb Code    26  ff.o(i.mem_cpy)
+    i.mem_set                                0x00003f00   Section        0  ff.o(i.mem_set)
+    mem_set                                  0x00003f01   Thumb Code    20  ff.o(i.mem_set)
+    i.mergeBlockWithBelow                    0x00003f14   Section        0  heap.o(i.mergeBlockWithBelow)
+    mergeBlockWithBelow                      0x00003f15   Thumb Code    46  heap.o(i.mergeBlockWithBelow)
+    i.move_window                            0x00003f42   Section        0  ff.o(i.move_window)
+    move_window                              0x00003f43   Thumb Code    52  ff.o(i.move_window)
+    i.nextBlockHeader                        0x00003f76   Section        0  heap.o(i.nextBlockHeader)
+    nextBlockHeader                          0x00003f77   Thumb Code    14  heap.o(i.nextBlockHeader)
+    i.nextMarker                             0x00003f84   Section        0  picojpeg.o(i.nextMarker)
+    nextMarker                               0x00003f85   Thumb Code    46  picojpeg.o(i.nextMarker)
+    i.pjpeg_decode_init                      0x00003fb4   Section        0  picojpeg.o(i.pjpeg_decode_init)
+    i.pjpeg_decode_mcu                       0x000040e4   Section        0  picojpeg.o(i.pjpeg_decode_mcu)
+    i.pjpeg_load_from_file                   0x00004130   Section        0  jpg2bmp.o(i.pjpeg_load_from_file)
+    i.pjpeg_need_bytes_callback              0x00004404   Section        0  jpg2bmp.o(i.pjpeg_need_bytes_callback)
+    i.previousBlockHeader                    0x00004474   Section        0  heap.o(i.previousBlockHeader)
+    previousBlockHeader                      0x00004475   Thumb Code    12  heap.o(i.previousBlockHeader)
+    i.processMarkers                         0x00004480   Section        0  picojpeg.o(i.processMarkers)
+    processMarkers                           0x00004481   Thumb Code   196  picojpeg.o(i.processMarkers)
+    i.processRestart                         0x00004544   Section        0  picojpeg.o(i.processRestart)
+    processRestart                           0x00004545   Thumb Code   132  picojpeg.o(i.processRestart)
+    i.pushColor                              0x000045dc   Section        0  st7735.o(i.pushColor)
+    pushColor                                0x000045dd   Thumb Code    18  st7735.o(i.pushColor)
+    i.put_fat                                0x000045ee   Section        0  ff.o(i.put_fat)
+    i.rcvr_datablock                         0x00004734   Section        0  diskio.o(i.rcvr_datablock)
+    rcvr_datablock                           0x00004735   Thumb Code    66  diskio.o(i.rcvr_datablock)
+    i.rcvr_spi                               0x0000477c   Section        0  diskio.o(i.rcvr_spi)
+    rcvr_spi                                 0x0000477d   Thumb Code    40  diskio.o(i.rcvr_spi)
+    i.rcvr_spi_multi                         0x000047a8   Section        0  diskio.o(i.rcvr_spi_multi)
+    rcvr_spi_multi                           0x000047a9   Thumb Code    24  diskio.o(i.rcvr_spi_multi)
+    i.readDHTMarker                          0x000047c0   Section        0  picojpeg.o(i.readDHTMarker)
+    readDHTMarker                            0x000047c1   Thumb Code   218  picojpeg.o(i.readDHTMarker)
+    i.readDQTMarker                          0x000048a0   Section        0  picojpeg.o(i.readDQTMarker)
+    readDQTMarker                            0x000048a1   Thumb Code   184  picojpeg.o(i.readDQTMarker)
+    i.readDRIMarker                          0x00004964   Section        0  picojpeg.o(i.readDRIMarker)
+    readDRIMarker                            0x00004965   Thumb Code    30  picojpeg.o(i.readDRIMarker)
+    i.readSOFMarker                          0x00004988   Section        0  picojpeg.o(i.readSOFMarker)
+    readSOFMarker                            0x00004989   Thumb Code   200  picojpeg.o(i.readSOFMarker)
+    i.readSOSMarker                          0x00004a6c   Section        0  picojpeg.o(i.readSOSMarker)
+    readSOSMarker                            0x00004a6d   Thumb Code   220  picojpeg.o(i.readSOSMarker)
+    i.remove_chain                           0x00004b60   Section        0  ff.o(i.remove_chain)
+    remove_chain                             0x00004b61   Thumb Code   108  ff.o(i.remove_chain)
+    i.replicateSignBit16                     0x00004bcc   Section        0  picojpeg.o(i.replicateSignBit16)
+    replicateSignBit16                       0x00004bcd   Thumb Code   112  picojpeg.o(i.replicateSignBit16)
+    i.select                                 0x00004c58   Section        0  diskio.o(i.select)
+    select                                   0x00004c59   Thumb Code    46  diskio.o(i.select)
+    i.send_cmd                               0x00004c8c   Section        0  diskio.o(i.send_cmd)
+    send_cmd                                 0x00004c8d   Thumb Code   150  diskio.o(i.send_cmd)
+    i.setAddrWindow                          0x00004d24   Section        0  st7735.o(i.setAddrWindow)
+    setAddrWindow                            0x00004d25   Thumb Code   106  st7735.o(i.setAddrWindow)
+    i.skipVariableMarker                     0x00004d98   Section        0  picojpeg.o(i.skipVariableMarker)
+    skipVariableMarker                       0x00004d99   Thumb Code    42  picojpeg.o(i.skipVariableMarker)
+    i.st_clust                               0x00004dc2   Section        0  ff.o(i.st_clust)
+    st_clust                                 0x00004dc3   Thumb Code    16  ff.o(i.st_clust)
+    i.startFile                              0x00004dd4   Section        0  camera.o(i.startFile)
+    i.stuffChar                              0x00004e24   Section        0  picojpeg.o(i.stuffChar)
+    stuffChar                                0x00004e25   Thumb Code    28  picojpeg.o(i.stuffChar)
+    i.subAndClamp                            0x00004e4c   Section        0  picojpeg.o(i.subAndClamp)
+    subAndClamp                              0x00004e4d   Thumb Code    32  picojpeg.o(i.subAndClamp)
+    i.sync_fs                                0x00004e6c   Section        0  ff.o(i.sync_fs)
+    sync_fs                                  0x00004e6d   Thumb Code   200  ff.o(i.sync_fs)
+    i.sync_window                            0x00004f34   Section        0  ff.o(i.sync_window)
+    sync_window                              0x00004f35   Thumb Code    82  ff.o(i.sync_window)
+    i.transformBlock                         0x00004f88   Section        0  picojpeg.o(i.transformBlock)
+    transformBlock                           0x00004f89   Thumb Code   344  picojpeg.o(i.transformBlock)
+    i.transformBlockReduce                   0x000050e4   Section        0  picojpeg.o(i.transformBlockReduce)
+    transformBlockReduce                     0x000050e5   Thumb Code  1054  picojpeg.o(i.transformBlockReduce)
+    i.upsampleCb                             0x00005504   Section        0  picojpeg.o(i.upsampleCb)
+    upsampleCb                               0x00005505   Thumb Code   188  picojpeg.o(i.upsampleCb)
+    i.upsampleCbH                            0x000055cc   Section        0  picojpeg.o(i.upsampleCbH)
+    upsampleCbH                              0x000055cd   Thumb Code   144  picojpeg.o(i.upsampleCbH)
+    i.upsampleCbV                            0x00005668   Section        0  picojpeg.o(i.upsampleCbV)
+    upsampleCbV                              0x00005669   Thumb Code   146  picojpeg.o(i.upsampleCbV)
+    i.upsampleCr                             0x00005708   Section        0  picojpeg.o(i.upsampleCr)
+    upsampleCr                               0x00005709   Thumb Code   188  picojpeg.o(i.upsampleCr)
+    i.upsampleCrH                            0x000057d0   Section        0  picojpeg.o(i.upsampleCrH)
+    upsampleCrH                              0x000057d1   Thumb Code   144  picojpeg.o(i.upsampleCrH)
+    i.upsampleCrV                            0x0000586c   Section        0  picojpeg.o(i.upsampleCrV)
+    upsampleCrV                              0x0000586d   Thumb Code   146  picojpeg.o(i.upsampleCrV)
+    i.validate                               0x0000590c   Section        0  ff.o(i.validate)
+    validate                                 0x0000590d   Thumb Code    54  ff.o(i.validate)
+    i.wait_ready                             0x00005944   Section        0  diskio.o(i.wait_ready)
+    wait_ready                               0x00005945   Thumb Code    42  diskio.o(i.wait_ready)
+    i.writeByte                              0x00005974   Section        0  camera.o(i.writeByte)
+    i.writecommand                           0x000059bc   Section        0  st7735.o(i.writecommand)
+    writecommand                             0x000059bd   Thumb Code    68  st7735.o(i.writecommand)
+    i.writedata                              0x00005a08   Section        0  st7735.o(i.writedata)
+    writedata                                0x00005a09   Thumb Code    72  st7735.o(i.writedata)
+    i.xchg_spi                               0x00005a58   Section        0  diskio.o(i.xchg_spi)
+    xchg_spi                                 0x00005a59   Thumb Code    48  diskio.o(i.xchg_spi)
+    i.xmit_datablock                         0x00005a8c   Section        0  diskio.o(i.xmit_datablock)
+    xmit_datablock                           0x00005a8d   Thumb Code    76  diskio.o(i.xmit_datablock)
+    i.xmit_spi_multi                         0x00005ad8   Section        0  diskio.o(i.xmit_spi_multi)
+    xmit_spi_multi                           0x00005ad9   Thumb Code    40  diskio.o(i.xmit_spi_multi)
+    .constdata                               0x00005b04   Section     2018  st7735.o(.constdata)
+    Font                                     0x00005b04   Data        1275  st7735.o(.constdata)
+    Bcmd                                     0x00005fff   Data         103  st7735.o(.constdata)
+    Rcmd1                                    0x00006066   Data          59  st7735.o(.constdata)
+    Rcmd2green                               0x000060a1   Data          13  st7735.o(.constdata)
+    Rcmd2red                                 0x000060ae   Data          13  st7735.o(.constdata)
+    Rcmd3                                    0x000060bb   Data          43  st7735.o(.constdata)
+    .constdata                               0x000062e6   Section      128  picojpeg.o(.constdata)
+    ZAG                                      0x000062e6   Data          64  picojpeg.o(.constdata)
+    .constdata                               0x00006368   Section       32  camera.o(.constdata)
+    .data                                    0x20000000   Section       13  diskio.o(.data)
+    Stat                                     0x20000000   Data           1  diskio.o(.data)
+    Timer1                                   0x20000004   Data           4  diskio.o(.data)
+    Timer2                                   0x20000008   Data           4  diskio.o(.data)
+    CardType                                 0x2000000c   Data           1  diskio.o(.data)
+    .data                                    0x20000010   Section        6  ff.o(.data)
+    FatFs                                    0x20000010   Data           4  ff.o(.data)
+    Fsid                                     0x20000014   Data           2  ff.o(.data)
+    .data                                    0x20000018   Section       44  st7735.o(.data)
+    _width                                   0x20000022   Data           2  st7735.o(.data)
+    _height                                  0x20000024   Data           2  st7735.o(.data)
+    ColStart                                 0x2000002c   Data           1  st7735.o(.data)
+    RowStart                                 0x2000002d   Data           1  st7735.o(.data)
+    Rotation                                 0x2000002e   Data           1  st7735.o(.data)
+    TabColor                                 0x2000002f   Data           1  st7735.o(.data)
+    .data                                    0x20000044   Section       14  jpg2bmp.o(.data)
+    MountFresult                             0x20000044   Data           1  jpg2bmp.o(.data)
+    Fresult                                  0x20000045   Data           1  jpg2bmp.o(.data)
+    g_nInFileSize                            0x20000048   Data           4  jpg2bmp.o(.data)
+    g_nInFileOfs                             0x2000004c   Data           4  jpg2bmp.o(.data)
+    .data                                    0x20000054   Section       78  picojpeg.o(.data)
+    gLastDC                                  0x20000054   Data           6  picojpeg.o(.data)
+    gValidHuffTables                         0x2000005a   Data           1  picojpeg.o(.data)
+    gValidQuantTables                        0x2000005b   Data           1  picojpeg.o(.data)
+    gTemFlag                                 0x2000005c   Data           1  picojpeg.o(.data)
+    gInBufOfs                                0x2000005d   Data           1  picojpeg.o(.data)
+    gInBufLeft                               0x2000005e   Data           1  picojpeg.o(.data)
+    gBitBuf                                  0x20000060   Data           2  picojpeg.o(.data)
+    gBitsLeft                                0x20000062   Data           1  picojpeg.o(.data)
+    gImageXSize                              0x20000064   Data           2  picojpeg.o(.data)
+    gImageYSize                              0x20000066   Data           2  picojpeg.o(.data)
+    gCompsInFrame                            0x20000068   Data           1  picojpeg.o(.data)
+    gCompIdent                               0x20000069   Data           3  picojpeg.o(.data)
+    gCompHSamp                               0x2000006c   Data           3  picojpeg.o(.data)
+    gCompVSamp                               0x2000006f   Data           3  picojpeg.o(.data)
+    gCompQuant                               0x20000072   Data           3  picojpeg.o(.data)
+    gRestartInterval                         0x20000076   Data           2  picojpeg.o(.data)
+    gNextRestartNum                          0x20000078   Data           2  picojpeg.o(.data)
+    gRestartsLeft                            0x2000007a   Data           2  picojpeg.o(.data)
+    gCompsInScan                             0x2000007c   Data           1  picojpeg.o(.data)
+    gCompList                                0x2000007d   Data           3  picojpeg.o(.data)
+    gCompDCTab                               0x20000080   Data           3  picojpeg.o(.data)
+    gCompACTab                               0x20000083   Data           3  picojpeg.o(.data)
+    gScanType                                0x20000086   Data           1  picojpeg.o(.data)
+    gMaxBlocksPerMCU                         0x20000087   Data           1  picojpeg.o(.data)
+    gMaxMCUXSize                             0x20000088   Data           1  picojpeg.o(.data)
+    gMaxMCUYSize                             0x20000089   Data           1  picojpeg.o(.data)
+    gMaxMCUSPerRow                           0x2000008a   Data           2  picojpeg.o(.data)
+    gMaxMCUSPerCol                           0x2000008c   Data           2  picojpeg.o(.data)
+    gNumMCUSRemaining                        0x2000008e   Data           2  picojpeg.o(.data)
+    gMCUOrg                                  0x20000090   Data           6  picojpeg.o(.data)
+    g_pNeedBytesCallback                     0x20000098   Data           4  picojpeg.o(.data)
+    g_pCallback_data                         0x2000009c   Data           4  picojpeg.o(.data)
+    gCallbackStatus                          0x200000a0   Data           1  picojpeg.o(.data)
+    gReduce                                  0x200000a1   Data           1  picojpeg.o(.data)
+    .data                                    0x200000a2   Section        4  fifo.o(.data)
+    PutI                                     0x200000a2   Data           2  fifo.o(.data)
+    GetI                                     0x200000a4   Data           2  fifo.o(.data)
+    .data                                    0x200000a8   Section      200  camera.o(.data)
+    Fresult                                  0x20000168   Data           1  camera.o(.data)
+    MountFresult                             0x20000169   Data           1  camera.o(.data)
+    successfullwrites                        0x2000016c   Data           4  camera.o(.data)
+    .bss                                     0x20000170   Section     1112  jpg2bmp.o(.bss)
+    g_sFatFs                                 0x20000170   Data         564  jpg2bmp.o(.bss)
+    Handle                                   0x200003a4   Data         548  jpg2bmp.o(.bss)
+    .bss                                     0x200005c8   Section     2272  picojpeg.o(.bss)
+    gCoeffBuf                                0x200005c8   Data         128  picojpeg.o(.bss)
+    gMCUBufR                                 0x20000648   Data         256  picojpeg.o(.bss)
+    gMCUBufG                                 0x20000748   Data         256  picojpeg.o(.bss)
+    gMCUBufB                                 0x20000848   Data         256  picojpeg.o(.bss)
+    gQuant0                                  0x20000948   Data         128  picojpeg.o(.bss)
+    gQuant1                                  0x200009c8   Data         128  picojpeg.o(.bss)
+    gHuffTab0                                0x20000a48   Data          80  picojpeg.o(.bss)
+    gHuffVal0                                0x20000a98   Data          16  picojpeg.o(.bss)
+    gHuffTab1                                0x20000aa8   Data          80  picojpeg.o(.bss)
+    gHuffVal1                                0x20000af8   Data          16  picojpeg.o(.bss)
+    gHuffTab2                                0x20000b08   Data          80  picojpeg.o(.bss)
+    gHuffVal2                                0x20000b58   Data         256  picojpeg.o(.bss)
+    gHuffTab3                                0x20000c58   Data          80  picojpeg.o(.bss)
+    gHuffVal3                                0x20000ca8   Data         256  picojpeg.o(.bss)
+    gInBuf                                   0x20000da8   Data         256  picojpeg.o(.bss)
+    .bss                                     0x20000ea8   Section      576  heap.o(.bss)
+    Heap                                     0x20000ea8   Data         576  heap.o(.bss)
+    .bss                                     0x200010e8   Section     5000  fifo.o(.bss)
+    FIFO                                     0x200010e8   Data        5000  fifo.o(.bss)
+    .bss                                     0x20002470   Section     1112  camera.o(.bss)
+    Handle                                   0x20002470   Data         548  camera.o(.bss)
+    g_sFatFs                                 0x20002694   Data         564  camera.o(.bss)
+    STACK                                    0x200028c8   Section     1024  startup.o(STACK)
+    StackMem                                 0x200028c8   Data           0  startup.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  jpg2bmp.o ABSOLUTE
+    __Vectors                                0x00000000   Data           0  startup.o(RESET)
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    Reset_Handler                            0x0000026d   Thumb Code     0  startup.o(RESET)
+    NMI_Handler                              0x00000271   Thumb Code     2  startup.o(RESET)
+    HardFault_Handler                        0x00000273   Thumb Code     2  startup.o(RESET)
+    MemManage_Handler                        0x00000275   Thumb Code     2  startup.o(RESET)
+    BusFault_Handler                         0x00000277   Thumb Code     2  startup.o(RESET)
+    UsageFault_Handler                       0x00000279   Thumb Code     2  startup.o(RESET)
+    SVC_Handler                              0x0000027b   Thumb Code     2  startup.o(RESET)
+    DebugMon_Handler                         0x0000027d   Thumb Code     2  startup.o(RESET)
+    PendSV_Handler                           0x0000027f   Thumb Code     2  startup.o(RESET)
+    SysTick_Handler                          0x00000281   Thumb Code     2  startup.o(RESET)
+    ADC0Seq0_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    ADC0Seq1_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    ADC0Seq2_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    ADC0Seq3_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    ADC1Seq0_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    ADC1Seq1_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    ADC1Seq2_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    ADC1Seq3_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    CAN0_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    CAN1_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    CAN2_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    Comp0_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    Comp1_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    Comp2_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    Ethernet_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    ExtBus_Handler                           0x00000283   Thumb Code     0  startup.o(RESET)
+    FPU_Handler                              0x00000283   Thumb Code     0  startup.o(RESET)
+    Fan0_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    FlashCtl_Handler                         0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortA_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortB_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortC_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortD_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortE_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortF_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortG_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortH_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortJ_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortK_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortL_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortM_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortN_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortP1_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortP2_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortP3_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortP4_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortP5_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortP6_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortP7_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortP_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ1_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ2_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ3_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ4_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ5_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ6_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ7_Handler                       0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortR_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    GPIOPortS_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    Hibernate_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    I2C0_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    I2C1_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    I2C2_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    I2C3_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    I2C4_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    I2C5_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    I2S0_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    LPC0_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    PECI0_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM0Fault_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM0Generator0_Handler                   0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM0Generator1_Handler                   0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM0Generator2_Handler                   0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM0Generator3_Handler                   0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM1Fault_Handler                        0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM1Generator0_Handler                   0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM1Generator1_Handler                   0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM1Generator2_Handler                   0x00000283   Thumb Code     0  startup.o(RESET)
+    PWM1Generator3_Handler                   0x00000283   Thumb Code     0  startup.o(RESET)
+    Quadrature0_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    Quadrature1_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    Quadrature2_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    SSI0_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    SSI1_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    SSI2_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    SSI3_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    SysCtl_Handler                           0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer0A_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer0B_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer1A_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer1B_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer2A_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer2B_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer3A_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer3B_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer4A_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer4B_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    Timer5B_Handler                          0x00000283   Thumb Code     0  startup.o(RESET)
+    UART0_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    UART2_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    UART3_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    UART4_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    UART5_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    UART6_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    UART7_Handler                            0x00000283   Thumb Code     0  startup.o(RESET)
+    USB0_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    WDT_Handler                              0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer0A_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer0B_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer1A_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer1B_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer2A_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer2B_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer3A_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer3B_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer4A_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer4B_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer5A_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    WideTimer5B_Handler                      0x00000283   Thumb Code     0  startup.o(RESET)
+    uDMA_Error                               0x00000283   Thumb Code     0  startup.o(RESET)
+    uDMA_Handler                             0x00000283   Thumb Code     0  startup.o(RESET)
+    __main                                   0x00000285   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x00000285   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x00000289   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x0000028d   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x0000028d   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x0000028d   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x0000028d   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x00000295   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x00000295   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Delay                                    0x00000299   Thumb Code     6  st7735.o(.emb_text)
+    DisableInterrupts                        0x000002a1   Thumb Code     0  startup.o(.text)
+    EnableInterrupts                         0x000002a5   Thumb Code     0  startup.o(.text)
+    StartCritical                            0x000002a9   Thumb Code     0  startup.o(.text)
+    EndCritical                              0x000002b1   Thumb Code     0  startup.o(.text)
+    WaitForInterrupt                         0x000002b7   Thumb Code     0  startup.o(.text)
+    __scatterload                            0x000002bd   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x000002bd   Thumb Code     0  init.o(.text)
+    __decompress                             0x000002e1   Thumb Code     0  __dczerorl2.o(.text)
+    __decompress1                            0x000002e1   Thumb Code    92  __dczerorl2.o(.text)
+    AcknowledgeReturn                        0x0000033d   Thumb Code    34  camera.o(i.AcknowledgeReturn)
+    BufferLengthCMD                          0x00000365   Thumb Code   142  camera.o(i.BufferLengthCMD)
+    CS_Init                                  0x00000401   Thumb Code   148  diskio.o(i.CS_Init)
+    CameraCapturePic                         0x000004ad   Thumb Code    24  camera.o(i.CameraCapturePic)
+    CameraInit                               0x000004c5   Thumb Code    24  camera.o(i.CameraInit)
+    CameraReset                              0x000004dd   Thumb Code    20  camera.o(i.CameraReset)
+    CameraSetBlackWhite                      0x000004f1   Thumb Code    16  camera.o(i.CameraSetBlackWhite)
+    CameraSetImageSize                       0x00000501   Thumb Code    16  camera.o(i.CameraSetImageSize)
+    ConsumeFiFo                              0x00000511   Thumb Code     8  camera.o(i.ConsumeFiFo)
+    DEBUG_UART_Init                          0x00000519   Thumb Code   118  debug_uart.o(i.DEBUG_UART_Init)
+    DEBUG_UART_OutChar                       0x000005a1   Thumb Code    18  debug_uart.o(i.DEBUG_UART_OutChar)
+    DEBUG_UART_OutHex                        0x000005b9   Thumb Code    86  debug_uart.o(i.DEBUG_UART_OutHex)
+    DEBUG_UART_OutString                     0x00000615   Thumb Code    24  debug_uart.o(i.DEBUG_UART_OutString)
+    Delay1ms                                 0x0000062d   Thumb Code    22  st7735.o(i.Delay1ms)
+    DelayCam                                 0x00000645   Thumb Code    14  camera.o(i.DelayCam)
+    FiFo_Get                                 0x00000659   Thumb Code    56  fifo.o(i.FiFo_Get)
+    FiFo_Init                                0x0000069d   Thumb Code    32  fifo.o(i.FiFo_Init)
+    FiFo_Put                                 0x000006c9   Thumb Code    66  fifo.o(i.FiFo_Put)
+    HandleBuffer                             0x00000719   Thumb Code    74  camera.o(i.HandleBuffer)
+    Heap_Free                                0x00000765   Thumb Code   140  heap.o(i.Heap_Free)
+    Heap_Init                                0x000007f5   Thumb Code    18  heap.o(i.Heap_Init)
+    PLL_Init                                 0x0000080d   Thumb Code   118  pll.o(i.PLL_Init)
+    ReadBufferCMD                            0x00000889   Thumb Code   266  camera.o(i.ReadBufferCMD)
+    SSI0_Init                                0x0000099d   Thumb Code   296  diskio.o(i.SSI0_Init)
+    ST7735_Color565                          0x00000ae5   Thumb Code    24  st7735.o(i.ST7735_Color565)
+    ST7735_DrawCharS                         0x00000afd   Thumb Code   232  st7735.o(i.ST7735_DrawCharS)
+    ST7735_DrawPixel                         0x00000bf1   Thumb Code    64  st7735.o(i.ST7735_DrawPixel)
+    ST7735_DrawString                        0x00000c39   Thumb Code    86  st7735.o(i.ST7735_DrawString)
+    ST7735_FillRect                          0x00000c91   Thumb Code   164  st7735.o(i.ST7735_FillRect)
+    ST7735_FillScreen                        0x00000d3d   Thumb Code    28  st7735.o(i.ST7735_FillScreen)
+    ST7735_InitR                             0x00000d61   Thumb Code    90  st7735.o(i.ST7735_InitR)
+    ST7735_SetCursor                         0x00000ddd   Thumb Code    22  st7735.o(i.ST7735_SetCursor)
+    ST7735_SetRotation                       0x00000dfd   Thumb Code   196  st7735.o(i.ST7735_SetRotation)
+    SendCmd                                  0x00000ed1   Thumb Code   122  camera.o(i.SendCmd)
+    Timer5A_Handler                          0x00000f51   Thumb Code    14  diskio.o(i.Timer5A_Handler)
+    Timer5_Init                              0x00000f65   Thumb Code    84  diskio.o(i.Timer5_Init)
+    UART1_Handler                            0x00000fd1   Thumb Code    32  uart1.o(i.UART1_Handler)
+    UART1_InChar                             0x00000ff5   Thumb Code    20  uart1.o(i.UART1_InChar)
+    UART1_Init                               0x0000100d   Thumb Code   206  uart1.o(i.UART1_Init)
+    UART1_OutChar                            0x000010f5   Thumb Code    18  uart1.o(i.UART1_OutChar)
+    __scatterload_copy                       0x0000110d   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x0000111b   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x0000111d   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    closeFile                                0x00001319   Thumb Code    18  camera.o(i.closeFile)
+    clust2sect                               0x00001335   Thumb Code    26  ff.o(i.clust2sect)
+    disk_initialize                          0x00001f01   Thumb Code   330  diskio.o(i.disk_initialize)
+    disk_ioctl                               0x0000205d   Thumb Code   544  diskio.o(i.disk_ioctl)
+    disk_read                                0x00002285   Thumb Code   136  diskio.o(i.disk_read)
+    disk_status                              0x00002315   Thumb Code    14  diskio.o(i.disk_status)
+    disk_timerproc                           0x00002329   Thumb Code    52  diskio.o(i.disk_timerproc)
+    disk_write                               0x00002369   Thumb Code   170  diskio.o(i.disk_write)
+    f_close                                  0x0000241d   Thumb Code    32  ff.o(i.f_close)
+    f_lseek                                  0x0000243d   Thumb Code   382  ff.o(i.f_lseek)
+    f_mount                                  0x000025bd   Thumb Code    86  ff.o(i.f_mount)
+    f_open                                   0x00002619   Thumb Code   348  ff.o(i.f_open)
+    f_read                                   0x00002779   Thumb Code   414  ff.o(i.f_read)
+    f_sync                                   0x00002919   Thumb Code   170  ff.o(i.f_sync)
+    f_write                                  0x000029c9   Thumb Code   470  ff.o(i.f_write)
+    get_fat                                  0x00003389   Thumb Code   242  ff.o(i.get_fat)
+    main                                     0x00003e29   Thumb Code    88  jpg2bmp.o(i.main)
+    pjpeg_decode_init                        0x00003fb5   Thumb Code   242  picojpeg.o(i.pjpeg_decode_init)
+    pjpeg_decode_mcu                         0x000040e5   Thumb Code    68  picojpeg.o(i.pjpeg_decode_mcu)
+    pjpeg_load_from_file                     0x00004131   Thumb Code   682  jpg2bmp.o(i.pjpeg_load_from_file)
+    pjpeg_need_bytes_callback                0x00004405   Thumb Code    94  jpg2bmp.o(i.pjpeg_need_bytes_callback)
+    put_fat                                  0x000045ef   Thumb Code   326  ff.o(i.put_fat)
+    startFile                                0x00004dd5   Thumb Code    54  camera.o(i.startFile)
+    writeByte                                0x00005975   Thumb Code    60  camera.o(i.writeByte)
+    dBfs                                     0x000060e6   Data         512  st7735.o(.constdata)
+    gWinogradQuant                           0x00006326   Data          64  picojpeg.o(.constdata)
+    Length                                   0x00006368   Data          20  camera.o(.constdata)
+    CommandList                              0x0000637c   Data          12  camera.o(.constdata)
+    Region$$Table$$Base                      0x00006388   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x000063a8   Number         0  anon$$obj.o(Region$$Table)
+    StX                                      0x20000018   Data           4  st7735.o(.data)
+    StY                                      0x2000001c   Data           4  st7735.o(.data)
+    StTextColor                              0x20000020   Data           2  st7735.o(.data)
+    lastj                                    0x20000028   Data           4  st7735.o(.data)
+    Messageindex                             0x20000030   Data           4  st7735.o(.data)
+    Ymax                                     0x20000034   Data           4  st7735.o(.data)
+    Ymin                                     0x20000038   Data           4  st7735.o(.data)
+    X                                        0x2000003c   Data           4  st7735.o(.data)
+    Yrange                                   0x20000040   Data           4  st7735.o(.data)
+    status                                   0x20000050   Data           2  jpg2bmp.o(.data)
+    BUFF_LENGTH                              0x200000a8   Data           2  camera.o(.data)
+    GetVersionCmd                            0x200000aa   Data           4  camera.o(.data)
+    ResetCmd                                 0x200000ae   Data           4  camera.o(.data)
+    StopBufferCmd                            0x200000b2   Data           5  camera.o(.data)
+    GetBufferLengthCmd                       0x200000b7   Data           5  camera.o(.data)
+    ReadBufferCmd                            0x200000bc   Data          16  camera.o(.data)
+    ResumeBufferCmd                          0x200000cc   Data           5  camera.o(.data)
+    SetPicSizeCmd                            0x200000d1   Data           9  camera.o(.data)
+    SetBlackWhiteCmd                         0x200000da   Data           6  camera.o(.data)
+    GetVersionRet                            0x200000e0   Data           4  camera.o(.data)
+    ResetRet                                 0x200000e4   Data           4  camera.o(.data)
+    StopBufferRet                            0x200000e8   Data           5  camera.o(.data)
+    GetBufferLengthRet                       0x200000ed   Data           9  camera.o(.data)
+    ReadBufferRet                            0x200000f6   Data           5  camera.o(.data)
+    ContinueBufferRet                        0x200000fb   Data           5  camera.o(.data)
+    SetPicSizeRet                            0x20000100   Data           5  camera.o(.data)
+    SetBlackWhiteRet                         0x20000105   Data           5  camera.o(.data)
+    Commands                                 0x2000010c   Data          40  camera.o(.data)
+    Received                                 0x20000134   Data          40  camera.o(.data)
+    FileName                                 0x2000015c   Data          12  camera.o(.data)
+    __initial_sp                             0x20002cc8   Data           0  startup.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x0000026d
+
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00006518, Max: 0xffffffff, ABSOLUTE, COMPRESSED[0x00006434])
+
+    Execution Region ER_RO (Base: 0x00000000, Size: 0x000063a8, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000284   Code   RO            3  * RESET               startup.o
+    0x00000284   0x00000000   Code   RO         1479  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x00000284   0x00000004   Code   RO         1486    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x00000288   0x00000004   Code   RO         1489    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x0000028c   0x00000000   Code   RO         1491    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x0000028c   0x00000000   Code   RO         1493    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x0000028c   0x00000008   Code   RO         1494    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x00000294   0x00000000   Code   RO         1496    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x00000294   0x00000000   Code   RO         1498    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x00000294   0x00000004   Code   RO         1487    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x00000298   0x00000006   Code   RO          497    .emb_text           st7735.o
+    0x0000029e   0x00000002   PAD
+    0x000002a0   0x0000001c   Code   RO            4    .text               startup.o
+    0x000002bc   0x00000024   Code   RO         1500    .text               mc_w.l(init.o)
+    0x000002e0   0x0000005c   Code   RO         1510    .text               mc_w.l(__dczerorl2.o)
+    0x0000033c   0x00000028   Code   RO         1339    i.AcknowledgeReturn  camera.o
+    0x00000364   0x0000009c   Code   RO         1340    i.BufferLengthCMD   camera.o
+    0x00000400   0x000000ac   Code   RO           12    i.CS_Init           diskio.o
+    0x000004ac   0x00000018   Code   RO         1341    i.CameraCapturePic  camera.o
+    0x000004c4   0x00000018   Code   RO         1342    i.CameraInit        camera.o
+    0x000004dc   0x00000014   Code   RO         1343    i.CameraReset       camera.o
+    0x000004f0   0x00000010   Code   RO         1344    i.CameraSetBlackWhite  camera.o
+    0x00000500   0x00000010   Code   RO         1346    i.CameraSetImageSize  camera.o
+    0x00000510   0x00000008   Code   RO         1347    i.ConsumeFiFo       camera.o
+    0x00000518   0x00000088   Code   RO         1289    i.DEBUG_UART_Init   debug_uart.o
+    0x000005a0   0x00000018   Code   RO         1290    i.DEBUG_UART_OutChar  debug_uart.o
+    0x000005b8   0x0000005c   Code   RO         1291    i.DEBUG_UART_OutHex  debug_uart.o
+    0x00000614   0x00000018   Code   RO         1292    i.DEBUG_UART_OutString  debug_uart.o
+    0x0000062c   0x00000016   Code   RO          498    i.Delay1ms          st7735.o
+    0x00000642   0x00000002   PAD
+    0x00000644   0x00000014   Code   RO         1348    i.DelayCam          camera.o
+    0x00000658   0x00000044   Code   RO         1258    i.FiFo_Get          fifo.o
+    0x0000069c   0x0000002c   Code   RO         1259    i.FiFo_Init         fifo.o
+    0x000006c8   0x00000050   Code   RO         1260    i.FiFo_Put          fifo.o
+    0x00000718   0x0000004a   Code   RO         1349    i.HandleBuffer      camera.o
+    0x00000762   0x00000002   PAD
+    0x00000764   0x00000090   Code   RO         1149    i.Heap_Free         heap.o
+    0x000007f4   0x00000018   Code   RO         1150    i.Heap_Init         heap.o
+    0x0000080c   0x0000007c   Code   RO          444    i.PLL_Init          pll.o
+    0x00000888   0x00000114   Code   RO         1350    i.ReadBufferCMD     camera.o
+    0x0000099c   0x00000148   Code   RO           13    i.SSI0_Init         diskio.o
+    0x00000ae4   0x00000018   Code   RO          504    i.ST7735_Color565   st7735.o
+    0x00000afc   0x000000f4   Code   RO          507    i.ST7735_DrawCharS  st7735.o
+    0x00000bf0   0x00000048   Code   RO          510    i.ST7735_DrawPixel  st7735.o
+    0x00000c38   0x00000056   Code   RO          511    i.ST7735_DrawString  st7735.o
+    0x00000c8e   0x00000002   PAD
+    0x00000c90   0x000000ac   Code   RO          512    i.ST7735_FillRect   st7735.o
+    0x00000d3c   0x00000024   Code   RO          513    i.ST7735_FillScreen  st7735.o
+    0x00000d60   0x0000007c   Code   RO          515    i.ST7735_InitR      st7735.o
+    0x00000ddc   0x00000020   Code   RO          528    i.ST7735_SetCursor  st7735.o
+    0x00000dfc   0x000000d4   Code   RO          529    i.ST7735_SetRotation  st7735.o
+    0x00000ed0   0x00000080   Code   RO         1351    i.SendCmd           camera.o
+    0x00000f50   0x00000014   Code   RO           14    i.Timer5A_Handler   diskio.o
+    0x00000f64   0x0000006c   Code   RO           15    i.Timer5_Init       diskio.o
+    0x00000fd0   0x00000024   Code   RO         1449    i.UART1_Handler     uart1.o
+    0x00000ff4   0x00000018   Code   RO         1450    i.UART1_InChar      uart1.o
+    0x0000100c   0x000000e8   Code   RO         1451    i.UART1_Init        uart1.o
+    0x000010f4   0x00000018   Code   RO         1452    i.UART1_OutChar     uart1.o
+    0x0000110c   0x0000000e   Code   RO         1504    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x0000111a   0x00000002   Code   RO         1505    i.__scatterload_null  mc_w.l(handlers.o)
+    0x0000111c   0x0000000e   Code   RO         1506    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x0000112a   0x00000020   Code   RO          825    i.addAndClamp       picojpeg.o
+    0x0000114a   0x0000000e   Code   RO          826    i.arithmeticRightShift8L  picojpeg.o
+    0x00001158   0x0000001c   Code   RO          827    i.arithmeticRightShiftN16  picojpeg.o
+    0x00001174   0x00000012   Code   RO         1155    i.blockHeader       heap.o
+    0x00001186   0x00000012   Code   RO         1156    i.blockRoom         heap.o
+    0x00001198   0x00000012   Code   RO         1157    i.blockTrailer      heap.o
+    0x000011aa   0x00000008   Code   RO         1158    i.blockUnused       heap.o
+    0x000011b2   0x00000002   PAD
+    0x000011b4   0x0000005c   Code   RO          828    i.checkHuffTables   picojpeg.o
+    0x00001210   0x00000044   Code   RO          829    i.checkQuantTables  picojpeg.o
+    0x00001254   0x00000090   Code   RO          148    i.check_fs          ff.o
+    0x000012e4   0x00000018   Code   RO          149    i.chk_chr           ff.o
+    0x000012fc   0x0000001c   Code   RO          830    i.clamp             picojpeg.o
+    0x00001318   0x0000001c   Code   RO         1352    i.closeFile         camera.o
+    0x00001334   0x0000001a   Code   RO          150    i.clust2sect        ff.o
+    0x0000134e   0x00000056   Code   RO          532    i.commandList       st7735.o
+    0x000013a4   0x00000240   Code   RO          533    i.commonInit        st7735.o
+    0x000015e4   0x0000006c   Code   RO          831    i.convertCb         picojpeg.o
+    0x00001650   0x0000006c   Code   RO          832    i.convertCr         picojpeg.o
+    0x000016bc   0x00000040   Code   RO          833    i.copyY             picojpeg.o
+    0x000016fc   0x0000002c   Code   RO          834    i.createWinogradQuant  picojpeg.o
+    0x00001728   0x000000d6   Code   RO          151    i.create_chain      ff.o
+    0x000017fe   0x00000002   PAD
+    0x00001800   0x000001b4   Code   RO          152    i.create_name       ff.o
+    0x000019b4   0x00000294   Code   RO          835    i.decodeNextMCU     picojpeg.o
+    0x00001c48   0x00000018   Code   RO           16    i.deselect          diskio.o
+    0x00001c60   0x0000005c   Code   RO          153    i.dir_alloc         ff.o
+    0x00001cbc   0x0000005c   Code   RO          154    i.dir_find          ff.o
+    0x00001d18   0x0000010e   Code   RO          155    i.dir_next          ff.o
+    0x00001e26   0x0000003a   Code   RO          157    i.dir_register      ff.o
+    0x00001e60   0x0000009e   Code   RO          159    i.dir_sdi           ff.o
+    0x00001efe   0x00000002   PAD
+    0x00001f00   0x0000015c   Code   RO           17    i.disk_initialize   diskio.o
+    0x0000205c   0x00000228   Code   RO           18    i.disk_ioctl        diskio.o
+    0x00002284   0x00000090   Code   RO           19    i.disk_read         diskio.o
+    0x00002314   0x00000014   Code   RO           20    i.disk_status       diskio.o
+    0x00002328   0x00000040   Code   RO           21    i.disk_timerproc    diskio.o
+    0x00002368   0x000000b4   Code   RO           22    i.disk_write        diskio.o
+    0x0000241c   0x00000020   Code   RO          162    i.f_close           ff.o
+    0x0000243c   0x0000017e   Code   RO          167    i.f_lseek           ff.o
+    0x000025ba   0x00000002   PAD
+    0x000025bc   0x0000005c   Code   RO          170    i.f_mount           ff.o
+    0x00002618   0x00000160   Code   RO          171    i.f_open            ff.o
+    0x00002778   0x0000019e   Code   RO          173    i.f_read            ff.o
+    0x00002916   0x00000002   PAD
+    0x00002918   0x000000b0   Code   RO          178    i.f_sync            ff.o
+    0x000029c8   0x000001d6   Code   RO          182    i.f_write           ff.o
+    0x00002b9e   0x00000002   PAD
+    0x00002ba0   0x0000004c   Code   RO          836    i.fillInBuf         picojpeg.o
+    0x00002bec   0x0000038c   Code   RO          183    i.find_volume       ff.o
+    0x00002f78   0x00000038   Code   RO          838    i.fixInBuffer       picojpeg.o
+    0x00002fb0   0x000000b0   Code   RO          184    i.follow_path       ff.o
+    0x00003060   0x00000058   Code   RO          839    i.getBit            picojpeg.o
+    0x000030b8   0x000000c0   Code   RO          840    i.getBits           picojpeg.o
+    0x00003178   0x0000000e   Code   RO          841    i.getBits1          picojpeg.o
+    0x00003186   0x0000000e   Code   RO          842    i.getBits2          picojpeg.o
+    0x00003194   0x00000058   Code   RO          843    i.getChar           picojpeg.o
+    0x000031ec   0x00000088   Code   RO          844    i.getExtendOffset   picojpeg.o
+    0x00003274   0x0000006c   Code   RO          845    i.getExtendTest     picojpeg.o
+    0x000032e0   0x00000038   Code   RO          846    i.getHuffTable      picojpeg.o
+    0x00003318   0x00000038   Code   RO          847    i.getHuffVal        picojpeg.o
+    0x00003350   0x0000000e   Code   RO          848    i.getMaxHuffCodes   picojpeg.o
+    0x0000335e   0x0000002a   Code   RO          849    i.getOctet          picojpeg.o
+    0x00003388   0x000000f2   Code   RO          185    i.get_fat           ff.o
+    0x0000347a   0x0000004a   Code   RO          187    i.get_ldnumber      ff.o
+    0x000034c4   0x00000060   Code   RO          850    i.huffCreate        picojpeg.o
+    0x00003524   0x00000062   Code   RO          851    i.huffDecode        picojpeg.o
+    0x00003586   0x00000022   Code   RO          852    i.huffExtend        picojpeg.o
+    0x000035a8   0x00000264   Code   RO          853    i.idctCols          picojpeg.o
+    0x0000380c   0x000001ac   Code   RO          854    i.idctRows          picojpeg.o
+    0x000039b8   0x00000018   Code   RO          855    i.imul_b1_b3        picojpeg.o
+    0x000039d0   0x00000018   Code   RO          856    i.imul_b2           picojpeg.o
+    0x000039e8   0x00000018   Code   RO          857    i.imul_b4           picojpeg.o
+    0x00003a00   0x00000016   Code   RO          858    i.imul_b5           picojpeg.o
+    0x00003a16   0x00000002   PAD
+    0x00003a18   0x0000001c   Code   RO         1160    i.inHeapRange       heap.o
+    0x00003a34   0x00000074   Code   RO          859    i.init              picojpeg.o
+    0x00003aa8   0x000001dc   Code   RO          860    i.initFrame         picojpeg.o
+    0x00003c84   0x00000068   Code   RO          861    i.initScan          picojpeg.o
+    0x00003cec   0x0000002c   Code   RO           23    i.init_spi          diskio.o
+    0x00003d18   0x00000020   Code   RO          188    i.ld_clust          ff.o
+    0x00003d38   0x00000054   Code   RO          862    i.locateSOFMarker   picojpeg.o
+    0x00003d8c   0x00000064   Code   RO          863    i.locateSOIMarker   picojpeg.o
+    0x00003df0   0x00000038   Code   RO          864    i.locateSOSMarker   picojpeg.o
+    0x00003e28   0x00000068   Code   RO          774    i.main              jpg2bmp.o
+    0x00003e90   0x00000030   Code   RO         1161    i.markBlockUnused   heap.o
+    0x00003ec0   0x00000026   Code   RO          189    i.mem_cmp           ff.o
+    0x00003ee6   0x0000001a   Code   RO          190    i.mem_cpy           ff.o
+    0x00003f00   0x00000014   Code   RO          191    i.mem_set           ff.o
+    0x00003f14   0x0000002e   Code   RO         1163    i.mergeBlockWithBelow  heap.o
+    0x00003f42   0x00000034   Code   RO          192    i.move_window       ff.o
+    0x00003f76   0x0000000e   Code   RO         1164    i.nextBlockHeader   heap.o
+    0x00003f84   0x0000002e   Code   RO          865    i.nextMarker        picojpeg.o
+    0x00003fb2   0x00000002   PAD
+    0x00003fb4   0x00000130   Code   RO          866    i.pjpeg_decode_init  picojpeg.o
+    0x000040e4   0x0000004c   Code   RO          867    i.pjpeg_decode_mcu  picojpeg.o
+    0x00004130   0x000002d4   Code   RO          775    i.pjpeg_load_from_file  jpg2bmp.o
+    0x00004404   0x00000070   Code   RO          776    i.pjpeg_need_bytes_callback  jpg2bmp.o
+    0x00004474   0x0000000c   Code   RO         1165    i.previousBlockHeader  heap.o
+    0x00004480   0x000000c4   Code   RO          868    i.processMarkers    picojpeg.o
+    0x00004544   0x00000098   Code   RO          869    i.processRestart    picojpeg.o
+    0x000045dc   0x00000012   Code   RO          538    i.pushColor         st7735.o
+    0x000045ee   0x00000146   Code   RO          193    i.put_fat           ff.o
+    0x00004734   0x00000048   Code   RO           24    i.rcvr_datablock    diskio.o
+    0x0000477c   0x0000002c   Code   RO           25    i.rcvr_spi          diskio.o
+    0x000047a8   0x00000018   Code   RO           26    i.rcvr_spi_multi    diskio.o
+    0x000047c0   0x000000e0   Code   RO          870    i.readDHTMarker     picojpeg.o
+    0x000048a0   0x000000c4   Code   RO          871    i.readDQTMarker     picojpeg.o
+    0x00004964   0x00000024   Code   RO          872    i.readDRIMarker     picojpeg.o
+    0x00004988   0x000000e4   Code   RO          873    i.readSOFMarker     picojpeg.o
+    0x00004a6c   0x000000f4   Code   RO          874    i.readSOSMarker     picojpeg.o
+    0x00004b60   0x0000006c   Code   RO          194    i.remove_chain      ff.o
+    0x00004bcc   0x0000008c   Code   RO          875    i.replicateSignBit16  picojpeg.o
+    0x00004c58   0x00000034   Code   RO           27    i.select            diskio.o
+    0x00004c8c   0x00000096   Code   RO           28    i.send_cmd          diskio.o
+    0x00004d22   0x00000002   PAD
+    0x00004d24   0x00000074   Code   RO          539    i.setAddrWindow     st7735.o
+    0x00004d98   0x0000002a   Code   RO          876    i.skipVariableMarker  picojpeg.o
+    0x00004dc2   0x00000010   Code   RO          195    i.st_clust          ff.o
+    0x00004dd2   0x00000002   PAD
+    0x00004dd4   0x00000050   Code   RO         1353    i.startFile         camera.o
+    0x00004e24   0x00000028   Code   RO          877    i.stuffChar         picojpeg.o
+    0x00004e4c   0x00000020   Code   RO          878    i.subAndClamp       picojpeg.o
+    0x00004e6c   0x000000c8   Code   RO          196    i.sync_fs           ff.o
+    0x00004f34   0x00000052   Code   RO          197    i.sync_window       ff.o
+    0x00004f86   0x00000002   PAD
+    0x00004f88   0x0000015c   Code   RO          879    i.transformBlock    picojpeg.o
+    0x000050e4   0x0000041e   Code   RO          880    i.transformBlockReduce  picojpeg.o
+    0x00005502   0x00000002   PAD
+    0x00005504   0x000000c8   Code   RO          881    i.upsampleCb        picojpeg.o
+    0x000055cc   0x0000009c   Code   RO          882    i.upsampleCbH       picojpeg.o
+    0x00005668   0x000000a0   Code   RO          883    i.upsampleCbV       picojpeg.o
+    0x00005708   0x000000c8   Code   RO          884    i.upsampleCr        picojpeg.o
+    0x000057d0   0x0000009c   Code   RO          885    i.upsampleCrH       picojpeg.o
+    0x0000586c   0x000000a0   Code   RO          886    i.upsampleCrV       picojpeg.o
+    0x0000590c   0x00000036   Code   RO          198    i.validate          ff.o
+    0x00005942   0x00000002   PAD
+    0x00005944   0x00000030   Code   RO           29    i.wait_ready        diskio.o
+    0x00005974   0x00000048   Code   RO         1354    i.writeByte         camera.o
+    0x000059bc   0x0000004c   Code   RO          540    i.writecommand      st7735.o
+    0x00005a08   0x00000050   Code   RO          541    i.writedata         st7735.o
+    0x00005a58   0x00000034   Code   RO           30    i.xchg_spi          diskio.o
+    0x00005a8c   0x0000004c   Code   RO           31    i.xmit_datablock    diskio.o
+    0x00005ad8   0x0000002c   Code   RO           32    i.xmit_spi_multi    diskio.o
+    0x00005b04   0x000007e2   Data   RO          543    .constdata          st7735.o
+    0x000062e6   0x00000080   Data   RO          888    .constdata          picojpeg.o
+    0x00006366   0x00000002   PAD
+    0x00006368   0x00000020   Data   RO         1356    .constdata          camera.o
+    0x00006388   0x00000020   Data   RO         1502    Region$$Table       anon$$obj.o
+
+
+    Execution Region ER_RW (Base: 0x20000000, Size: 0x00000170, Max: 0xffffffff, ABSOLUTE, COMPRESSED[0x0000008c])
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x0000000d   Data   RW           33    .data               diskio.o
+    0x2000000d   0x00000003   PAD
+    0x20000010   0x00000006   Data   RW          200    .data               ff.o
+    0x20000016   0x00000002   PAD
+    0x20000018   0x0000002c   Data   RW          544    .data               st7735.o
+    0x20000044   0x0000000e   Data   RW          778    .data               jpg2bmp.o
+    0x20000052   0x00000002   PAD
+    0x20000054   0x0000004e   Data   RW          889    .data               picojpeg.o
+    0x200000a2   0x00000004   Data   RW         1262    .data               fifo.o
+    0x200000a6   0x00000002   PAD
+    0x200000a8   0x000000c8   Data   RW         1357    .data               camera.o
+
+
+    Execution Region ER_ZI (Base: 0x20000170, Size: 0x00002b58, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000170   0x00000458   Zero   RW          777    .bss                jpg2bmp.o
+    0x200005c8   0x000008e0   Zero   RW          887    .bss                picojpeg.o
+    0x20000ea8   0x00000240   Zero   RW         1167    .bss                heap.o
+    0x200010e8   0x00001388   Zero   RW         1261    .bss                fifo.o
+    0x20002470   0x00000458   Zero   RW         1355    .bss                camera.o
+    0x200028c8   0x00000400   Zero   RW            1    STACK               startup.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       982         90         32        200       1112      11369   camera.o
+       276         30          0          0          0       2166   debug_uart.o
+      2566        194          0         13          0      19781   diskio.o
+      5786         56          0          6          0      29800   ff.o
+       192         38          0          4       5000       2138   fifo.o
+       378         14          0          0        576       6612   heap.o
+       940         76          0         14       1112       9635   jpg2bmp.o
+      8874        836        128         78       2272      45720   picojpeg.o
+       124          6          0          0          0        511   pll.o
+         0          0          0          0          0        532   sdcfile.o
+      1982        188       2018         44          0      15469   st7735.o
+       672        622          0          0       1024       1036   startup.o
+       316         40          0          0          0       2336   uart1.o
+
+    ----------------------------------------------------------------------
+     23122       2190       2212        368      11096     147105   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+        34          0          2          9          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+        92          0          0          0          0          0   __dczerorl2.o
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+
+    ----------------------------------------------------------------------
+       178         16          0          0          0         68   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       178         16          0          0          0         68   mc_w.l
+
+    ----------------------------------------------------------------------
+       178         16          0          0          0         68   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     23300       2206       2212        368      11096     130473   Grand Totals
+     23300       2206       2212        140      11096     130473   ELF Image Totals (compressed)
+     23300       2206       2212        140          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                25512 (  24.91kB)
+    Total RW  Size (RW Data + ZI Data)             11464 (  11.20kB)
+    Total ROM Size (Code + RO Data + RW Data)      25652 (  25.05kB)
+
+==============================================================================
+

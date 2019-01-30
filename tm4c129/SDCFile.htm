@@ -1,0 +1,2111 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\SDCFile.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\SDCFile.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Tue Dec 04 23:50:18 2018
+<BR><P>
+<H3>Maximum Stack Usage =        568 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; pjpeg_load_from_file &rArr; f_open &rArr; follow_path &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[6d]">Reset_Handler</a>
+ <LI><a href="#[11f]">DisableInterrupts</a>
+ <LI><a href="#[ff]">EnableInterrupts</a>
+ <LI><a href="#[120]">StartCritical</a>
+ <LI><a href="#[121]">EndCritical</a>
+ <LI><a href="#[122]">WaitForInterrupt</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[1]">NMI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1]">NMI_Handler</a><BR>
+ <LI><a href="#[2]">HardFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2]">HardFault_Handler</a><BR>
+ <LI><a href="#[3]">MemManage_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3]">MemManage_Handler</a><BR>
+ <LI><a href="#[4]">BusFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[4]">BusFault_Handler</a><BR>
+ <LI><a href="#[5]">UsageFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[5]">UsageFault_Handler</a><BR>
+ <LI><a href="#[6]">SVC_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[6]">SVC_Handler</a><BR>
+ <LI><a href="#[7]">DebugMon_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[7]">DebugMon_Handler</a><BR>
+ <LI><a href="#[8]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[8]">PendSV_Handler</a><BR>
+ <LI><a href="#[9]">SysTick_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[9]">SysTick_Handler</a><BR>
+ <LI><a href="#[18]">ADC0Seq0_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[18]">ADC0Seq0_Handler</a><BR>
+ <LI><a href="#[71]">Delay</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[71]">Delay</a><BR>
+ <LI><a href="#[ca]">send_cmd</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[ca]">send_cmd</a><BR>
+ <LI><a href="#[cb]">disk_ioctl</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[cb]">disk_ioctl</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[18]">ADC0Seq0_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[19]">ADC0Seq1_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[1a]">ADC0Seq2_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[1b]">ADC0Seq3_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[38]">ADC1Seq0_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[39]">ADC1Seq1_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[3a]">ADC1Seq2_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[3b]">ADC1Seq3_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[4]">BusFault_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[30]">CAN0_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[31]">CAN1_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[23]">Comp0_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[24]">Comp1_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[25]">Comp2_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[7]">DebugMon_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[32]">Ethernet_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[3c]">ExtBus_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[4d]">FPU_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[27]">FlashCtl_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[a]">GPIOPortA_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[b]">GPIOPortB_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[c]">GPIOPortC_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[d]">GPIOPortD_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[e]">GPIOPortE_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[28]">GPIOPortF_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[29]">GPIOPortG_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[2a]">GPIOPortH_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[3d]">GPIOPortJ_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[3e]">GPIOPortK_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[3f]">GPIOPortL_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[50]">GPIOPortM_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[51]">GPIOPortN_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[54]">GPIOPortP1_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[55]">GPIOPortP2_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[56]">GPIOPortP3_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[57]">GPIOPortP4_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[58]">GPIOPortP5_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[59]">GPIOPortP6_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[5a]">GPIOPortP7_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[53]">GPIOPortP_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[5c]">GPIOPortQ1_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[5d]">GPIOPortQ2_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[5e]">GPIOPortQ3_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[5f]">GPIOPortQ4_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[60]">GPIOPortQ5_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[61]">GPIOPortQ6_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[62]">GPIOPortQ7_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[5b]">GPIOPortQ_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[2]">HardFault_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[33]">Hibernate_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[12]">I2C0_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[2f]">I2C1_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[47]">I2C2_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[48]">I2C3_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[4e]">I2C4_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[4f]">I2C5_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[67]">I2C6_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[68]">I2C7_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[69]">I2C8_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[6a]">I2C9_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[3]">MemManage_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[1]">NMI_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[13]">PWM0Fault_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[14]">PWM0Generator0_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[15]">PWM0Generator1_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[16]">PWM0Generator2_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[35]">PWM0Generator3_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[8]">PendSV_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[17]">Quadrature0_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[6d]">Reset_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[11]">SSI0_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[2c]">SSI1_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[40]">SSI2_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[41]">SSI3_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[6]">SVC_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[26]">SysCtl_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[9]">SysTick_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[52]">Tamper_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[1d]">Timer0A_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[1e]">Timer0B_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[1f]">Timer1A_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[20]">Timer1B_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[21]">Timer2A_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[22]">Timer2B_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[2d]">Timer3A_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[2e]">Timer3B_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[49]">Timer4A_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[4a]">Timer4B_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[4b]">Timer5A_Handler</a> from diskio.o(i.Timer5A_Handler) referenced from startup.o(RESET)
+ <LI><a href="#[4c]">Timer5B_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[63]">Timer6A_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[64]">Timer6B_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[65]">Timer7A_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[66]">Timer7B_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[f]">UART0_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[10]">UART1_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[2b]">UART2_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[42]">UART3_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[43]">UART4_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[44]">UART5_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[45]">UART6_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[46]">UART7_Handler</a> from uart1.o(i.UART7_Handler) referenced from startup.o(RESET)
+ <LI><a href="#[34]">USB0_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[5]">UsageFault_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[1c]">WDT_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[6b]">main</a> from jpg2bmp.o(i.main) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
+ <LI><a href="#[6c]">pjpeg_need_bytes_callback</a> from jpg2bmp.o(i.pjpeg_need_bytes_callback) referenced from jpg2bmp.o(i.pjpeg_load_from_file)
+ <LI><a href="#[37]">uDMA_Error</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[36]">uDMA_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[6d]"></a>Reset_Handler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[3]"></a>MemManage_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[4]"></a>BusFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[5]"></a>UsageFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[6]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[7]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[8]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[9]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[18]"></a>ADC0Seq0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC0Seq0_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC0Seq0_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[19]"></a>ADC0Seq1_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[1a]"></a>ADC0Seq2_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[1b]"></a>ADC0Seq3_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[38]"></a>ADC1Seq0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[39]"></a>ADC1Seq1_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[3a]"></a>ADC1Seq2_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[3b]"></a>ADC1Seq3_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[30]"></a>CAN0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[31]"></a>CAN1_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[23]"></a>Comp0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[24]"></a>Comp1_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[25]"></a>Comp2_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[32]"></a>Ethernet_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[3c]"></a>ExtBus_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[4d]"></a>FPU_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[27]"></a>FlashCtl_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[a]"></a>GPIOPortA_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[b]"></a>GPIOPortB_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[c]"></a>GPIOPortC_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[d]"></a>GPIOPortD_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[e]"></a>GPIOPortE_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[28]"></a>GPIOPortF_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[29]"></a>GPIOPortG_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[2a]"></a>GPIOPortH_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[3d]"></a>GPIOPortJ_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[3e]"></a>GPIOPortK_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[3f]"></a>GPIOPortL_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[50]"></a>GPIOPortM_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[51]"></a>GPIOPortN_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[54]"></a>GPIOPortP1_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[55]"></a>GPIOPortP2_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[56]"></a>GPIOPortP3_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[57]"></a>GPIOPortP4_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[58]"></a>GPIOPortP5_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[59]"></a>GPIOPortP6_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[5a]"></a>GPIOPortP7_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[53]"></a>GPIOPortP_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[5c]"></a>GPIOPortQ1_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[5d]"></a>GPIOPortQ2_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[5e]"></a>GPIOPortQ3_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[5f]"></a>GPIOPortQ4_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[60]"></a>GPIOPortQ5_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[61]"></a>GPIOPortQ6_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[62]"></a>GPIOPortQ7_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[5b]"></a>GPIOPortQ_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[33]"></a>Hibernate_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[12]"></a>I2C0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[2f]"></a>I2C1_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[47]"></a>I2C2_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[48]"></a>I2C3_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[4e]"></a>I2C4_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[4f]"></a>I2C5_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[67]"></a>I2C6_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[68]"></a>I2C7_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[69]"></a>I2C8_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[6a]"></a>I2C9_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[13]"></a>PWM0Fault_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[14]"></a>PWM0Generator0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[15]"></a>PWM0Generator1_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[16]"></a>PWM0Generator2_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[35]"></a>PWM0Generator3_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[17]"></a>Quadrature0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[11]"></a>SSI0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[2c]"></a>SSI1_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[40]"></a>SSI2_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[41]"></a>SSI3_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[26]"></a>SysCtl_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[52]"></a>Tamper_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[1d]"></a>Timer0A_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[1e]"></a>Timer0B_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[1f]"></a>Timer1A_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[20]"></a>Timer1B_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[21]"></a>Timer2A_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[22]"></a>Timer2B_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[2d]"></a>Timer3A_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[2e]"></a>Timer3B_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[49]"></a>Timer4A_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[4a]"></a>Timer4B_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[4c]"></a>Timer5B_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[63]"></a>Timer6A_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[64]"></a>Timer6B_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[65]"></a>Timer7A_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[66]"></a>Timer7B_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[f]"></a>UART0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[10]"></a>UART1_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[2b]"></a>UART2_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[42]"></a>UART3_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[43]"></a>UART4_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[44]"></a>UART5_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[45]"></a>UART6_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[34]"></a>USB0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[1c]"></a>WDT_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[37]"></a>uDMA_Error</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[36]"></a>uDMA_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[6e]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+</UL>
+
+<P><STRONG><a name="[119]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[6f]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[72]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[11a]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+
+<P><STRONG><a name="[11b]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+
+<P><STRONG><a name="[11c]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+
+<P><STRONG><a name="[11d]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+
+<P><STRONG><a name="[11e]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+
+<P><STRONG><a name="[71]"></a>Delay</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, st7735.o(.emb_text))
+<BR><BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay1ms
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay
+</UL>
+
+<P><STRONG><a name="[11f]"></a>DisableInterrupts</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(.text), UNUSED)
+
+<P><STRONG><a name="[ff]"></a>EnableInterrupts</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[120]"></a>StartCritical</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(.text), UNUSED)
+
+<P><STRONG><a name="[121]"></a>EndCritical</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(.text), UNUSED)
+
+<P><STRONG><a name="[122]"></a>WaitForInterrupt</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup.o(.text), UNUSED)
+
+<P><STRONG><a name="[70]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[123]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[124]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+
+<P><STRONG><a name="[125]"></a>__decompress1</STRONG> (Thumb, 92 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+
+<P><STRONG><a name="[73]"></a>AcknowledgeReturn</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, camera.o(i.AcknowledgeReturn))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = AcknowledgeReturn
+</UL>
+<BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FiFo_Get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendCmd
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBufferCMD
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BufferLengthCMD
+</UL>
+
+<P><STRONG><a name="[75]"></a>BufferLengthCMD</STRONG> (Thumb, 142 bytes, Stack size 24 bytes, camera.o(i.BufferLengthCMD))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = BufferLengthCMD &rArr; AcknowledgeReturn
+</UL>
+<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART7_OutChar
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayCam
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConsumeFiFo
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AcknowledgeReturn
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FiFo_Get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HandleBuffer
+</UL>
+
+<P><STRONG><a name="[94]"></a>CS_Init</STRONG> (Thumb, 148 bytes, Stack size 0 bytes, diskio.o(i.CS_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSI0_Init
+</UL>
+
+<P><STRONG><a name="[79]"></a>CameraCapturePic</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, camera.o(i.CameraCapturePic))
+<BR><BR>[Stack]<UL><LI>Max Depth = 400<LI>Call Chain = CameraCapturePic &rArr; HandleBuffer &rArr; ReadBufferCMD &rArr; startFile &rArr; f_open &rArr; follow_path &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendCmd
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HandleBuffer
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConsumeFiFo
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[7c]"></a>CameraInit</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, camera.o(i.CameraInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = CameraInit &rArr; CameraSetImageSize &rArr; SendCmd &rArr; AcknowledgeReturn
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART7_Init
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CameraSetImageSize
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CameraSetBlackWhite
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CameraReset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HandleBuffer
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[7e]"></a>CameraReset</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, camera.o(i.CameraReset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = CameraReset &rArr; SendCmd &rArr; AcknowledgeReturn
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendCmd
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FiFo_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CameraInit
+</UL>
+
+<P><STRONG><a name="[80]"></a>CameraSetBlackWhite</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, camera.o(i.CameraSetBlackWhite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = CameraSetBlackWhite &rArr; SendCmd &rArr; AcknowledgeReturn
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CameraInit
+</UL>
+
+<P><STRONG><a name="[7f]"></a>CameraSetImageSize</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, camera.o(i.CameraSetImageSize))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = CameraSetImageSize &rArr; SendCmd &rArr; AcknowledgeReturn
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CameraInit
+</UL>
+
+<P><STRONG><a name="[76]"></a>ConsumeFiFo</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, camera.o(i.ConsumeFiFo))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ConsumeFiFo
+</UL>
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FiFo_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendCmd
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBufferCMD
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HandleBuffer
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BufferLengthCMD
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CameraCapturePic
+</UL>
+
+<P><STRONG><a name="[84]"></a>DEBUG_UART_OutChar</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, debug_uart.o(i.DEBUG_UART_OutChar))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEBUG_UART_OutString
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEBUG_UART_OutHex
+</UL>
+
+<P><STRONG><a name="[82]"></a>DEBUG_UART_OutHex</STRONG> (Thumb, 86 bytes, Stack size 8 bytes, debug_uart.o(i.DEBUG_UART_OutHex))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = DEBUG_UART_OutHex &rArr; DEBUG_UART_OutString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEBUG_UART_OutString
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEBUG_UART_OutChar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBufferCMD
+</UL>
+
+<P><STRONG><a name="[83]"></a>DEBUG_UART_OutString</STRONG> (Thumb, 24 bytes, Stack size 4 bytes, debug_uart.o(i.DEBUG_UART_OutString))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = DEBUG_UART_OutString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEBUG_UART_OutChar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEBUG_UART_OutHex
+</UL>
+
+<P><STRONG><a name="[85]"></a>Delay1ms</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, st7735.o(i.Delay1ms))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Delay1ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;commonInit
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;commandList
+</UL>
+
+<P><STRONG><a name="[78]"></a>DelayCam</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, camera.o(i.DelayCam))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendCmd
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HandleBuffer
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BufferLengthCMD
+</UL>
+
+<P><STRONG><a name="[74]"></a>FiFo_Get</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, fifo.o(i.FiFo_Get))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendCmd
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBufferCMD
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BufferLengthCMD
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AcknowledgeReturn
+</UL>
+
+<P><STRONG><a name="[81]"></a>FiFo_Init</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, fifo.o(i.FiFo_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART7_Init
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConsumeFiFo
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CameraReset
+</UL>
+
+<P><STRONG><a name="[a4]"></a>FiFo_Put</STRONG> (Thumb, 66 bytes, Stack size 0 bytes, fifo.o(i.FiFo_Put))
+<BR><BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART7_Handler
+</UL>
+
+<P><STRONG><a name="[7b]"></a>HandleBuffer</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, camera.o(i.HandleBuffer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 392<LI>Call Chain = HandleBuffer &rArr; ReadBufferCMD &rArr; startFile &rArr; f_open &rArr; follow_path &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendCmd
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBufferCMD
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayCam
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConsumeFiFo
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BufferLengthCMD
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CameraInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CameraCapturePic
+</UL>
+
+<P><STRONG><a name="[87]"></a>Heap_Free</STRONG> (Thumb, 140 bytes, Stack size 24 bytes, heap.o(i.Heap_Free))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = Heap_Free &rArr; mergeBlockWithBelow &rArr; blockTrailer
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;previousBlockHeader
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nextBlockHeader
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mergeBlockWithBelow
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;markBlockUnused
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inHeapRange
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;blockUnused
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;blockTrailer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pjpeg_load_from_file
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[fd]"></a>Heap_Init</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, heap.o(i.Heap_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[fe]"></a>PLL_Init</STRONG> (Thumb, 270 bytes, Stack size 0 bytes, pll.o(i.PLL_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[86]"></a>ReadBufferCMD</STRONG> (Thumb, 266 bytes, Stack size 32 bytes, camera.o(i.ReadBufferCMD))
+<BR><BR>[Stack]<UL><LI>Max Depth = 384<LI>Call Chain = ReadBufferCMD &rArr; startFile &rArr; f_open &rArr; follow_path &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART7_OutChar
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeByte
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;startFile
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;closeFile
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConsumeFiFo
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AcknowledgeReturn
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEBUG_UART_OutHex
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FiFo_Get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HandleBuffer
+</UL>
+
+<P><STRONG><a name="[92]"></a>SSI0_Init</STRONG> (Thumb, 296 bytes, Stack size 4 bytes, diskio.o(i.SSI0_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = SSI0_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer5_Init
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CS_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_spi
+</UL>
+
+<P><STRONG><a name="[105]"></a>ST7735_Color565</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, st7735.o(i.ST7735_Color565))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ST7735_Color565
+</UL>
+<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pjpeg_load_from_file
+</UL>
+
+<P><STRONG><a name="[95]"></a>ST7735_DrawCharS</STRONG> (Thumb, 232 bytes, Stack size 48 bytes, st7735.o(i.ST7735_DrawCharS))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = ST7735_DrawCharS &rArr; ST7735_FillRect &rArr; setAddrWindow
+</UL>
+<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_FillRect
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_DrawPixel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_DrawString
+</UL>
+
+<P><STRONG><a name="[96]"></a>ST7735_DrawPixel</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, st7735.o(i.ST7735_DrawPixel))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = ST7735_DrawPixel &rArr; setAddrWindow
+</UL>
+<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setAddrWindow
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pushColor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pjpeg_load_from_file
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_DrawCharS
+</UL>
+
+<P><STRONG><a name="[9a]"></a>ST7735_DrawString</STRONG> (Thumb, 86 bytes, Stack size 32 bytes, st7735.o(i.ST7735_DrawString))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = ST7735_DrawString &rArr; ST7735_DrawCharS &rArr; ST7735_FillRect &rArr; setAddrWindow
+</UL>
+<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_DrawCharS
+</UL>
+<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pjpeg_load_from_file
+</UL>
+
+<P><STRONG><a name="[97]"></a>ST7735_FillRect</STRONG> (Thumb, 164 bytes, Stack size 32 bytes, st7735.o(i.ST7735_FillRect))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = ST7735_FillRect &rArr; setAddrWindow
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writedata
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setAddrWindow
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_FillScreen
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_DrawCharS
+</UL>
+
+<P><STRONG><a name="[9c]"></a>ST7735_FillScreen</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, st7735.o(i.ST7735_FillScreen))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ST7735_FillScreen &rArr; ST7735_FillRect &rArr; setAddrWindow
+</UL>
+<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_FillRect
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[9d]"></a>ST7735_InitR</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, st7735.o(i.ST7735_InitR))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = ST7735_InitR &rArr; commonInit &rArr; commandList &rArr; Delay1ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writedata
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writecommand
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;commonInit
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;commandList
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a1]"></a>ST7735_SetRotation</STRONG> (Thumb, 196 bytes, Stack size 8 bytes, st7735.o(i.ST7735_SetRotation))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ST7735_SetRotation
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writedata
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writecommand
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[7a]"></a>SendCmd</STRONG> (Thumb, 122 bytes, Stack size 24 bytes, camera.o(i.SendCmd))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = SendCmd &rArr; AcknowledgeReturn
+</UL>
+<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART7_OutChar
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayCam
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConsumeFiFo
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AcknowledgeReturn
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FiFo_Get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HandleBuffer
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CameraSetImageSize
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CameraSetBlackWhite
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CameraReset
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CameraCapturePic
+</UL>
+
+<P><STRONG><a name="[4b]"></a>Timer5A_Handler</STRONG> (Thumb, 14 bytes, Stack size 4 bytes, diskio.o(i.Timer5A_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = Timer5A_Handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_timerproc
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[93]"></a>Timer5_Init</STRONG> (Thumb, 84 bytes, Stack size 0 bytes, diskio.o(i.Timer5_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSI0_Init
+</UL>
+
+<P><STRONG><a name="[46]"></a>UART7_Handler</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, uart1.o(i.UART7_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UART7_Handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART7_InChar
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FiFo_Put
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[a3]"></a>UART7_InChar</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, uart1.o(i.UART7_InChar))
+<BR><BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART7_Handler
+</UL>
+
+<P><STRONG><a name="[7d]"></a>UART7_Init</STRONG> (Thumb, 206 bytes, Stack size 8 bytes, uart1.o(i.UART7_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UART7_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FiFo_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CameraInit
+</UL>
+
+<P><STRONG><a name="[77]"></a>UART7_OutChar</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, uart1.o(i.UART7_OutChar))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendCmd
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBufferCMD
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BufferLengthCMD
+</UL>
+
+<P><STRONG><a name="[126]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[127]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[128]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+
+<P><STRONG><a name="[91]"></a>closeFile</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, camera.o(i.closeFile))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = closeFile &rArr; f_close &rArr; f_sync &rArr; sync_fs &rArr; disk_ioctl &rArr;  disk_ioctl (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_close
+</UL>
+<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBufferCMD
+</UL>
+
+<P><STRONG><a name="[c5]"></a>clust2sect</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, ff.o(i.clust2sect))
+<BR><BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_write
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_read
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_lseek
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_sdi
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_next
+</UL>
+
+<P><STRONG><a name="[c8]"></a>disk_initialize</STRONG> (Thumb, 330 bytes, Stack size 24 bytes, diskio.o(i.disk_initialize))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = disk_initialize &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xchg_spi
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_cmd
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_spi
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deselect
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_volume
+</UL>
+
+<P><STRONG><a name="[cb]"></a>disk_ioctl</STRONG> (Thumb, 544 bytes, Stack size 56 bytes, diskio.o(i.disk_ioctl))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112 + In Cycle
+<LI>Call Chain = disk_ioctl &rArr;  disk_ioctl (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_ioctl
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xchg_spi
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_ready
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_cmd
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;select
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcvr_datablock
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deselect
+</UL>
+<BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sync_fs
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_ioctl
+</UL>
+
+<P><STRONG><a name="[cf]"></a>disk_read</STRONG> (Thumb, 136 bytes, Stack size 24 bytes, diskio.o(i.disk_read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = disk_read &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_cmd
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcvr_datablock
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deselect
+</UL>
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_write
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_read
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_lseek
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
+</UL>
+
+<P><STRONG><a name="[e0]"></a>disk_status</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, diskio.o(i.disk_status))
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;validate
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_volume
+</UL>
+
+<P><STRONG><a name="[a2]"></a>disk_timerproc</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, diskio.o(i.disk_timerproc))
+<BR><BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer5A_Handler
+</UL>
+
+<P><STRONG><a name="[d0]"></a>disk_write</STRONG> (Thumb, 170 bytes, Stack size 24 bytes, diskio.o(i.disk_write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xmit_datablock
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_cmd
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deselect
+</UL>
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_write
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_sync
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_read
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_lseek
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sync_window
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sync_fs
+</UL>
+
+<P><STRONG><a name="[ab]"></a>f_close</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, ff.o(i.f_close))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = f_close &rArr; f_sync &rArr; sync_fs &rArr; disk_ioctl &rArr;  disk_ioctl (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_sync
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;validate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;closeFile
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pjpeg_load_from_file
+</UL>
+
+<P><STRONG><a name="[d4]"></a>f_lseek</STRONG> (Thumb, 382 bytes, Stack size 32 bytes, ff.o(i.f_lseek))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = f_lseek &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_fat
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clust2sect
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;validate
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_chain
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_write
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeByte
+</UL>
+
+<P><STRONG><a name="[d5]"></a>f_mount</STRONG> (Thumb, 86 bytes, Stack size 40 bytes, ff.o(i.f_mount))
+<BR><BR>[Stack]<UL><LI>Max Depth = 256<LI>Call Chain = f_mount &rArr; find_volume &rArr; check_fs &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_ldnumber
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_volume
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;startFile
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pjpeg_load_from_file
+</UL>
+
+<P><STRONG><a name="[d8]"></a>f_open</STRONG> (Thumb, 348 bytes, Stack size 80 bytes, ff.o(i.f_open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 344<LI>Call Chain = f_open &rArr; follow_path &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;st_clust
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;remove_chain
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ld_clust
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;follow_path
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_volume
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_register
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;startFile
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pjpeg_load_from_file
+</UL>
+
+<P><STRONG><a name="[dd]"></a>f_read</STRONG> (Thumb, 414 bytes, Stack size 64 bytes, ff.o(i.f_read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = f_read &rArr; get_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_fat
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clust2sect
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;validate
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_cpy
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_write
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pjpeg_need_bytes_callback
+</UL>
+
+<P><STRONG><a name="[d2]"></a>f_sync</STRONG> (Thumb, 170 bytes, Stack size 24 bytes, ff.o(i.f_sync))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = f_sync &rArr; sync_fs &rArr; disk_ioctl &rArr;  disk_ioctl (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;validate
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sync_fs
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;st_clust
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_close
+</UL>
+
+<P><STRONG><a name="[df]"></a>f_write</STRONG> (Thumb, 470 bytes, Stack size 64 bytes, ff.o(i.f_write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = f_write &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clust2sect
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;validate
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_cpy
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_chain
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_write
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeByte
+</UL>
+
+<P><STRONG><a name="[b1]"></a>get_fat</STRONG> (Thumb, 242 bytes, Stack size 32 bytes, ff.o(i.get_fat))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = get_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
+</UL>
+<BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_read
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_lseek
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;remove_chain
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_sdi
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_next
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_chain
+</UL>
+
+<P><STRONG><a name="[6b]"></a>main</STRONG> (Thumb, 86 bytes, Stack size 48 bytes, jpg2bmp.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 568 + Unknown Stack Size
+<LI>Call Chain = main &rArr; pjpeg_load_from_file &rArr; f_open &rArr; follow_path &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_InitR
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_FillScreen
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PLL_Init
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableInterrupts
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Heap_Init
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Heap_Free
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CameraInit
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CameraCapturePic
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pjpeg_load_from_file
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_SetRotation
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P><STRONG><a name="[102]"></a>pjpeg_decode_init</STRONG> (Thumb, 242 bytes, Stack size 24 bytes, picojpeg.o(i.pjpeg_decode_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 200<LI>Call Chain = pjpeg_decode_init &rArr; initScan &rArr; locateSOSMarker &rArr; processMarkers &rArr; readDHTMarker &rArr; getBits1 &rArr; getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;locateSOFMarker
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initScan
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initFrame
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pjpeg_load_from_file
+</UL>
+
+<P><STRONG><a name="[104]"></a>pjpeg_decode_mcu</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, picojpeg.o(i.pjpeg_decode_mcu))
+<BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = pjpeg_decode_mcu &rArr; decodeNextMCU &rArr; transformBlock &rArr; idctCols &rArr; imul_b5
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;decodeNextMCU
+</UL>
+<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pjpeg_load_from_file
+</UL>
+
+<P><STRONG><a name="[100]"></a>pjpeg_load_from_file</STRONG> (Thumb, 682 bytes, Stack size 176 bytes, jpg2bmp.o(i.pjpeg_load_from_file))
+<BR><BR>[Stack]<UL><LI>Max Depth = 520<LI>Call Chain = pjpeg_load_from_file &rArr; f_open &rArr; follow_path &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_DrawString
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_Color565
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_mount
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_close
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pjpeg_decode_mcu
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pjpeg_decode_init
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Heap_Free
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_DrawPixel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6c]"></a>pjpeg_need_bytes_callback</STRONG> (Thumb, 94 bytes, Stack size 32 bytes, jpg2bmp.o(i.pjpeg_need_bytes_callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = pjpeg_need_bytes_callback &rArr; f_read &rArr; get_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_read
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jpg2bmp.o(i.pjpeg_load_from_file)
+</UL>
+<P><STRONG><a name="[b2]"></a>put_fat</STRONG> (Thumb, 326 bytes, Stack size 32 bytes, ff.o(i.put_fat))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
+</UL>
+<BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;remove_chain
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_chain
+</UL>
+
+<P><STRONG><a name="[8f]"></a>startFile</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, camera.o(i.startFile))
+<BR><BR>[Stack]<UL><LI>Max Depth = 352<LI>Call Chain = startFile &rArr; f_open &rArr; follow_path &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_mount
+</UL>
+<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBufferCMD
+</UL>
+
+<P><STRONG><a name="[90]"></a>writeByte</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, camera.o(i.writeByte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 256<LI>Call Chain = writeByte &rArr; f_write &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_write
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_lseek
+</UL>
+<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadBufferCMD
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[bd]"></a>deselect</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, diskio.o(i.deselect))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = deselect &rArr; xchg_spi
+</UL>
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xchg_spi
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_write
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_read
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_ioctl
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_initialize
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_cmd
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;select
+</UL>
+
+<P><STRONG><a name="[c9]"></a>init_spi</STRONG> (Thumb, 34 bytes, Stack size 4 bytes, diskio.o(i.init_spi))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = init_spi &rArr; SSI0_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSI0_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_initialize
+</UL>
+
+<P><STRONG><a name="[cd]"></a>rcvr_datablock</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, diskio.o(i.rcvr_datablock))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = rcvr_datablock &rArr; rcvr_spi_multi
+</UL>
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xchg_spi
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcvr_spi_multi
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_read
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_ioctl
+</UL>
+
+<P><STRONG><a name="[10b]"></a>rcvr_spi</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, diskio.o(i.rcvr_spi))
+<BR><BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcvr_spi_multi
+</UL>
+
+<P><STRONG><a name="[10a]"></a>rcvr_spi_multi</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, diskio.o(i.rcvr_spi_multi))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = rcvr_spi_multi
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcvr_spi
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcvr_datablock
+</UL>
+
+<P><STRONG><a name="[cc]"></a>select</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, diskio.o(i.select))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = select &rArr; wait_ready &rArr; xchg_spi
+</UL>
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xchg_spi
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_ready
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deselect
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_ioctl
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_cmd
+</UL>
+
+<P><STRONG><a name="[ca]"></a>send_cmd</STRONG> (Thumb, 150 bytes, Stack size 24 bytes, diskio.o(i.send_cmd))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56 + In Cycle
+<LI>Call Chain = send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xchg_spi
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_cmd
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;select
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deselect
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_write
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_read
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_ioctl
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_initialize
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_cmd
+</UL>
+
+<P><STRONG><a name="[ce]"></a>wait_ready</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, diskio.o(i.wait_ready))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = wait_ready &rArr; xchg_spi
+</UL>
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xchg_spi
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_ioctl
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xmit_datablock
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;select
+</UL>
+
+<P><STRONG><a name="[be]"></a>xchg_spi</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, diskio.o(i.xchg_spi))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = xchg_spi
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_ioctl
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_initialize
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xmit_datablock
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_ready
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_cmd
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;select
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcvr_datablock
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deselect
+</UL>
+
+<P><STRONG><a name="[d1]"></a>xmit_datablock</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, diskio.o(i.xmit_datablock))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = xmit_datablock &rArr; wait_ready &rArr; xchg_spi
+</UL>
+<BR>[Calls]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xmit_spi_multi
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xchg_spi
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_ready
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_write
+</UL>
+
+<P><STRONG><a name="[118]"></a>xmit_spi_multi</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, diskio.o(i.xmit_spi_multi))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = xmit_spi_multi
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xmit_datablock
+</UL>
+
+<P><STRONG><a name="[a9]"></a>check_fs</STRONG> (Thumb, 140 bytes, Stack size 16 bytes, ff.o(i.check_fs))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = check_fs &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_volume
+</UL>
+
+<P><STRONG><a name="[b5]"></a>chk_chr</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, ff.o(i.chk_chr))
+<BR><BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_name
+</UL>
+
+<P><STRONG><a name="[b0]"></a>create_chain</STRONG> (Thumb, 214 bytes, Stack size 32 bytes, ff.o(i.create_chain))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;put_fat
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_fat
+</UL>
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_write
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_lseek
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_next
+</UL>
+
+<P><STRONG><a name="[b3]"></a>create_name</STRONG> (Thumb, 418 bytes, Stack size 48 bytes, ff.o(i.create_name))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = create_name &rArr; mem_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_set
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chk_chr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;follow_path
+</UL>
+
+<P><STRONG><a name="[bf]"></a>dir_alloc</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, ff.o(i.dir_alloc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = dir_alloc &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_sdi
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_next
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_register
+</UL>
+
+<P><STRONG><a name="[c2]"></a>dir_find</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, ff.o(i.dir_find))
+<BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_cmp
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_sdi
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_next
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;follow_path
+</UL>
+
+<P><STRONG><a name="[c1]"></a>dir_next</STRONG> (Thumb, 270 bytes, Stack size 24 bytes, ff.o(i.dir_next))
+<BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_fat
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clust2sect
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sync_window
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_set
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_chain
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_find
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_alloc
+</UL>
+
+<P><STRONG><a name="[c6]"></a>dir_register</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, ff.o(i.dir_register))
+<BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = dir_register &rArr; dir_alloc &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_set
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_cpy
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_alloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
+</UL>
+
+<P><STRONG><a name="[c0]"></a>dir_sdi</STRONG> (Thumb, 158 bytes, Stack size 24 bytes, ff.o(i.dir_sdi))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = dir_sdi &rArr; get_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_fat
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clust2sect
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;follow_path
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_find
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_alloc
+</UL>
+
+<P><STRONG><a name="[d7]"></a>find_volume</STRONG> (Thumb, 890 bytes, Stack size 80 bytes, ff.o(i.find_volume))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = find_volume &rArr; check_fs &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_ldnumber
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_fs
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_status
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_initialize
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_mount
+</UL>
+
+<P><STRONG><a name="[d9]"></a>follow_path</STRONG> (Thumb, 176 bytes, Stack size 32 bytes, ff.o(i.follow_path))
+<BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = follow_path &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ld_clust
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_sdi
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_find
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_name
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
+</UL>
+
+<P><STRONG><a name="[d6]"></a>get_ldnumber</STRONG> (Thumb, 74 bytes, Stack size 16 bytes, ff.o(i.get_ldnumber))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = get_ldnumber
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_mount
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_volume
+</UL>
+
+<P><STRONG><a name="[da]"></a>ld_clust</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, ff.o(i.ld_clust))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ld_clust
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;follow_path
+</UL>
+
+<P><STRONG><a name="[c3]"></a>mem_cmp</STRONG> (Thumb, 38 bytes, Stack size 20 bytes, ff.o(i.mem_cmp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = mem_cmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_find
+</UL>
+
+<P><STRONG><a name="[c7]"></a>mem_cpy</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, ff.o(i.mem_cpy))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = mem_cpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_write
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_read
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_register
+</UL>
+
+<P><STRONG><a name="[b4]"></a>mem_set</STRONG> (Thumb, 20 bytes, Stack size 12 bytes, ff.o(i.mem_set))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = mem_set
+</UL>
+<BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sync_fs
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_register
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_next
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_name
+</UL>
+
+<P><STRONG><a name="[aa]"></a>move_window</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, ff.o(i.move_window))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sync_window
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;put_fat
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_fat
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_sync
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_volume
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_register
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_find
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_alloc
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_fs
+</UL>
+
+<P><STRONG><a name="[dc]"></a>remove_chain</STRONG> (Thumb, 108 bytes, Stack size 24 bytes, ff.o(i.remove_chain))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = remove_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;put_fat
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_fat
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
+</UL>
+
+<P><STRONG><a name="[db]"></a>st_clust</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, ff.o(i.st_clust))
+<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_sync
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
+</UL>
+
+<P><STRONG><a name="[de]"></a>sync_fs</STRONG> (Thumb, 200 bytes, Stack size 16 bytes, ff.o(i.sync_fs))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = sync_fs &rArr; disk_ioctl &rArr;  disk_ioctl (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sync_window
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_set
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_write
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_ioctl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_sync
+</UL>
+
+<P><STRONG><a name="[c4]"></a>sync_window</STRONG> (Thumb, 82 bytes, Stack size 24 bytes, ff.o(i.sync_window))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sync_fs
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_next
+</UL>
+
+<P><STRONG><a name="[d3]"></a>validate</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, ff.o(i.validate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = validate
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_status
+</UL>
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_write
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_sync
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_read
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_lseek
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_close
+</UL>
+
+<P><STRONG><a name="[9f]"></a>commandList</STRONG> (Thumb, 86 bytes, Stack size 24 bytes, st7735.o(i.commandList))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = commandList &rArr; Delay1ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writedata
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writecommand
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay1ms
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;commonInit
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_InitR
+</UL>
+
+<P><STRONG><a name="[9e]"></a>commonInit</STRONG> (Thumb, 368 bytes, Stack size 8 bytes, st7735.o(i.commonInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = commonInit &rArr; commandList &rArr; Delay1ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;commandList
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay1ms
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_InitR
+</UL>
+
+<P><STRONG><a name="[99]"></a>pushColor</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, st7735.o(i.pushColor))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = pushColor
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writedata
+</UL>
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_DrawPixel
+</UL>
+
+<P><STRONG><a name="[98]"></a>setAddrWindow</STRONG> (Thumb, 106 bytes, Stack size 24 bytes, st7735.o(i.setAddrWindow))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = setAddrWindow
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writedata
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writecommand
+</UL>
+<BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_FillRect
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_DrawPixel
+</UL>
+
+<P><STRONG><a name="[a0]"></a>writecommand</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, st7735.o(i.writecommand))
+<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setAddrWindow
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;commandList
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_InitR
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_SetRotation
+</UL>
+
+<P><STRONG><a name="[9b]"></a>writedata</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, st7735.o(i.writedata))
+<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setAddrWindow
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pushColor
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;commandList
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_InitR
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_SetRotation
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ST7735_FillRect
+</UL>
+
+<P><STRONG><a name="[ae]"></a>addAndClamp</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, picojpeg.o(i.addAndClamp))
+<BR><BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;upsampleCrV
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;upsampleCrH
+<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;upsampleCr
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;upsampleCbV
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;upsampleCbH
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;upsampleCb
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;transformBlockReduce
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;convertCr
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;convertCb
+</UL>
+
+<P><STRONG><a name="[f2]"></a>arithmeticRightShift8L</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, picojpeg.o(i.arithmeticRightShift8L))
+<BR><BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imul_b5
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imul_b4
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imul_b2
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imul_b1_b3
+</UL>
+
+<P><STRONG><a name="[a5]"></a>arithmeticRightShiftN16</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, picojpeg.o(i.arithmeticRightShiftN16))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = arithmeticRightShiftN16
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;replicateSignBit16
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;transformBlockReduce
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;idctCols
+</UL>
+
+<P><STRONG><a name="[f6]"></a>checkHuffTables</STRONG> (Thumb, 70 bytes, Stack size 8 bytes, picojpeg.o(i.checkHuffTables))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = checkHuffTables
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initScan
+</UL>
+
+<P><STRONG><a name="[f7]"></a>checkQuantTables</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, picojpeg.o(i.checkQuantTables))
+<BR><BR>[Called By]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initScan
+</UL>
+
+<P><STRONG><a name="[ec]"></a>clamp</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, picojpeg.o(i.clamp))
+<BR><BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;transformBlockReduce
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;idctCols
+</UL>
+
+<P><STRONG><a name="[ac]"></a>convertCb</STRONG> (Thumb, 96 bytes, Stack size 40 bytes, picojpeg.o(i.convertCb))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = convertCb
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;subAndClamp
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;addAndClamp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;transformBlock
+</UL>
+
+<P><STRONG><a name="[af]"></a>convertCr</STRONG> (Thumb, 96 bytes, Stack size 40 bytes, picojpeg.o(i.convertCr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = convertCr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;subAndClamp
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;addAndClamp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;transformBlock
+</UL>
+
+<P><STRONG><a name="[111]"></a>copyY</STRONG> (Thumb, 46 bytes, Stack size 20 bytes, picojpeg.o(i.copyY))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = copyY
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;transformBlock
+</UL>
+
+<P><STRONG><a name="[110]"></a>createWinogradQuant</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, picojpeg.o(i.createWinogradQuant))
+<BR><BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readDQTMarker
+</UL>
+
+<P><STRONG><a name="[b6]"></a>decodeNextMCU</STRONG> (Thumb, 576 bytes, Stack size 64 bytes, picojpeg.o(i.decodeNextMCU))
+<BR><BR>[Stack]<UL><LI>Max Depth = 224<LI>Call Chain = decodeNextMCU &rArr; transformBlock &rArr; idctCols &rArr; imul_b5
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;transformBlockReduce
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;transformBlock
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processRestart
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;huffExtend
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;huffDecode
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBits2
+</UL>
+<BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pjpeg_decode_mcu
+</UL>
+
+<P><STRONG><a name="[e8]"></a>fillInBuf</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, picojpeg.o(i.fillInBuf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = fillInBuf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getChar
+</UL>
+
+<P><STRONG><a name="[e1]"></a>fixInBuffer</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, picojpeg.o(i.fixInBuffer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = fixInBuffer &rArr; getBits2 &rArr; getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stuffChar
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBits2
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initScan
+</UL>
+
+<P><STRONG><a name="[e3]"></a>getBit</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, picojpeg.o(i.getBit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = getBit &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getOctet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;huffDecode
+</UL>
+
+<P><STRONG><a name="[e5]"></a>getBits</STRONG> (Thumb, 184 bytes, Stack size 24 bytes, picojpeg.o(i.getBits))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getOctet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBits2
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBits1
+</UL>
+
+<P><STRONG><a name="[e6]"></a>getBits1</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, picojpeg.o(i.getBits1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = getBits1 &rArr; getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;skipVariableMarker
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readSOSMarker
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readSOFMarker
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readDRIMarker
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readDQTMarker
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readDHTMarker
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nextMarker
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;locateSOIMarker
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
+</UL>
+
+<P><STRONG><a name="[b9]"></a>getBits2</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, picojpeg.o(i.getBits2))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = getBits2 &rArr; getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processRestart
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fixInBuffer
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;decodeNextMCU
+</UL>
+
+<P><STRONG><a name="[e7]"></a>getChar</STRONG> (Thumb, 70 bytes, Stack size 8 bytes, picojpeg.o(i.getChar))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fillInBuf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processRestart
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getOctet
+</UL>
+
+<P><STRONG><a name="[ea]"></a>getExtendOffset</STRONG> (Thumb, 112 bytes, Stack size 0 bytes, picojpeg.o(i.getExtendOffset))
+<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;huffExtend
+</UL>
+
+<P><STRONG><a name="[e9]"></a>getExtendTest</STRONG> (Thumb, 108 bytes, Stack size 0 bytes, picojpeg.o(i.getExtendTest))
+<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;huffExtend
+</UL>
+
+<P><STRONG><a name="[10c]"></a>getHuffTable</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, picojpeg.o(i.getHuffTable))
+<BR><BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readDHTMarker
+</UL>
+
+<P><STRONG><a name="[10d]"></a>getHuffVal</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, picojpeg.o(i.getHuffVal))
+<BR><BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readDHTMarker
+</UL>
+
+<P><STRONG><a name="[10e]"></a>getMaxHuffCodes</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, picojpeg.o(i.getMaxHuffCodes))
+<BR><BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readDHTMarker
+</UL>
+
+<P><STRONG><a name="[e4]"></a>getOctet</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, picojpeg.o(i.getOctet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stuffChar
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getChar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBits
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBit
+</UL>
+
+<P><STRONG><a name="[10f]"></a>huffCreate</STRONG> (Thumb, 96 bytes, Stack size 20 bytes, picojpeg.o(i.huffCreate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = huffCreate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readDHTMarker
+</UL>
+
+<P><STRONG><a name="[b8]"></a>huffDecode</STRONG> (Thumb, 98 bytes, Stack size 32 bytes, picojpeg.o(i.huffDecode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = huffDecode &rArr; getBit &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;decodeNextMCU
+</UL>
+
+<P><STRONG><a name="[ba]"></a>huffExtend</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, picojpeg.o(i.huffExtend))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = huffExtend
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getExtendTest
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getExtendOffset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;decodeNextMCU
+</UL>
+
+<P><STRONG><a name="[eb]"></a>idctCols</STRONG> (Thumb, 606 bytes, Stack size 136 bytes, picojpeg.o(i.idctCols))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = idctCols &rArr; imul_b5
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imul_b5
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imul_b4
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imul_b2
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imul_b1_b3
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clamp
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arithmeticRightShiftN16
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;transformBlock
+</UL>
+
+<P><STRONG><a name="[f1]"></a>idctRows</STRONG> (Thumb, 424 bytes, Stack size 128 bytes, picojpeg.o(i.idctRows))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = idctRows &rArr; imul_b5
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imul_b5
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imul_b4
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imul_b2
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;imul_b1_b3
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;transformBlock
+</UL>
+
+<P><STRONG><a name="[f0]"></a>imul_b1_b3</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, picojpeg.o(i.imul_b1_b3))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = imul_b1_b3
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arithmeticRightShift8L
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;idctRows
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;idctCols
+</UL>
+
+<P><STRONG><a name="[ef]"></a>imul_b2</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, picojpeg.o(i.imul_b2))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = imul_b2
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arithmeticRightShift8L
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;idctRows
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;idctCols
+</UL>
+
+<P><STRONG><a name="[ee]"></a>imul_b4</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, picojpeg.o(i.imul_b4))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = imul_b4
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arithmeticRightShift8L
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;idctRows
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;idctCols
+</UL>
+
+<P><STRONG><a name="[ed]"></a>imul_b5</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, picojpeg.o(i.imul_b5))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = imul_b5
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arithmeticRightShift8L
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;idctRows
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;idctCols
+</UL>
+
+<P><STRONG><a name="[f3]"></a>init</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, picojpeg.o(i.init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = init &rArr; getBits1 &rArr; getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBits1
+</UL>
+<BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pjpeg_decode_init
+</UL>
+
+<P><STRONG><a name="[103]"></a>initFrame</STRONG> (Thumb, 422 bytes, Stack size 0 bytes, picojpeg.o(i.initFrame))
+<BR><BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pjpeg_decode_init
+</UL>
+
+<P><STRONG><a name="[f4]"></a>initScan</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, picojpeg.o(i.initScan))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = initScan &rArr; locateSOSMarker &rArr; processMarkers &rArr; readDHTMarker &rArr; getBits1 &rArr; getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;locateSOSMarker
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fixInBuffer
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;checkQuantTables
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;checkHuffTables
+</UL>
+<BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pjpeg_decode_init
+</UL>
+
+<P><STRONG><a name="[f8]"></a>locateSOFMarker</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, picojpeg.o(i.locateSOFMarker))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = locateSOFMarker &rArr; processMarkers &rArr; readDHTMarker &rArr; getBits1 &rArr; getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readSOFMarker
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processMarkers
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;locateSOIMarker
+</UL>
+<BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pjpeg_decode_init
+</UL>
+
+<P><STRONG><a name="[f9]"></a>locateSOIMarker</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, picojpeg.o(i.locateSOIMarker))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = locateSOIMarker &rArr; getBits1 &rArr; getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBits1
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;locateSOFMarker
+</UL>
+
+<P><STRONG><a name="[f5]"></a>locateSOSMarker</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, picojpeg.o(i.locateSOSMarker))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = locateSOSMarker &rArr; processMarkers &rArr; readDHTMarker &rArr; getBits1 &rArr; getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readSOSMarker
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processMarkers
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initScan
+</UL>
+
+<P><STRONG><a name="[101]"></a>nextMarker</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, picojpeg.o(i.nextMarker))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = nextMarker &rArr; getBits1 &rArr; getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBits1
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processMarkers
+</UL>
+
+<P><STRONG><a name="[fa]"></a>processMarkers</STRONG> (Thumb, 196 bytes, Stack size 16 bytes, picojpeg.o(i.processMarkers))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = processMarkers &rArr; readDHTMarker &rArr; getBits1 &rArr; getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;skipVariableMarker
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readDRIMarker
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readDQTMarker
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readDHTMarker
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nextMarker
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;locateSOSMarker
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;locateSOFMarker
+</UL>
+
+<P><STRONG><a name="[b7]"></a>processRestart</STRONG> (Thumb, 132 bytes, Stack size 16 bytes, picojpeg.o(i.processRestart))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = processRestart &rArr; getBits2 &rArr; getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getChar
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBits2
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;decodeNextMCU
+</UL>
+
+<P><STRONG><a name="[106]"></a>readDHTMarker</STRONG> (Thumb, 218 bytes, Stack size 56 bytes, picojpeg.o(i.readDHTMarker))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = readDHTMarker &rArr; getBits1 &rArr; getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;huffCreate
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getMaxHuffCodes
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getHuffVal
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getHuffTable
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBits1
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processMarkers
+</UL>
+
+<P><STRONG><a name="[107]"></a>readDQTMarker</STRONG> (Thumb, 184 bytes, Stack size 32 bytes, picojpeg.o(i.readDQTMarker))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = readDQTMarker &rArr; getBits1 &rArr; getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBits1
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;createWinogradQuant
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processMarkers
+</UL>
+
+<P><STRONG><a name="[108]"></a>readDRIMarker</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, picojpeg.o(i.readDRIMarker))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = readDRIMarker &rArr; getBits1 &rArr; getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBits1
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processMarkers
+</UL>
+
+<P><STRONG><a name="[fb]"></a>readSOFMarker</STRONG> (Thumb, 200 bytes, Stack size 16 bytes, picojpeg.o(i.readSOFMarker))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = readSOFMarker &rArr; getBits1 &rArr; getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBits1
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;locateSOFMarker
+</UL>
+
+<P><STRONG><a name="[fc]"></a>readSOSMarker</STRONG> (Thumb, 220 bytes, Stack size 40 bytes, picojpeg.o(i.readSOSMarker))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = readSOSMarker &rArr; getBits1 &rArr; getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBits1
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;locateSOSMarker
+</UL>
+
+<P><STRONG><a name="[a6]"></a>replicateSignBit16</STRONG> (Thumb, 112 bytes, Stack size 0 bytes, picojpeg.o(i.replicateSignBit16))
+<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arithmeticRightShiftN16
+</UL>
+
+<P><STRONG><a name="[109]"></a>skipVariableMarker</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, picojpeg.o(i.skipVariableMarker))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = skipVariableMarker &rArr; getBits1 &rArr; getBits &rArr; getOctet &rArr; getChar &rArr; fillInBuf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getBits1
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processMarkers
+</UL>
+
+<P><STRONG><a name="[e2]"></a>stuffChar</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, picojpeg.o(i.stuffChar))
+<BR><BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getOctet
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fixInBuffer
+</UL>
+
+<P><STRONG><a name="[ad]"></a>subAndClamp</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, picojpeg.o(i.subAndClamp))
+<BR><BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;upsampleCrV
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;upsampleCrH
+<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;upsampleCr
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;upsampleCbV
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;upsampleCbH
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;upsampleCb
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;transformBlockReduce
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;convertCr
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;convertCb
+</UL>
+
+<P><STRONG><a name="[bc]"></a>transformBlock</STRONG> (Thumb, 344 bytes, Stack size 8 bytes, picojpeg.o(i.transformBlock))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = transformBlock &rArr; idctCols &rArr; imul_b5
+</UL>
+<BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;upsampleCrV
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;upsampleCrH
+<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;upsampleCr
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;upsampleCbV
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;upsampleCbH
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;upsampleCb
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;idctRows
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;idctCols
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;copyY
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;convertCr
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;convertCb
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;decodeNextMCU
+</UL>
+
+<P><STRONG><a name="[bb]"></a>transformBlockReduce</STRONG> (Thumb, 1054 bytes, Stack size 32 bytes, picojpeg.o(i.transformBlockReduce))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = transformBlockReduce &rArr; arithmeticRightShiftN16
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;subAndClamp
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clamp
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arithmeticRightShiftN16
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;addAndClamp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;decodeNextMCU
+</UL>
+
+<P><STRONG><a name="[116]"></a>upsampleCb</STRONG> (Thumb, 188 bytes, Stack size 48 bytes, picojpeg.o(i.upsampleCb))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = upsampleCb
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;subAndClamp
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;addAndClamp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;transformBlock
+</UL>
+
+<P><STRONG><a name="[114]"></a>upsampleCbH</STRONG> (Thumb, 144 bytes, Stack size 48 bytes, picojpeg.o(i.upsampleCbH))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = upsampleCbH
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;subAndClamp
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;addAndClamp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;transformBlock
+</UL>
+
+<P><STRONG><a name="[112]"></a>upsampleCbV</STRONG> (Thumb, 146 bytes, Stack size 48 bytes, picojpeg.o(i.upsampleCbV))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = upsampleCbV
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;subAndClamp
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;addAndClamp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;transformBlock
+</UL>
+
+<P><STRONG><a name="[117]"></a>upsampleCr</STRONG> (Thumb, 188 bytes, Stack size 48 bytes, picojpeg.o(i.upsampleCr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = upsampleCr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;subAndClamp
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;addAndClamp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;transformBlock
+</UL>
+
+<P><STRONG><a name="[115]"></a>upsampleCrH</STRONG> (Thumb, 144 bytes, Stack size 48 bytes, picojpeg.o(i.upsampleCrH))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = upsampleCrH
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;subAndClamp
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;addAndClamp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;transformBlock
+</UL>
+
+<P><STRONG><a name="[113]"></a>upsampleCrV</STRONG> (Thumb, 146 bytes, Stack size 48 bytes, picojpeg.o(i.upsampleCrV))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = upsampleCrV
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;subAndClamp
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;addAndClamp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;transformBlock
+</UL>
+
+<P><STRONG><a name="[a7]"></a>blockHeader</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, heap.o(i.blockHeader))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = blockHeader
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;blockRoom
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;previousBlockHeader
+</UL>
+
+<P><STRONG><a name="[a8]"></a>blockRoom</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, heap.o(i.blockRoom))
+<BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;blockTrailer
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;blockHeader
+</UL>
+
+<P><STRONG><a name="[8a]"></a>blockTrailer</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, heap.o(i.blockTrailer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = blockTrailer
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;blockRoom
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nextBlockHeader
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mergeBlockWithBelow
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;markBlockUnused
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Heap_Free
+</UL>
+
+<P><STRONG><a name="[89]"></a>blockUnused</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, heap.o(i.blockUnused))
+<BR><BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;markBlockUnused
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Heap_Free
+</UL>
+
+<P><STRONG><a name="[88]"></a>inHeapRange</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, heap.o(i.inHeapRange))
+<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Heap_Free
+</UL>
+
+<P><STRONG><a name="[8b]"></a>markBlockUnused</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, heap.o(i.markBlockUnused))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = markBlockUnused &rArr; blockTrailer
+</UL>
+<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;blockUnused
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;blockTrailer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Heap_Free
+</UL>
+
+<P><STRONG><a name="[8d]"></a>mergeBlockWithBelow</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, heap.o(i.mergeBlockWithBelow))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = mergeBlockWithBelow &rArr; blockTrailer
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;blockTrailer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Heap_Free
+</UL>
+
+<P><STRONG><a name="[8e]"></a>nextBlockHeader</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, heap.o(i.nextBlockHeader))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = nextBlockHeader &rArr; blockTrailer
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;blockTrailer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Heap_Free
+</UL>
+
+<P><STRONG><a name="[8c]"></a>previousBlockHeader</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, heap.o(i.previousBlockHeader))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = previousBlockHeader &rArr; blockHeader
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;blockHeader
+</UL>
+<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Heap_Free
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

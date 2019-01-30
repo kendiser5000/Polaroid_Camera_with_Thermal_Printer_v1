@@ -1,0 +1,795 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Sikenderali Ashraf\Desktop\tm4c129\SDCFile.uvproj
+Project File Date:  12/04/2018
+
+<h2>Output:</h2>
+Rebuild target 'SDCFile'
+assembling startup.s...
+compiling diskio.c...
+compiling ff.c...
+compiling PLL.c...
+compiling SDCFile.c...
+compiling ST7735.c...
+compiling jpg2bmp.c...
+jpg2bmp.c(56): warning:  #174-D: expression has no effect
+         pCallback_data;
+jpg2bmp.c(91): warning:  #550-D: variable "row_pitch" was set but never used
+     uint row_pitch;
+jpg2bmp.c(95): warning:  #550-D: variable "row_blocks_per_mcu" was set but never used
+     uint row_blocks_per_mcu, col_blocks_per_mcu;
+jpg2bmp.c(95): warning:  #550-D: variable "col_blocks_per_mcu" was set but never used
+     uint row_blocks_per_mcu, col_blocks_per_mcu;
+jpg2bmp.c(157): warning:  #177-D: variable "xPos" was declared but never referenced
+         uint32_t xPos = 0;
+jpg2bmp.c(158): warning:  #177-D: variable "yPos" was declared but never referenced
+         uint32_t yPos = 0;
+jpg2bmp.c(279): warning:  #177-D: variable "x" was declared but never referenced
+        int x = 5;
+jpg2bmp.c: 7 warnings, 0 errors
+compiling picojpeg.c...
+picojpeg.c(685): warning:  #550-D: variable "spectral_start" was set but never used
+     uint8 spectral_start, spectral_end, successive_high, successive_low;
+picojpeg.c(685): warning:  #550-D: variable "spectral_end" was set but never used
+     uint8 spectral_start, spectral_end, successive_high, successive_low;
+picojpeg.c(685): warning:  #550-D: variable "successive_high" was set but never used
+     uint8 spectral_start, spectral_end, successive_high, successive_low;
+picojpeg.c(685): warning:  #550-D: variable "successive_low" was set but never used
+     uint8 spectral_start, spectral_end, successive_high, successive_low;
+picojpeg.c(1028): warning:  #177-D: function "findEOI" was declared but never referenced
+  static uint8 findEOI(void)
+picojpeg.c: 5 warnings, 0 errors
+compiling heap.c...
+compiling FiFo.c...
+compiling DEBUG_UART.c...
+compiling Camera.c...
+Camera.c(125): warning:  #167-D: argument of type "volatile char *" is incompatible with parameter of type "char *"
+                FiFo_Get(data);
+Camera.c(167): warning:  #167-D: argument of type "volatile char *" is incompatible with parameter of type "char *"
+                FiFo_Get(&data);
+Camera.c(374): warning:  #177-D: variable "x" was declared but never referenced
+                                int x = 5;
+Camera.c(385): warning:  #177-D: variable "x" was declared but never referenced
+                        int x = 7;
+Camera.c: 4 warnings, 0 errors
+compiling Uart1.c...
+linking...
+Program Size: Code=22948 RO-data=2212 RW-data=368 ZI-data=11096  
+".\SDCFile.axf" - 0 Error(s), 16 Warning(s).
+Load "C:\\Users\\Sikenderali Ashraf\\Desktop\\tm4c129\\SDCFile.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+
+  #define INT_PWM0_3              59          // PWM Generator 3
+tm4c1294ncpdt.h(98): warning:  #47-D: incompatible redefinition of macro "INT_UDMA" (declared at line 90 of "..\inc/tm4c123gh6pm.h")
+  #define INT_UDMA                60          // uDMA 0 Software
+tm4c1294ncpdt.h(99): warning:  #47-D: incompatible redefinition of macro "INT_UDMAERR" (declared at line 91 of "..\inc/tm4c123gh6pm.h")
+  #define INT_UDMAERR             61          // uDMA 0 Error
+tm4c1294ncpdt.h(100): warning:  #47-D: incompatible redefinition of macro "INT_ADC1SS0" (declared at line 92 of "..\inc/tm4c123gh6pm.h")
+  #define INT_ADC1SS0             62          // ADC1 Sequence 0
+tm4c1294ncpdt.h(101): warning:  #47-D: incompatible redefinition of macro "INT_ADC1SS1" (declared at line 93 of "..\inc/tm4c123gh6pm.h")
+  #define INT_ADC1SS1             63          // ADC1 Sequence 1
+tm4c1294ncpdt.h(102): warning:  #47-D: incompatible redefinition of macro "INT_ADC1SS2" (declared at line 94 of "..\inc/tm4c123gh6pm.h")
+  #define INT_ADC1SS2             64          // ADC1 Sequence 2
+tm4c1294ncpdt.h(103): warning:  #47-D: incompatible redefinition of macro "INT_ADC1SS3" (declared at line 95 of "..\inc/tm4c123gh6pm.h")
+  #define INT_ADC1SS3             65          // ADC1 Sequence 3
+tm4c1294ncpdt.h(108): warning:  #47-D: incompatible redefinition of macro "INT_SSI2" (declared at line 96 of "..\inc/tm4c123gh6pm.h")
+  #define INT_SSI2                70          // SSI 2
+tm4c1294ncpdt.h(109): warning:  #47-D: incompatible redefinition of macro "INT_SSI3" (declared at line 97 of "..\inc/tm4c123gh6pm.h")
+  #define INT_SSI3                71          // SSI 3
+tm4c1294ncpdt.h(110): warning:  #47-D: incompatible redefinition of macro "INT_UART3" (declared at line 98 of "..\inc/tm4c123gh6pm.h")
+  #define INT_UART3               72          // UART 3
+tm4c1294ncpdt.h(111): warning:  #47-D: incompatible redefinition of macro "INT_UART4" (declared at line 99 of "..\inc/tm4c123gh6pm.h")
+  #define INT_UART4               73          // UART 4
+tm4c1294ncpdt.h(112): warning:  #47-D: incompatible redefinition of macro "INT_UART5" (declared at line 100 of "..\inc/tm4c123gh6pm.h")
+  #define INT_UART5               74          // UART 5
+tm4c1294ncpdt.h(113): warning:  #47-D: incompatible redefinition of macro "INT_UART6" (declared at line 101 of "..\inc/tm4c123gh6pm.h")
+  #define INT_UART6               75          // UART 6
+tm4c1294ncpdt.h(114): warning:  #47-D: incompatible redefinition of macro "INT_UART7" (declared at line 102 of "..\inc/tm4c123gh6pm.h")
+  #define INT_UART7               76          // UART 7
+tm4c1294ncpdt.h(115): warning:  #47-D: incompatible redefinition of macro "INT_I2C2" (declared at line 103 of "..\inc/tm4c123gh6pm.h")
+  #define INT_I2C2                77          // I2C 2
+tm4c1294ncpdt.h(116): warning:  #47-D: incompatible redefinition of macro "INT_I2C3" (declared at line 104 of "..\inc/tm4c123gh6pm.h")
+  #define INT_I2C3                78          // I2C 3
+tm4c1294ncpdt.h(117): warning:  #47-D: incompatible redefinition of macro "INT_TIMER4A" (declared at line 105 of "..\inc/tm4c123gh6pm.h")
+  #define INT_TIMER4A             79          // Timer 4A
+tm4c1294ncpdt.h(118): warning:  #47-D: incompatible redefinition of macro "INT_TIMER4B" (declared at line 106 of "..\inc/tm4c123gh6pm.h")
+  #define INT_TIMER4B             80          // Timer 4B
+tm4c1294ncpdt.h(119): warning:  #47-D: incompatible redefinition of macro "INT_TIMER5A" (declared at line 107 of "..\inc/tm4c123gh6pm.h")
+  #define INT_TIMER5A             81          // Timer 5A
+tm4c1294ncpdt.h(120): warning:  #47-D: incompatible redefinition of macro "INT_TIMER5B" (declared at line 108 of "..\inc/tm4c123gh6pm.h")
+  #define INT_TIMER5B             82          // Timer 5B
+tm4c1294ncpdt.h(121): warning:  #47-D: incompatible redefinition of macro "INT_SYSEXC" (declared at line 121 of "..\inc/tm4c123gh6pm.h")
+  #define INT_SYSEXC              83          // Floating-Point Exception
+tm4c1294ncpdt.h(1379): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_DATA_BITS_R" (declared at line 161 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_DATA_BITS_R  ((volatile uint32_t *)0x40058000)
+tm4c1294ncpdt.h(1380): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_DATA_R" (declared at line 162 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_DATA_R       (*((volatile uint32_t *)0x400583FC))
+tm4c1294ncpdt.h(1381): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_DIR_R" (declared at line 163 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_DIR_R        (*((volatile uint32_t *)0x40058400))
+tm4c1294ncpdt.h(1382): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_IS_R" (declared at line 164 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_IS_R         (*((volatile uint32_t *)0x40058404))
+tm4c1294ncpdt.h(1383): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_IBE_R" (declared at line 165 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_IBE_R        (*((volatile uint32_t *)0x40058408))
+tm4c1294ncpdt.h(1384): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_IEV_R" (declared at line 166 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_IEV_R        (*((volatile uint32_t *)0x4005840C))
+tm4c1294ncpdt.h(1385): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_IM_R" (declared at line 167 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_IM_R         (*((volatile uint32_t *)0x40058410))
+tm4c1294ncpdt.h(1386): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_RIS_R" (declared at line 168 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_RIS_R        (*((volatile uint32_t *)0x40058414))
+tm4c1294ncpdt.h(1387): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_MIS_R" (declared at line 169 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_MIS_R        (*((volatile uint32_t *)0x40058418))
+tm4c1294ncpdt.h(1388): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_ICR_R" (declared at line 170 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_ICR_R        (*((volatile uint32_t *)0x4005841C))
+tm4c1294ncpdt.h(1389): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_AFSEL_R" (declared at line 171 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_AFSEL_R      (*((volatile uint32_t *)0x40058420))
+tm4c1294ncpdt.h(1390): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_DR2R_R" (declared at line 172 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_DR2R_R       (*((volatile uint32_t *)0x40058500))
+tm4c1294ncpdt.h(1391): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_DR4R_R" (declared at line 173 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_DR4R_R       (*((volatile uint32_t *)0x40058504))
+tm4c1294ncpdt.h(1392): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_DR8R_R" (declared at line 174 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_DR8R_R       (*((volatile uint32_t *)0x40058508))
+tm4c1294ncpdt.h(1393): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_ODR_R" (declared at line 175 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_ODR_R        (*((volatile uint32_t *)0x4005850C))
+tm4c1294ncpdt.h(1394): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_PUR_R" (declared at line 176 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_PUR_R        (*((volatile uint32_t *)0x40058510))
+tm4c1294ncpdt.h(1395): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_PDR_R" (declared at line 177 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_PDR_R        (*((volatile uint32_t *)0x40058514))
+tm4c1294ncpdt.h(1396): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_SLR_R" (declared at line 178 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_SLR_R        (*((volatile uint32_t *)0x40058518))
+tm4c1294ncpdt.h(1397): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_DEN_R" (declared at line 179 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_DEN_R        (*((volatile uint32_t *)0x4005851C))
+tm4c1294ncpdt.h(1398): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_LOCK_R" (declared at line 180 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_LOCK_R       (*((volatile uint32_t *)0x40058520))
+tm4c1294ncpdt.h(1399): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_CR_R" (declared at line 181 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_CR_R         (*((volatile uint32_t *)0x40058524))
+tm4c1294ncpdt.h(1400): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_AMSEL_R" (declared at line 182 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_AMSEL_R      (*((volatile uint32_t *)0x40058528))
+tm4c1294ncpdt.h(1401): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_PCTL_R" (declared at line 183 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_PCTL_R       (*((volatile uint32_t *)0x4005852C))
+tm4c1294ncpdt.h(1402): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_ADCCTL_R" (declared at line 184 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_ADCCTL_R     (*((volatile uint32_t *)0x40058530))
+tm4c1294ncpdt.h(1403): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_DMACTL_R" (declared at line 185 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_DMACTL_R     (*((volatile uint32_t *)0x40058534))
+tm4c1294ncpdt.h(1417): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_DATA_BITS_R" (declared at line 192 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_DATA_BITS_R  ((volatile uint32_t *)0x40059000)
+tm4c1294ncpdt.h(1418): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_DATA_R" (declared at line 193 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_DATA_R       (*((volatile uint32_t *)0x400593FC))
+tm4c1294ncpdt.h(1419): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_DIR_R" (declared at line 194 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_DIR_R        (*((volatile uint32_t *)0x40059400))
+tm4c1294ncpdt.h(1420): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_IS_R" (declared at line 195 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_IS_R         (*((volatile uint32_t *)0x40059404))
+tm4c1294ncpdt.h(1421): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_IBE_R" (declared at line 196 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_IBE_R        (*((volatile uint32_t *)0x40059408))
+tm4c1294ncpdt.h(1422): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_IEV_R" (declared at line 197 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_IEV_R        (*((volatile uint32_t *)0x4005940C))
+tm4c1294ncpdt.h(1423): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_IM_R" (declared at line 198 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_IM_R         (*((volatile uint32_t *)0x40059410))
+tm4c1294ncpdt.h(1424): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_RIS_R" (declared at line 199 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_RIS_R        (*((volatile uint32_t *)0x40059414))
+tm4c1294ncpdt.h(1425): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_MIS_R" (declared at line 200 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_MIS_R        (*((volatile uint32_t *)0x40059418))
+tm4c1294ncpdt.h(1426): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_ICR_R" (declared at line 201 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_ICR_R        (*((volatile uint32_t *)0x4005941C))
+tm4c1294ncpdt.h(1427): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_AFSEL_R" (declared at line 202 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_AFSEL_R      (*((volatile uint32_t *)0x40059420))
+tm4c1294ncpdt.h(1428): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_DR2R_R" (declared at line 203 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_DR2R_R       (*((volatile uint32_t *)0x40059500))
+tm4c1294ncpdt.h(1429): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_DR4R_R" (declared at line 204 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_DR4R_R       (*((volatile uint32_t *)0x40059504))
+tm4c1294ncpdt.h(1430): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_DR8R_R" (declared at line 205 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_DR8R_R       (*((volatile uint32_t *)0x40059508))
+tm4c1294ncpdt.h(1431): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_ODR_R" (declared at line 206 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_ODR_R        (*((volatile uint32_t *)0x4005950C))
+tm4c1294ncpdt.h(1432): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_PUR_R" (declared at line 207 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_PUR_R        (*((volatile uint32_t *)0x40059510))
+tm4c1294ncpdt.h(1433): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_PDR_R" (declared at line 208 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_PDR_R        (*((volatile uint32_t *)0x40059514))
+tm4c1294ncpdt.h(1434): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_SLR_R" (declared at line 209 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_SLR_R        (*((volatile uint32_t *)0x40059518))
+tm4c1294ncpdt.h(1435): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_DEN_R" (declared at line 210 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_DEN_R        (*((volatile uint32_t *)0x4005951C))
+tm4c1294ncpdt.h(1436): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_LOCK_R" (declared at line 211 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_LOCK_R       (*((volatile uint32_t *)0x40059520))
+tm4c1294ncpdt.h(1437): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_CR_R" (declared at line 212 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_CR_R         (*((volatile uint32_t *)0x40059524))
+tm4c1294ncpdt.h(1438): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_AMSEL_R" (declared at line 213 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_AMSEL_R      (*((volatile uint32_t *)0x40059528))
+tm4c1294ncpdt.h(1439): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_PCTL_R" (declared at line 214 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_PCTL_R       (*((volatile uint32_t *)0x4005952C))
+tm4c1294ncpdt.h(1440): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_ADCCTL_R" (declared at line 215 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_ADCCTL_R     (*((volatile uint32_t *)0x40059530))
+tm4c1294ncpdt.h(1441): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_DMACTL_R" (declared at line 216 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_DMACTL_R     (*((volatile uint32_t *)0x40059534))
+tm4c1294ncpdt.h(1455): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_DATA_BITS_R" (declared at line 223 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_DATA_BITS_R  ((volatile uint32_t *)0x4005A000)
+tm4c1294ncpdt.h(1456): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_DATA_R" (declared at line 224 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_DATA_R       (*((volatile uint32_t *)0x4005A3FC))
+tm4c1294ncpdt.h(1457): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_DIR_R" (declared at line 225 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_DIR_R        (*((volatile uint32_t *)0x4005A400))
+tm4c1294ncpdt.h(1458): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_IS_R" (declared at line 226 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_IS_R         (*((volatile uint32_t *)0x4005A404))
+tm4c1294ncpdt.h(1459): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_IBE_R" (declared at line 227 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_IBE_R        (*((volatile uint32_t *)0x4005A408))
+tm4c1294ncpdt.h(1460): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_IEV_R" (declared at line 228 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_IEV_R        (*((volatile uint32_t *)0x4005A40C))
+tm4c1294ncpdt.h(1461): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_IM_R" (declared at line 229 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_IM_R         (*((volatile uint32_t *)0x4005A410))
+tm4c1294ncpdt.h(1462): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_RIS_R" (declared at line 230 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_RIS_R        (*((volatile uint32_t *)0x4005A414))
+tm4c1294ncpdt.h(1463): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_MIS_R" (declared at line 231 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_MIS_R        (*((volatile uint32_t *)0x4005A418))
+tm4c1294ncpdt.h(1464): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_ICR_R" (declared at line 232 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_ICR_R        (*((volatile uint32_t *)0x4005A41C))
+tm4c1294ncpdt.h(1465): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_AFSEL_R" (declared at line 233 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_AFSEL_R      (*((volatile uint32_t *)0x4005A420))
+tm4c1294ncpdt.h(1466): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_DR2R_R" (declared at line 234 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_DR2R_R       (*((volatile uint32_t *)0x4005A500))
+tm4c1294ncpdt.h(1467): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_DR4R_R" (declared at line 235 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_DR4R_R       (*((volatile uint32_t *)0x4005A504))
+tm4c1294ncpdt.h(1468): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_DR8R_R" (declared at line 236 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_DR8R_R       (*((volatile uint32_t *)0x4005A508))
+tm4c1294ncpdt.h(1469): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_ODR_R" (declared at line 237 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_ODR_R        (*((volatile uint32_t *)0x4005A50C))
+tm4c1294ncpdt.h(1470): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_PUR_R" (declared at line 238 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_PUR_R        (*((volatile uint32_t *)0x4005A510))
+tm4c1294ncpdt.h(1471): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_PDR_R" (declared at line 239 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_PDR_R        (*((volatile uint32_t *)0x4005A514))
+tm4c1294ncpdt.h(1472): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_SLR_R" (declared at line 240 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_SLR_R        (*((volatile uint32_t *)0x4005A518))
+tm4c1294ncpdt.h(1473): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_DEN_R" (declared at line 241 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_DEN_R        (*((volatile uint32_t *)0x4005A51C))
+tm4c1294ncpdt.h(1474): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_LOCK_R" (declared at line 242 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_LOCK_R       (*((volatile uint32_t *)0x4005A520))
+tm4c1294ncpdt.h(1475): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_CR_R" (declared at line 243 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_CR_R         (*((volatile uint32_t *)0x4005A524))
+tm4c1294ncpdt.h(1476): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_AMSEL_R" (declared at line 244 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_AMSEL_R      (*((volatile uint32_t *)0x4005A528))
+tm4c1294ncpdt.h(1477): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_PCTL_R" (declared at line 245 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_PCTL_R       (*((volatile uint32_t *)0x4005A52C))
+tm4c1294ncpdt.h(1478): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_ADCCTL_R" (declared at line 246 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_ADCCTL_R     (*((volatile uint32_t *)0x4005A530))
+tm4c1294ncpdt.h(1479): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_DMACTL_R" (declared at line 247 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_DMACTL_R     (*((volatile uint32_t *)0x4005A534))
+tm4c1294ncpdt.h(1493): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_DATA_BITS_R" (declared at line 254 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_DATA_BITS_R  ((volatile uint32_t *)0x4005B000)
+tm4c1294ncpdt.h(1494): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_DATA_R" (declared at line 255 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_DATA_R       (*((volatile uint32_t *)0x4005B3FC))
+tm4c1294ncpdt.h(1495): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_DIR_R" (declared at line 256 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_DIR_R        (*((volatile uint32_t *)0x4005B400))
+tm4c1294ncpdt.h(1496): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_IS_R" (declared at line 257 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_IS_R         (*((volatile uint32_t *)0x4005B404))
+tm4c1294ncpdt.h(1497): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_IBE_R" (declared at line 258 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_IBE_R        (*((volatile uint32_t *)0x4005B408))
+tm4c1294ncpdt.h(1498): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_IEV_R" (declared at line 259 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_IEV_R        (*((volatile uint32_t *)0x4005B40C))
+tm4c1294ncpdt.h(1499): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_IM_R" (declared at line 260 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_IM_R         (*((volatile uint32_t *)0x4005B410))
+tm4c1294ncpdt.h(1500): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_RIS_R" (declared at line 261 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_RIS_R        (*((volatile uint32_t *)0x4005B414))
+tm4c1294ncpdt.h(1501): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_MIS_R" (declared at line 262 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_MIS_R        (*((volatile uint32_t *)0x4005B418))
+tm4c1294ncpdt.h(1502): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_ICR_R" (declared at line 263 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_ICR_R        (*((volatile uint32_t *)0x4005B41C))
+tm4c1294ncpdt.h(1503): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_AFSEL_R" (declared at line 264 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_AFSEL_R      (*((volatile uint32_t *)0x4005B420))
+tm4c1294ncpdt.h(1504): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_DR2R_R" (declared at line 265 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_DR2R_R       (*((volatile uint32_t *)0x4005B500))
+tm4c1294ncpdt.h(1505): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_DR4R_R" (declared at line 266 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_DR4R_R       (*((volatile uint32_t *)0x4005B504))
+tm4c1294ncpdt.h(1506): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_DR8R_R" (declared at line 267 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_DR8R_R       (*((volatile uint32_t *)0x4005B508))
+tm4c1294ncpdt.h(1507): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_ODR_R" (declared at line 268 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_ODR_R        (*((volatile uint32_t *)0x4005B50C))
+tm4c1294ncpdt.h(1508): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_PUR_R" (declared at line 269 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_PUR_R        (*((volatile uint32_t *)0x4005B510))
+tm4c1294ncpdt.h(1509): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_PDR_R" (declared at line 270 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_PDR_R        (*((volatile uint32_t *)0x4005B514))
+tm4c1294ncpdt.h(1510): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_SLR_R" (declared at line 271 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_SLR_R        (*((volatile uint32_t *)0x4005B518))
+tm4c1294ncpdt.h(1511): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_DEN_R" (declared at line 272 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_DEN_R        (*((volatile uint32_t *)0x4005B51C))
+tm4c1294ncpdt.h(1512): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_LOCK_R" (declared at line 273 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_LOCK_R       (*((volatile uint32_t *)0x4005B520))
+tm4c1294ncpdt.h(1513): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_CR_R" (declared at line 274 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_CR_R         (*((volatile uint32_t *)0x4005B524))
+tm4c1294ncpdt.h(1514): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_AMSEL_R" (declared at line 275 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_AMSEL_R      (*((volatile uint32_t *)0x4005B528))
+tm4c1294ncpdt.h(1515): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_PCTL_R" (declared at line 276 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_PCTL_R       (*((volatile uint32_t *)0x4005B52C))
+tm4c1294ncpdt.h(1516): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_ADCCTL_R" (declared at line 277 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_ADCCTL_R     (*((volatile uint32_t *)0x4005B530))
+tm4c1294ncpdt.h(1517): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_DMACTL_R" (declared at line 278 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_DMACTL_R     (*((volatile uint32_t *)0x4005B534))
+tm4c1294ncpdt.h(1531): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_DATA_BITS_R" (declared at line 669 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_DATA_BITS_R  ((volatile uint32_t *)0x4005C000)
+tm4c1294ncpdt.h(1532): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_DATA_R" (declared at line 670 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_DATA_R       (*((volatile uint32_t *)0x4005C3FC))
+tm4c1294ncpdt.h(1533): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_DIR_R" (declared at line 671 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_DIR_R        (*((volatile uint32_t *)0x4005C400))
+tm4c1294ncpdt.h(1534): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_IS_R" (declared at line 672 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_IS_R         (*((volatile uint32_t *)0x4005C404))
+tm4c1294ncpdt.h(1535): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_IBE_R" (declared at line 673 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_IBE_R        (*((volatile uint32_t *)0x4005C408))
+tm4c1294ncpdt.h(1536): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_IEV_R" (declared at line 674 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_IEV_R        (*((volatile uint32_t *)0x4005C40C))
+tm4c1294ncpdt.h(1537): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_IM_R" (declared at line 675 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_IM_R         (*((volatile uint32_t *)0x4005C410))
+tm4c1294ncpdt.h(1538): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_RIS_R" (declared at line 676 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_RIS_R        (*((volatile uint32_t *)0x4005C414))
+tm4c1294ncpdt.h(1539): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_MIS_R" (declared at line 677 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_MIS_R        (*((volatile uint32_t *)0x4005C418))
+tm4c1294ncpdt.h(1540): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_ICR_R" (declared at line 678 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_ICR_R        (*((volatile uint32_t *)0x4005C41C))
+tm4c1294ncpdt.h(1541): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_AFSEL_R" (declared at line 679 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_AFSEL_R      (*((volatile uint32_t *)0x4005C420))
+tm4c1294ncpdt.h(1542): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_DR2R_R" (declared at line 680 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_DR2R_R       (*((volatile uint32_t *)0x4005C500))
+tm4c1294ncpdt.h(1543): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_DR4R_R" (declared at line 681 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_DR4R_R       (*((volatile uint32_t *)0x4005C504))
+tm4c1294ncpdt.h(1544): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_DR8R_R" (declared at line 682 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_DR8R_R       (*((volatile uint32_t *)0x4005C508))
+tm4c1294ncpdt.h(1545): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_ODR_R" (declared at line 683 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_ODR_R        (*((volatile uint32_t *)0x4005C50C))
+tm4c1294ncpdt.h(1546): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_PUR_R" (declared at line 684 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_PUR_R        (*((volatile uint32_t *)0x4005C510))
+tm4c1294ncpdt.h(1547): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_PDR_R" (declared at line 685 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_PDR_R        (*((volatile uint32_t *)0x4005C514))
+tm4c1294ncpdt.h(1548): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_SLR_R" (declared at line 686 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_SLR_R        (*((volatile uint32_t *)0x4005C518))
+tm4c1294ncpdt.h(1549): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_DEN_R" (declared at line 687 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_DEN_R        (*((volatile uint32_t *)0x4005C51C))
+tm4c1294ncpdt.h(1550): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_LOCK_R" (declared at line 688 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_LOCK_R       (*((volatile uint32_t *)0x4005C520))
+tm4c1294ncpdt.h(1551): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_CR_R" (declared at line 689 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_CR_R         (*((volatile uint32_t *)0x4005C524))
+tm4c1294ncpdt.h(1552): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_AMSEL_R" (declared at line 690 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_AMSEL_R      (*((volatile uint32_t *)0x4005C528))
+tm4c1294ncpdt.h(1553): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_PCTL_R" (declared at line 691 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_PCTL_R       (*((volatile uint32_t *)0x4005C52C))
+tm4c1294ncpdt.h(1554): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_ADCCTL_R" (declared at line 692 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_ADCCTL_R     (*((volatile uint32_t *)0x4005C530))
+tm4c1294ncpdt.h(1555): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_DMACTL_R" (declared at line 693 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_DMACTL_R     (*((volatile uint32_t *)0x4005C534))
+tm4c1294ncpdt.h(1569): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DATA_BITS_R" (declared at line 700 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_DATA_BITS_R  ((volatile uint32_t *)0x4005D000)
+tm4c1294ncpdt.h(1570): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DATA_R" (declared at line 701 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_DATA_R       (*((volatile uint32_t *)0x4005D3FC))
+tm4c1294ncpdt.h(1571): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DIR_R" (declared at line 702 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_DIR_R        (*((volatile uint32_t *)0x4005D400))
+tm4c1294ncpdt.h(1572): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_IS_R" (declared at line 703 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_IS_R         (*((volatile uint32_t *)0x4005D404))
+tm4c1294ncpdt.h(1573): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_IBE_R" (declared at line 704 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_IBE_R        (*((volatile uint32_t *)0x4005D408))
+tm4c1294ncpdt.h(1574): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_IEV_R" (declared at line 705 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_IEV_R        (*((volatile uint32_t *)0x4005D40C))
+tm4c1294ncpdt.h(1575): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_IM_R" (declared at line 706 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_IM_R         (*((volatile uint32_t *)0x4005D410))
+tm4c1294ncpdt.h(1576): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_RIS_R" (declared at line 707 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_RIS_R        (*((volatile uint32_t *)0x4005D414))
+tm4c1294ncpdt.h(1577): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_MIS_R" (declared at line 708 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_MIS_R        (*((volatile uint32_t *)0x4005D418))
+tm4c1294ncpdt.h(1578): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_ICR_R" (declared at line 709 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_ICR_R        (*((volatile uint32_t *)0x4005D41C))
+tm4c1294ncpdt.h(1579): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_AFSEL_R" (declared at line 710 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_AFSEL_R      (*((volatile uint32_t *)0x4005D420))
+tm4c1294ncpdt.h(1580): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DR2R_R" (declared at line 711 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_DR2R_R       (*((volatile uint32_t *)0x4005D500))
+tm4c1294ncpdt.h(1581): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DR4R_R" (declared at line 712 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_DR4R_R       (*((volatile uint32_t *)0x4005D504))
+tm4c1294ncpdt.h(1582): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DR8R_R" (declared at line 713 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_DR8R_R       (*((volatile uint32_t *)0x4005D508))
+tm4c1294ncpdt.h(1583): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_ODR_R" (declared at line 714 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_ODR_R        (*((volatile uint32_t *)0x4005D50C))
+tm4c1294ncpdt.h(1584): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_PUR_R" (declared at line 715 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_PUR_R        (*((volatile uint32_t *)0x4005D510))
+tm4c1294ncpdt.h(1585): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_PDR_R" (declared at line 716 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_PDR_R        (*((volatile uint32_t *)0x4005D514))
+tm4c1294ncpdt.h(1586): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_SLR_R" (declared at line 717 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_SLR_R        (*((volatile uint32_t *)0x4005D518))
+tm4c1294ncpdt.h(1587): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DEN_R" (declared at line 718 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_DEN_R        (*((volatile uint32_t *)0x4005D51C))
+tm4c1294ncpdt.h(1588): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_LOCK_R" (declared at line 719 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_LOCK_R       (*((volatile uint32_t *)0x4005D520))
+tm4c1294ncpdt.h(1589): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_CR_R" (declared at line 720 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_CR_R         (*((volatile uint32_t *)0x4005D524))
+tm4c1294ncpdt.h(1590): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_AMSEL_R" (declared at line 721 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_AMSEL_R      (*((volatile uint32_t *)0x4005D528))
+tm4c1294ncpdt.h(1591): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_PCTL_R" (declared at line 722 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_PCTL_R       (*((volatile uint32_t *)0x4005D52C))
+tm4c1294ncpdt.h(1592): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_ADCCTL_R" (declared at line 723 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_ADCCTL_R     (*((volatile uint32_t *)0x4005D530))
+tm4c1294ncpdt.h(1593): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DMACTL_R" (declared at line 724 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_DMACTL_R     (*((volatile uint32_t *)0x4005D534))
+tm4c1294ncpdt.h(10194): warning:  #47-D: incompatible redefinition of macro "EEPROM_PP_SIZE_M" (declared at line 8895 of "..\inc/tm4c123gh6pm.h")
+  #define EEPROM_PP_SIZE_M        0x0000FFFF  // EEPROM Size
+tm4c1294ncpdt.h(11485): warning:  #47-D: incompatible redefinition of macro "FLASH_FMA_OFFSET_M" (declared at line 9105 of "..\inc/tm4c123gh6pm.h")
+  #define FLASH_FMA_OFFSET_M      0x000FFFFF  // Address Offset
+DEBUG_UART.c: 177 warnings, 0 errors
+compiling Camera.c...
+Camera.c(125): warning:  #167-D: argument of type "volatile char *" is incompatible with parameter of type "char *"
+                FiFo_Get(data);
+Camera.c(167): warning:  #167-D: argument of type "volatile char *" is incompatible with parameter of type "char *"
+                FiFo_Get(&data);
+Camera.c(374): warning:  #177-D: variable "x" was declared but never referenced
+                                int x = 5;
+Camera.c(385): warning:  #177-D: variable "x" was declared but never referenced
+                        int x = 7;
+Camera.c: 4 warnings, 0 errors
+compiling Uart1.c...
+linking...
+Program Size: Code=23048 RO-data=2212 RW-data=368 ZI-data=11096  
+".\SDCFile.axf" - 0 Error(s), 193 Warning(s).
+Load "C:\\Users\\Sikenderali Ashraf\\Desktop\\tm4c129\\SDCFile.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+Load "C:\\Users\\Sikenderali Ashraf\\Desktop\\tm4c129\\SDCFile.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+ter of type "char *"
+                FiFo_Get(&data);
+Camera.c(374): warning:  #177-D: variable "x" was declared but never referenced
+                                int x = 5;
+Camera.c(385): warning:  #177-D: variable "x" was declared but never referenced
+                        int x = 7;
+Camera.c: 4 warnings, 0 errors
+compiling Uart1.c...
+".\SDCFile.axf" - 4 Error(s), 197 Warning(s).
+Target not created
+inc/tm4c123gh6pm.h")
+  #define INT_UART3               72          // UART 3
+tm4c1294ncpdt.h(111): warning:  #47-D: incompatible redefinition of macro "INT_UART4" (declared at line 99 of "..\inc/tm4c123gh6pm.h")
+  #define INT_UART4               73          // UART 4
+tm4c1294ncpdt.h(112): warning:  #47-D: incompatible redefinition of macro "INT_UART5" (declared at line 100 of "..\inc/tm4c123gh6pm.h")
+  #define INT_UART5               74          // UART 5
+tm4c1294ncpdt.h(113): warning:  #47-D: incompatible redefinition of macro "INT_UART6" (declared at line 101 of "..\inc/tm4c123gh6pm.h")
+  #define INT_UART6               75          // UART 6
+tm4c1294ncpdt.h(114): warning:  #47-D: incompatible redefinition of macro "INT_UART7" (declared at line 102 of "..\inc/tm4c123gh6pm.h")
+  #define INT_UART7               76          // UART 7
+tm4c1294ncpdt.h(115): warning:  #47-D: incompatible redefinition of macro "INT_I2C2" (declared at line 103 of "..\inc/tm4c123gh6pm.h")
+  #define INT_I2C2                77          // I2C 2
+tm4c1294ncpdt.h(116): warning:  #47-D: incompatible redefinition of macro "INT_I2C3" (declared at line 104 of "..\inc/tm4c123gh6pm.h")
+  #define INT_I2C3                78          // I2C 3
+tm4c1294ncpdt.h(117): warning:  #47-D: incompatible redefinition of macro "INT_TIMER4A" (declared at line 105 of "..\inc/tm4c123gh6pm.h")
+  #define INT_TIMER4A             79          // Timer 4A
+tm4c1294ncpdt.h(118): warning:  #47-D: incompatible redefinition of macro "INT_TIMER4B" (declared at line 106 of "..\inc/tm4c123gh6pm.h")
+  #define INT_TIMER4B             80          // Timer 4B
+tm4c1294ncpdt.h(119): warning:  #47-D: incompatible redefinition of macro "INT_TIMER5A" (declared at line 107 of "..\inc/tm4c123gh6pm.h")
+  #define INT_TIMER5A             81          // Timer 5A
+tm4c1294ncpdt.h(120): warning:  #47-D: incompatible redefinition of macro "INT_TIMER5B" (declared at line 108 of "..\inc/tm4c123gh6pm.h")
+  #define INT_TIMER5B             82          // Timer 5B
+tm4c1294ncpdt.h(121): warning:  #47-D: incompatible redefinition of macro "INT_SYSEXC" (declared at line 121 of "..\inc/tm4c123gh6pm.h")
+  #define INT_SYSEXC              83          // Floating-Point Exception
+tm4c1294ncpdt.h(1379): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_DATA_BITS_R" (declared at line 161 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_DATA_BITS_R  ((volatile uint32_t *)0x40058000)
+tm4c1294ncpdt.h(1380): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_DATA_R" (declared at line 162 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_DATA_R       (*((volatile uint32_t *)0x400583FC))
+tm4c1294ncpdt.h(1381): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_DIR_R" (declared at line 163 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_DIR_R        (*((volatile uint32_t *)0x40058400))
+tm4c1294ncpdt.h(1382): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_IS_R" (declared at line 164 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_IS_R         (*((volatile uint32_t *)0x40058404))
+tm4c1294ncpdt.h(1383): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_IBE_R" (declared at line 165 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_IBE_R        (*((volatile uint32_t *)0x40058408))
+tm4c1294ncpdt.h(1384): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_IEV_R" (declared at line 166 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_IEV_R        (*((volatile uint32_t *)0x4005840C))
+tm4c1294ncpdt.h(1385): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_IM_R" (declared at line 167 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_IM_R         (*((volatile uint32_t *)0x40058410))
+tm4c1294ncpdt.h(1386): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_RIS_R" (declared at line 168 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_RIS_R        (*((volatile uint32_t *)0x40058414))
+tm4c1294ncpdt.h(1387): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_MIS_R" (declared at line 169 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_MIS_R        (*((volatile uint32_t *)0x40058418))
+tm4c1294ncpdt.h(1388): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_ICR_R" (declared at line 170 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_ICR_R        (*((volatile uint32_t *)0x4005841C))
+tm4c1294ncpdt.h(1389): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_AFSEL_R" (declared at line 171 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_AFSEL_R      (*((volatile uint32_t *)0x40058420))
+tm4c1294ncpdt.h(1390): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_DR2R_R" (declared at line 172 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_DR2R_R       (*((volatile uint32_t *)0x40058500))
+tm4c1294ncpdt.h(1391): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_DR4R_R" (declared at line 173 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_DR4R_R       (*((volatile uint32_t *)0x40058504))
+tm4c1294ncpdt.h(1392): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_DR8R_R" (declared at line 174 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_DR8R_R       (*((volatile uint32_t *)0x40058508))
+tm4c1294ncpdt.h(1393): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_ODR_R" (declared at line 175 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_ODR_R        (*((volatile uint32_t *)0x4005850C))
+tm4c1294ncpdt.h(1394): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_PUR_R" (declared at line 176 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_PUR_R        (*((volatile uint32_t *)0x40058510))
+tm4c1294ncpdt.h(1395): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_PDR_R" (declared at line 177 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_PDR_R        (*((volatile uint32_t *)0x40058514))
+tm4c1294ncpdt.h(1396): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_SLR_R" (declared at line 178 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_SLR_R        (*((volatile uint32_t *)0x40058518))
+tm4c1294ncpdt.h(1397): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_DEN_R" (declared at line 179 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_DEN_R        (*((volatile uint32_t *)0x4005851C))
+tm4c1294ncpdt.h(1398): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_LOCK_R" (declared at line 180 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_LOCK_R       (*((volatile uint32_t *)0x40058520))
+tm4c1294ncpdt.h(1399): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_CR_R" (declared at line 181 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_CR_R         (*((volatile uint32_t *)0x40058524))
+tm4c1294ncpdt.h(1400): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_AMSEL_R" (declared at line 182 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_AMSEL_R      (*((volatile uint32_t *)0x40058528))
+tm4c1294ncpdt.h(1401): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_PCTL_R" (declared at line 183 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_PCTL_R       (*((volatile uint32_t *)0x4005852C))
+tm4c1294ncpdt.h(1402): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_ADCCTL_R" (declared at line 184 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_ADCCTL_R     (*((volatile uint32_t *)0x40058530))
+tm4c1294ncpdt.h(1403): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTA_DMACTL_R" (declared at line 185 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTA_DMACTL_R     (*((volatile uint32_t *)0x40058534))
+tm4c1294ncpdt.h(1417): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_DATA_BITS_R" (declared at line 192 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_DATA_BITS_R  ((volatile uint32_t *)0x40059000)
+tm4c1294ncpdt.h(1418): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_DATA_R" (declared at line 193 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_DATA_R       (*((volatile uint32_t *)0x400593FC))
+tm4c1294ncpdt.h(1419): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_DIR_R" (declared at line 194 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_DIR_R        (*((volatile uint32_t *)0x40059400))
+tm4c1294ncpdt.h(1420): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_IS_R" (declared at line 195 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_IS_R         (*((volatile uint32_t *)0x40059404))
+tm4c1294ncpdt.h(1421): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_IBE_R" (declared at line 196 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_IBE_R        (*((volatile uint32_t *)0x40059408))
+tm4c1294ncpdt.h(1422): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_IEV_R" (declared at line 197 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_IEV_R        (*((volatile uint32_t *)0x4005940C))
+tm4c1294ncpdt.h(1423): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_IM_R" (declared at line 198 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_IM_R         (*((volatile uint32_t *)0x40059410))
+tm4c1294ncpdt.h(1424): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_RIS_R" (declared at line 199 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_RIS_R        (*((volatile uint32_t *)0x40059414))
+tm4c1294ncpdt.h(1425): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_MIS_R" (declared at line 200 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_MIS_R        (*((volatile uint32_t *)0x40059418))
+tm4c1294ncpdt.h(1426): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_ICR_R" (declared at line 201 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_ICR_R        (*((volatile uint32_t *)0x4005941C))
+tm4c1294ncpdt.h(1427): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_AFSEL_R" (declared at line 202 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_AFSEL_R      (*((volatile uint32_t *)0x40059420))
+tm4c1294ncpdt.h(1428): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_DR2R_R" (declared at line 203 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_DR2R_R       (*((volatile uint32_t *)0x40059500))
+tm4c1294ncpdt.h(1429): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_DR4R_R" (declared at line 204 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_DR4R_R       (*((volatile uint32_t *)0x40059504))
+tm4c1294ncpdt.h(1430): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_DR8R_R" (declared at line 205 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_DR8R_R       (*((volatile uint32_t *)0x40059508))
+tm4c1294ncpdt.h(1431): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_ODR_R" (declared at line 206 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_ODR_R        (*((volatile uint32_t *)0x4005950C))
+tm4c1294ncpdt.h(1432): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_PUR_R" (declared at line 207 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_PUR_R        (*((volatile uint32_t *)0x40059510))
+tm4c1294ncpdt.h(1433): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_PDR_R" (declared at line 208 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_PDR_R        (*((volatile uint32_t *)0x40059514))
+tm4c1294ncpdt.h(1434): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_SLR_R" (declared at line 209 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_SLR_R        (*((volatile uint32_t *)0x40059518))
+tm4c1294ncpdt.h(1435): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_DEN_R" (declared at line 210 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_DEN_R        (*((volatile uint32_t *)0x4005951C))
+tm4c1294ncpdt.h(1436): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_LOCK_R" (declared at line 211 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_LOCK_R       (*((volatile uint32_t *)0x40059520))
+tm4c1294ncpdt.h(1437): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_CR_R" (declared at line 212 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_CR_R         (*((volatile uint32_t *)0x40059524))
+tm4c1294ncpdt.h(1438): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_AMSEL_R" (declared at line 213 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_AMSEL_R      (*((volatile uint32_t *)0x40059528))
+tm4c1294ncpdt.h(1439): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_PCTL_R" (declared at line 214 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_PCTL_R       (*((volatile uint32_t *)0x4005952C))
+tm4c1294ncpdt.h(1440): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_ADCCTL_R" (declared at line 215 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_ADCCTL_R     (*((volatile uint32_t *)0x40059530))
+tm4c1294ncpdt.h(1441): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTB_DMACTL_R" (declared at line 216 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTB_DMACTL_R     (*((volatile uint32_t *)0x40059534))
+tm4c1294ncpdt.h(1455): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_DATA_BITS_R" (declared at line 223 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_DATA_BITS_R  ((volatile uint32_t *)0x4005A000)
+tm4c1294ncpdt.h(1456): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_DATA_R" (declared at line 224 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_DATA_R       (*((volatile uint32_t *)0x4005A3FC))
+tm4c1294ncpdt.h(1457): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_DIR_R" (declared at line 225 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_DIR_R        (*((volatile uint32_t *)0x4005A400))
+tm4c1294ncpdt.h(1458): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_IS_R" (declared at line 226 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_IS_R         (*((volatile uint32_t *)0x4005A404))
+tm4c1294ncpdt.h(1459): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_IBE_R" (declared at line 227 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_IBE_R        (*((volatile uint32_t *)0x4005A408))
+tm4c1294ncpdt.h(1460): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_IEV_R" (declared at line 228 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_IEV_R        (*((volatile uint32_t *)0x4005A40C))
+tm4c1294ncpdt.h(1461): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_IM_R" (declared at line 229 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_IM_R         (*((volatile uint32_t *)0x4005A410))
+tm4c1294ncpdt.h(1462): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_RIS_R" (declared at line 230 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_RIS_R        (*((volatile uint32_t *)0x4005A414))
+tm4c1294ncpdt.h(1463): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_MIS_R" (declared at line 231 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_MIS_R        (*((volatile uint32_t *)0x4005A418))
+tm4c1294ncpdt.h(1464): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_ICR_R" (declared at line 232 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_ICR_R        (*((volatile uint32_t *)0x4005A41C))
+tm4c1294ncpdt.h(1465): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_AFSEL_R" (declared at line 233 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_AFSEL_R      (*((volatile uint32_t *)0x4005A420))
+tm4c1294ncpdt.h(1466): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_DR2R_R" (declared at line 234 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_DR2R_R       (*((volatile uint32_t *)0x4005A500))
+tm4c1294ncpdt.h(1467): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_DR4R_R" (declared at line 235 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_DR4R_R       (*((volatile uint32_t *)0x4005A504))
+tm4c1294ncpdt.h(1468): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_DR8R_R" (declared at line 236 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_DR8R_R       (*((volatile uint32_t *)0x4005A508))
+tm4c1294ncpdt.h(1469): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_ODR_R" (declared at line 237 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_ODR_R        (*((volatile uint32_t *)0x4005A50C))
+tm4c1294ncpdt.h(1470): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_PUR_R" (declared at line 238 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_PUR_R        (*((volatile uint32_t *)0x4005A510))
+tm4c1294ncpdt.h(1471): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_PDR_R" (declared at line 239 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_PDR_R        (*((volatile uint32_t *)0x4005A514))
+tm4c1294ncpdt.h(1472): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_SLR_R" (declared at line 240 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_SLR_R        (*((volatile uint32_t *)0x4005A518))
+tm4c1294ncpdt.h(1473): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_DEN_R" (declared at line 241 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_DEN_R        (*((volatile uint32_t *)0x4005A51C))
+tm4c1294ncpdt.h(1474): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_LOCK_R" (declared at line 242 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_LOCK_R       (*((volatile uint32_t *)0x4005A520))
+tm4c1294ncpdt.h(1475): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_CR_R" (declared at line 243 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_CR_R         (*((volatile uint32_t *)0x4005A524))
+tm4c1294ncpdt.h(1476): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_AMSEL_R" (declared at line 244 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_AMSEL_R      (*((volatile uint32_t *)0x4005A528))
+tm4c1294ncpdt.h(1477): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_PCTL_R" (declared at line 245 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_PCTL_R       (*((volatile uint32_t *)0x4005A52C))
+tm4c1294ncpdt.h(1478): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_ADCCTL_R" (declared at line 246 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_ADCCTL_R     (*((volatile uint32_t *)0x4005A530))
+tm4c1294ncpdt.h(1479): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTC_DMACTL_R" (declared at line 247 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTC_DMACTL_R     (*((volatile uint32_t *)0x4005A534))
+tm4c1294ncpdt.h(1493): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_DATA_BITS_R" (declared at line 254 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_DATA_BITS_R  ((volatile uint32_t *)0x4005B000)
+tm4c1294ncpdt.h(1494): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_DATA_R" (declared at line 255 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_DATA_R       (*((volatile uint32_t *)0x4005B3FC))
+tm4c1294ncpdt.h(1495): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_DIR_R" (declared at line 256 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_DIR_R        (*((volatile uint32_t *)0x4005B400))
+tm4c1294ncpdt.h(1496): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_IS_R" (declared at line 257 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_IS_R         (*((volatile uint32_t *)0x4005B404))
+tm4c1294ncpdt.h(1497): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_IBE_R" (declared at line 258 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_IBE_R        (*((volatile uint32_t *)0x4005B408))
+tm4c1294ncpdt.h(1498): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_IEV_R" (declared at line 259 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_IEV_R        (*((volatile uint32_t *)0x4005B40C))
+tm4c1294ncpdt.h(1499): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_IM_R" (declared at line 260 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_IM_R         (*((volatile uint32_t *)0x4005B410))
+tm4c1294ncpdt.h(1500): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_RIS_R" (declared at line 261 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_RIS_R        (*((volatile uint32_t *)0x4005B414))
+tm4c1294ncpdt.h(1501): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_MIS_R" (declared at line 262 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_MIS_R        (*((volatile uint32_t *)0x4005B418))
+tm4c1294ncpdt.h(1502): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_ICR_R" (declared at line 263 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_ICR_R        (*((volatile uint32_t *)0x4005B41C))
+tm4c1294ncpdt.h(1503): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_AFSEL_R" (declared at line 264 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_AFSEL_R      (*((volatile uint32_t *)0x4005B420))
+tm4c1294ncpdt.h(1504): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_DR2R_R" (declared at line 265 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_DR2R_R       (*((volatile uint32_t *)0x4005B500))
+tm4c1294ncpdt.h(1505): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_DR4R_R" (declared at line 266 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_DR4R_R       (*((volatile uint32_t *)0x4005B504))
+tm4c1294ncpdt.h(1506): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_DR8R_R" (declared at line 267 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_DR8R_R       (*((volatile uint32_t *)0x4005B508))
+tm4c1294ncpdt.h(1507): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_ODR_R" (declared at line 268 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_ODR_R        (*((volatile uint32_t *)0x4005B50C))
+tm4c1294ncpdt.h(1508): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_PUR_R" (declared at line 269 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_PUR_R        (*((volatile uint32_t *)0x4005B510))
+tm4c1294ncpdt.h(1509): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_PDR_R" (declared at line 270 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_PDR_R        (*((volatile uint32_t *)0x4005B514))
+tm4c1294ncpdt.h(1510): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_SLR_R" (declared at line 271 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_SLR_R        (*((volatile uint32_t *)0x4005B518))
+tm4c1294ncpdt.h(1511): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_DEN_R" (declared at line 272 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_DEN_R        (*((volatile uint32_t *)0x4005B51C))
+tm4c1294ncpdt.h(1512): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_LOCK_R" (declared at line 273 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_LOCK_R       (*((volatile uint32_t *)0x4005B520))
+tm4c1294ncpdt.h(1513): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_CR_R" (declared at line 274 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_CR_R         (*((volatile uint32_t *)0x4005B524))
+tm4c1294ncpdt.h(1514): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_AMSEL_R" (declared at line 275 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_AMSEL_R      (*((volatile uint32_t *)0x4005B528))
+tm4c1294ncpdt.h(1515): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_PCTL_R" (declared at line 276 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_PCTL_R       (*((volatile uint32_t *)0x4005B52C))
+tm4c1294ncpdt.h(1516): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_ADCCTL_R" (declared at line 277 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_ADCCTL_R     (*((volatile uint32_t *)0x4005B530))
+tm4c1294ncpdt.h(1517): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTD_DMACTL_R" (declared at line 278 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTD_DMACTL_R     (*((volatile uint32_t *)0x4005B534))
+tm4c1294ncpdt.h(1531): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_DATA_BITS_R" (declared at line 669 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_DATA_BITS_R  ((volatile uint32_t *)0x4005C000)
+tm4c1294ncpdt.h(1532): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_DATA_R" (declared at line 670 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_DATA_R       (*((volatile uint32_t *)0x4005C3FC))
+tm4c1294ncpdt.h(1533): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_DIR_R" (declared at line 671 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_DIR_R        (*((volatile uint32_t *)0x4005C400))
+tm4c1294ncpdt.h(1534): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_IS_R" (declared at line 672 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_IS_R         (*((volatile uint32_t *)0x4005C404))
+tm4c1294ncpdt.h(1535): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_IBE_R" (declared at line 673 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_IBE_R        (*((volatile uint32_t *)0x4005C408))
+tm4c1294ncpdt.h(1536): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_IEV_R" (declared at line 674 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_IEV_R        (*((volatile uint32_t *)0x4005C40C))
+tm4c1294ncpdt.h(1537): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_IM_R" (declared at line 675 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_IM_R         (*((volatile uint32_t *)0x4005C410))
+tm4c1294ncpdt.h(1538): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_RIS_R" (declared at line 676 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_RIS_R        (*((volatile uint32_t *)0x4005C414))
+tm4c1294ncpdt.h(1539): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_MIS_R" (declared at line 677 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_MIS_R        (*((volatile uint32_t *)0x4005C418))
+tm4c1294ncpdt.h(1540): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_ICR_R" (declared at line 678 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_ICR_R        (*((volatile uint32_t *)0x4005C41C))
+tm4c1294ncpdt.h(1541): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_AFSEL_R" (declared at line 679 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_AFSEL_R      (*((volatile uint32_t *)0x4005C420))
+tm4c1294ncpdt.h(1542): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_DR2R_R" (declared at line 680 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_DR2R_R       (*((volatile uint32_t *)0x4005C500))
+tm4c1294ncpdt.h(1543): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_DR4R_R" (declared at line 681 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_DR4R_R       (*((volatile uint32_t *)0x4005C504))
+tm4c1294ncpdt.h(1544): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_DR8R_R" (declared at line 682 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_DR8R_R       (*((volatile uint32_t *)0x4005C508))
+tm4c1294ncpdt.h(1545): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_ODR_R" (declared at line 683 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_ODR_R        (*((volatile uint32_t *)0x4005C50C))
+tm4c1294ncpdt.h(1546): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_PUR_R" (declared at line 684 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_PUR_R        (*((volatile uint32_t *)0x4005C510))
+tm4c1294ncpdt.h(1547): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_PDR_R" (declared at line 685 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_PDR_R        (*((volatile uint32_t *)0x4005C514))
+tm4c1294ncpdt.h(1548): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_SLR_R" (declared at line 686 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_SLR_R        (*((volatile uint32_t *)0x4005C518))
+tm4c1294ncpdt.h(1549): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_DEN_R" (declared at line 687 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_DEN_R        (*((volatile uint32_t *)0x4005C51C))
+tm4c1294ncpdt.h(1550): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_LOCK_R" (declared at line 688 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_LOCK_R       (*((volatile uint32_t *)0x4005C520))
+tm4c1294ncpdt.h(1551): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_CR_R" (declared at line 689 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_CR_R         (*((volatile uint32_t *)0x4005C524))
+tm4c1294ncpdt.h(1552): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_AMSEL_R" (declared at line 690 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_AMSEL_R      (*((volatile uint32_t *)0x4005C528))
+tm4c1294ncpdt.h(1553): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_PCTL_R" (declared at line 691 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_PCTL_R       (*((volatile uint32_t *)0x4005C52C))
+tm4c1294ncpdt.h(1554): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_ADCCTL_R" (declared at line 692 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_ADCCTL_R     (*((volatile uint32_t *)0x4005C530))
+tm4c1294ncpdt.h(1555): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTE_DMACTL_R" (declared at line 693 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTE_DMACTL_R     (*((volatile uint32_t *)0x4005C534))
+tm4c1294ncpdt.h(1569): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DATA_BITS_R" (declared at line 700 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_DATA_BITS_R  ((volatile uint32_t *)0x4005D000)
+tm4c1294ncpdt.h(1570): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DATA_R" (declared at line 701 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_DATA_R       (*((volatile uint32_t *)0x4005D3FC))
+tm4c1294ncpdt.h(1571): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DIR_R" (declared at line 702 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_DIR_R        (*((volatile uint32_t *)0x4005D400))
+tm4c1294ncpdt.h(1572): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_IS_R" (declared at line 703 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_IS_R         (*((volatile uint32_t *)0x4005D404))
+tm4c1294ncpdt.h(1573): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_IBE_R" (declared at line 704 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_IBE_R        (*((volatile uint32_t *)0x4005D408))
+tm4c1294ncpdt.h(1574): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_IEV_R" (declared at line 705 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_IEV_R        (*((volatile uint32_t *)0x4005D40C))
+tm4c1294ncpdt.h(1575): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_IM_R" (declared at line 706 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_IM_R         (*((volatile uint32_t *)0x4005D410))
+tm4c1294ncpdt.h(1576): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_RIS_R" (declared at line 707 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_RIS_R        (*((volatile uint32_t *)0x4005D414))
+tm4c1294ncpdt.h(1577): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_MIS_R" (declared at line 708 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_MIS_R        (*((volatile uint32_t *)0x4005D418))
+tm4c1294ncpdt.h(1578): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_ICR_R" (declared at line 709 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_ICR_R        (*((volatile uint32_t *)0x4005D41C))
+tm4c1294ncpdt.h(1579): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_AFSEL_R" (declared at line 710 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_AFSEL_R      (*((volatile uint32_t *)0x4005D420))
+tm4c1294ncpdt.h(1580): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DR2R_R" (declared at line 711 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_DR2R_R       (*((volatile uint32_t *)0x4005D500))
+tm4c1294ncpdt.h(1581): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DR4R_R" (declared at line 712 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_DR4R_R       (*((volatile uint32_t *)0x4005D504))
+tm4c1294ncpdt.h(1582): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DR8R_R" (declared at line 713 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_DR8R_R       (*((volatile uint32_t *)0x4005D508))
+tm4c1294ncpdt.h(1583): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_ODR_R" (declared at line 714 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_ODR_R        (*((volatile uint32_t *)0x4005D50C))
+tm4c1294ncpdt.h(1584): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_PUR_R" (declared at line 715 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_PUR_R        (*((volatile uint32_t *)0x4005D510))
+tm4c1294ncpdt.h(1585): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_PDR_R" (declared at line 716 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_PDR_R        (*((volatile uint32_t *)0x4005D514))
+tm4c1294ncpdt.h(1586): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_SLR_R" (declared at line 717 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_SLR_R        (*((volatile uint32_t *)0x4005D518))
+tm4c1294ncpdt.h(1587): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DEN_R" (declared at line 718 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_DEN_R        (*((volatile uint32_t *)0x4005D51C))
+tm4c1294ncpdt.h(1588): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_LOCK_R" (declared at line 719 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_LOCK_R       (*((volatile uint32_t *)0x4005D520))
+tm4c1294ncpdt.h(1589): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_CR_R" (declared at line 720 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_CR_R         (*((volatile uint32_t *)0x4005D524))
+tm4c1294ncpdt.h(1590): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_AMSEL_R" (declared at line 721 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_AMSEL_R      (*((volatile uint32_t *)0x4005D528))
+tm4c1294ncpdt.h(1591): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_PCTL_R" (declared at line 722 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_PCTL_R       (*((volatile uint32_t *)0x4005D52C))
+tm4c1294ncpdt.h(1592): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_ADCCTL_R" (declared at line 723 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_ADCCTL_R     (*((volatile uint32_t *)0x4005D530))
+tm4c1294ncpdt.h(1593): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DMACTL_R" (declared at line 724 of "..\inc/tm4c123gh6pm.h")
+  #define GPIO_PORTF_DMACTL_R     (*((volatile uint32_t *)0x4005D534))
+tm4c1294ncpdt.h(10194): warning:  #47-D: incompatible redefinition of macro "EEPROM_PP_SIZE_M" (declared at line 8895 of "..\inc/tm4c123gh6pm.h")
+  #define EEPROM_PP_SIZE_M        0x0000FFFF  // EEPROM Size
+tm4c1294ncpdt.h(11485): warning:  #47-D: incompatible redefinition of macro "FLASH_FMA_OFFSET_M" (declared at line 9105 of "..\inc/tm4c123gh6pm.h")
+  #define FLASH_FMA_OFFSET_M      0x000FFFFF  // Address Offset
+DEBUG_UART.c: 177 warnings, 0 errors
+compiling Camera.c...
+Camera.c(125): warning:  #167-D: argument of type "volatile char *" is incompatible with parameter of type "char *"
+                FiFo_Get(data);
+Camera.c(167): warning:  #167-D: argument of type "volatile char *" is incompatible with parameter of type "char *"
+                FiFo_Get(&data);
+Camera.c(374): warning:  #177-D: variable "x" was declared but never referenced
+                                int x = 5;
+Camera.c(385): warning:  #177-D: variable "x" was declared but never referenced
+                        int x = 7;
+Camera.c: 4 warnings, 0 errors
+compiling Uart1.c...
+linking...
+Program Size: Code=23012 RO-data=2212 RW-data=368 ZI-data=11096  
+".\SDCFile.axf" - 0 Error(s), 370 Warning(s).
+Load "C:\\Users\\Sikenderali Ashraf\\Desktop\\tm4c129\\SDCFile.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.

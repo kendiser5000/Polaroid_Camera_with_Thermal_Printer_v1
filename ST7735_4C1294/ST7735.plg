@@ -1,0 +1,46 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\Dropbox\ArmBook\Connected_LaunchPad\ST7735_4C1294\ST7735.uvproj
+Project File Date:  05/22/2014
+
+<h2>Output:</h2>
+Build target 'ST7735'
+compiling ST7735TestMain.c...
+ST7735TestMain.c(1812): warning:  #111-D: statement is unreachable
+linking...
+.\ST7735.axf: error: L6047U: The size of this image (58036 bytes) exceeds the maximum allowed for this version of the linker
+".\ST7735.axf" - 1 Errors, 1 Warning(s).
+Target not created
+Build target 'ST7735'
+compiling ST7735TestMain.c...
+ST7735TestMain.c(1696): warning:  #177-D: variable "x" was declared but never referenced
+ST7735TestMain.c(1696): warning:  #177-D: variable "y" was declared but never referenced
+ST7735TestMain.c(1696): warning:  #177-D: variable "dx" was declared but never referenced
+ST7735TestMain.c(1696): warning:  #177-D: variable "dy" was declared but never referenced
+linking...
+.\ST7735.axf: error: L6047U: The size of this image (45532 bytes) exceeds the maximum allowed for this version of the linker
+".\ST7735.axf" - 1 Errors, 4 Warning(s).
+Target not created
+Build target 'ST7735'
+compiling ST7735TestMain.c...
+ST7735TestMain.c(1820): warning:  #111-D: statement is unreachable
+linking...
+.\ST7735.axf: error: L6047U: The size of this image (58036 bytes) exceeds the maximum allowed for this version of the linker
+".\ST7735.axf" - 1 Errors, 1 Warning(s).
+Target not created
+Build target 'ST7735'
+compiling ST7735TestMain.c...
+ST7735TestMain.c(1820): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=5180 RO-data=14408 RW-data=20 ZI-data=1124  
+".\ST7735.axf" - 0 Errors, 1 Warning(s).
+Build target 'ST7735'
+compiling ST7735TestMain.c...
+ST7735TestMain.c(1820): warning:  #111-D: statement is unreachable
+linking...
+.\ST7735.axf: error: L6047U: The size of this image (58036 bytes) exceeds the maximum allowed for this version of the linker
+".\ST7735.axf" - 1 Errors, 1 Warning(s).
+Target not created

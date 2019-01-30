@@ -1,0 +1,16 @@
+.\jpg2bmp.o: jpg2bmp.c
+.\jpg2bmp.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\jpg2bmp.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\jpg2bmp.o: C:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\jpg2bmp.o: C:\Keil\ARM\ARMCC\bin\..\include\math.h
+.\jpg2bmp.o: C:\Keil\ARM\ARMCC\bin\..\include\assert.h
+.\jpg2bmp.o: picojpeg.h
+.\jpg2bmp.o: diskio.h
+.\jpg2bmp.o: integer.h
+.\jpg2bmp.o: ff.h
+.\jpg2bmp.o: ffconf.h
+.\jpg2bmp.o: PLL.h
+.\jpg2bmp.o: ST7735.h
+.\jpg2bmp.o: heap.h
+.\jpg2bmp.o: ../inc/tm4c123gh6pm.h
+.\jpg2bmp.o: Camera.h

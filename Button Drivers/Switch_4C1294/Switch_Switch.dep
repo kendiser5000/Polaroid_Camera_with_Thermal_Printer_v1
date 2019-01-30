@@ -1,0 +1,11 @@
+Dependencies for Project 'Switch', Target 'Switch': (DO NOT MODIFY !)
+F (.\startup.s)(0x5C0450B1)(--cpu Cortex-M4 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C129--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\Board.c)(0x5C0450B1)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C129-Drvmdk -DPART_TM4C1294NCPDT -DTM4C1294NCPDT-o .\board.o --omf_browse .\board.crf --depend .\board.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+F (.\Switch.c)(0x5C059852)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C129-Drvmdk -DPART_TM4C1294NCPDT -DTM4C1294NCPDT-o .\switch.o --omf_browse .\switch.crf --depend .\switch.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (tm4c1294ncpdt.h)(0x5C0477D3)
+F (.\SwitchTestMain.c)(0x5C059708)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C129-Drvmdk -DPART_TM4C1294NCPDT -DTM4C1294NCPDT-o .\switchtestmain.o --omf_browse .\switchtestmain.crf --depend .\switchtestmain.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (Board.h)(0x5C0450B1)
+I (Switch.h)(0x5C058961)

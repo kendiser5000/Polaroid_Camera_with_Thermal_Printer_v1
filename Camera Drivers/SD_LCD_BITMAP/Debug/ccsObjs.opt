@@ -1,0 +1,1 @@
+"./PLL.obj" "./SDCFile.obj" "./ST7735.obj" "./diskio.obj" "../diskio.o" "./ff.obj" "../ff.o" "./heap.obj" "../heap.o" "./jpg2bmp.obj" "../jpg2bmp.o" "./picojpeg.obj" "../picojpeg.o" "../pll.o" "../sdcfile.o" "../st7735.o" "../startup.o" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd" -llibc.a 

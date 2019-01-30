@@ -1,0 +1,18 @@
+Design Consistency Status Report
+--------------------------------
+
+Report File:        C:\Users\mattqd97\Documents\GitHub\Final-Project\Pcb and Sch\Lab7_TM4C123starter (PCB - Design Consistency Status Report).txt
+Report Written:     Thursday, November 01, 2018
+Design Path:        C:\Users\mattqd97\Documents\GitHub\Final-Project\Pcb and Sch\Lab7_TM4C123starter.pcb
+Design Title:       
+Created:            10/22/2018 11:46:27 PM
+Last Saved:         10/30/2018 8:21:07 AM
+Editing Time:       990 min
+Units:              mil (precision 0)
+
+
+Checking integrity of Schematic "C:\Users\mattqd97\Documents\GitHub\Final-Project\Pcb and Sch\Lab7_TM4C123starter.sch" with PCB "C:\Users\mattqd97\Documents\GitHub\Final-Project\Pcb and Sch\Lab7_TM4C123starter.pcb"
+======================================================================================================================================================================================================================
+
+
+End Of Report.
